@@ -44,7 +44,7 @@ export default function AboutPage() {
       <section className="about-section">
         <h2 className="about-section-title">色阶引擎</h2>
         <p className="about-p">
-          全站色阶由 @palette-studio/core 在 OKLCH 色彩空间实时生成：明度感知均匀，
+          全站色阶由 shise-engine 在 OKLCH 色彩空间实时生成：明度感知均匀，
           过渡不生硬；暗色模式的色阶与墨阶并非简单反转，而是按暗底观感重新生成；
           文字可用级同时经 WCAG 对比度与 APCA Lc 双轨校验，宁缺毋滥。
         </p>

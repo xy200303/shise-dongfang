@@ -1,5 +1,5 @@
 {
-  "name": "@palette-studio/core",
+  "name": "shise-engine",
   "version": "0.1.0",
   "description": "感知均匀的 10 级色阶生成引擎（OKLCH），支持暗色模式与中性色阶，输出 TDesign Design Token",
   "license": "MIT",

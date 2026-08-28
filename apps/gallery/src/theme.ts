@@ -1,4 +1,4 @@
-import { generateTheme, tokensToCss } from '@palette-studio/core';
+import { generateTheme, tokensToCss } from 'shise-engine';
 
 export type ThemeMode = 'light' | 'dark';
 

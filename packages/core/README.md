@@ -1,11 +1,11 @@
-# @palette-studio/core
+# shise-engine
 
 感知均匀的 10 级色阶生成引擎。输入任意主色，输出由浅到深、过渡自然的主色阶（亮/暗双模式）、跟随主题色的中性色阶、搭配色和谐方案，以及整套 TDesign Design Token。
 
 ## 安装
 
 ```bash
-pnpm add @palette-studio/core
+pnpm add shise-engine
 ```
 
 ## 使用
@@ -21,7 +21,7 @@ import {
   contrastRatio,        // WCAG 2.x 对比度
   apcaContrast,         // APCA（WCAG 3 草案）Lc 值
   accessibleTextLevel,  // APCA 可访问文字级推荐
-} from '@palette-studio/core';
+} from 'shise-engine';
 
 const { colors, primaryIndex, darkColors } = generatePalette('#0052d9', {
   remainInput: true,   // 输入色原样保留在最接近的一级

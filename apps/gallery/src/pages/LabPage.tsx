@@ -9,8 +9,8 @@ import {
   harmonyColors,
   usageHint,
   wcagLevel,
-} from '@palette-studio/core';
-import type { HarmonyResult } from '@palette-studio/core';
+} from 'shise-engine';
+import type { HarmonyResult } from 'shise-engine';
 import type { ColorEntry } from '../types';
 import './lab.css';
 

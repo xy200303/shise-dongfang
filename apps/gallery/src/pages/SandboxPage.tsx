@@ -20,7 +20,7 @@ import {
   toTDesignTokens,
   tokensToCss,
   usageHint,
-} from '@palette-studio/core';
+} from 'shise-engine';
 import type { ColorEntry } from '../types';
 import './sandbox.css';
 
@@ -135,7 +135,7 @@ export default function SandboxPage({ colors, onApplyTheme }: Props) {
   const exportCss = () =>
     download(
       `tdesign-tokens-${slug}.css`,
-      `/* 拾色 · 东方 × @palette-studio/core — 基于 ${hex} 生成的 TDesign Design Token */\n` +
+      `/* 拾色 · 东方 × shise-engine — 基于 ${hex} 生成的 TDesign Design Token */\n` +
         `${tokensToCss(tokens.light, ':root')}\n\n` +
         `${tokensToCss(tokens.dark, ':root[theme-mode="dark"]')}\n`,
       'text/css',

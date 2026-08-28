@@ -1,7 +1,7 @@
 import { useEffect, useMemo, useRef, useState } from 'react';
 import { MessagePlugin } from 'tdesign-react';
-import { bestTextOn, converter, differenceCiede2000 } from '@palette-studio/core';
-import type { Oklch } from '@palette-studio/core';
+import { bestTextOn, converter, differenceCiede2000 } from 'shise-engine';
+import type { Oklch } from 'shise-engine';
 import type { ColorEntry } from '../types';
 import './picker.css';
 
