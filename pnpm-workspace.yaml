@@ -1,5 +1,2 @@
 packages:
   - apps/*
-onlyBuiltDependencies:
-  - shise-engine
-  - "shise-engine@https://codeload.github.com/xy200303/shise-engine/tar.gz/814c1d2be8bb3fab0912b84349ae146e601e8bc2"
