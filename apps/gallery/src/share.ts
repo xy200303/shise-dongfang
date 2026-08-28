@@ -1,4 +1,4 @@
-import { generateTheme } from '@palette-studio/core';
+import { generateTheme } from 'shise-engine';
 import type { ColorEntry } from './types';
 
 const W = 1200;

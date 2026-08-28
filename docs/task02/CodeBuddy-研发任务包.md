@@ -1,16 +1,16 @@
 # CodeBuddy 研发任务包
 
 > 使用方法：把本文件整篇喂给 CodeBuddy 作为研发需求上下文，让它在 `apps/gallery/` 内开发。
-> 核心原则：色彩相关能力一律调用 `@palette-studio/core`，不允许自己写色阶/对比度逻辑。
+> 核心原则：色彩相关能力一律调用 `shise-engine`，不允许自己写色阶/对比度逻辑。
 
 ## 项目上下文
 
-- monorepo：pnpm workspace，引擎包 `@palette-studio/core`（packages/core，已构建）
+- monorepo：pnpm workspace，引擎包 `shise-engine`（packages/core，已构建）
 - 新应用：`apps/gallery`，Vite + React 18 + TypeScript + tdesign-react
 - 数据集：`src/data/colors.json`（200+ 传统色：id/name/pinyin/hex/category/poem/poemSource/season）
 - 参考实现：`apps/demo` 里有 token 注入、色阶带、复制、暗色模式的现成写法
 
-## 引擎 API（@palette-studio/core）
+## 引擎 API（shise-engine）
 
 ```ts
 generateTheme(hex)       // { colors[10], primaryIndex, darkColors, darkPrimaryIndex, neutral{colors[14],darkColors}, tokens{light,dark} }

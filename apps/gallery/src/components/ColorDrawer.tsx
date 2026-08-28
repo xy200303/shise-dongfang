@@ -1,6 +1,6 @@
 import { useMemo } from 'react';
 import { Button, Drawer, MessagePlugin } from 'tdesign-react';
-import { bestTextOn, generateTheme, harmonyColors, resolveBase, usageHint } from '@palette-studio/core';
+import { bestTextOn, generateTheme, harmonyColors, resolveBase, usageHint } from 'shise-engine';
 import { toggleFavorite, useFavorites } from '../favorites';
 import { exportShareCard } from '../share';
 import type { ThemeMode } from '../theme';

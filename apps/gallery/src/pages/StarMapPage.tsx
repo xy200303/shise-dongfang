@@ -1,6 +1,6 @@
 import { useMemo, useRef, useState } from 'react';
-import { converter, HUE_ZONES } from '@palette-studio/core';
-import type { Oklch } from '@palette-studio/core';
+import { converter, HUE_ZONES } from 'shise-engine';
+import type { Oklch } from 'shise-engine';
 import type { Category, ColorEntry, Season } from '../types';
 import { CATEGORY_TABS, SEASONS } from '../types';
 import './starmap.css';

@@ -5,7 +5,7 @@
 **演示地址**：https://shise.xyun.dev
 
 腾讯犀牛鸟开源计划 2026 · TDesign 课题实战阶段 Task 02 交付仓库。
-色阶引擎课题（Task 01）主仓库：[xy200303/palette-studio](https://github.com/xy200303/palette-studio)。
+色阶引擎课题（Task 01）主仓库：[xy200303/shise-engine](https://github.com/xy200303/shise-engine)。
 
 ## 功能
 
@@ -19,12 +19,12 @@
 
 ## 技术栈
 
-- `packages/core`：`@palette-studio/core` OKLCH 色阶引擎（与 palette-studio 同源）
+- 色阶引擎 [`shise-engine`](https://github.com/xy200303/shise-engine)（Task 01 算法核心包）以 **git 依赖**形式直接安装使用，安装时自动构建，单一事实来源
 - `apps/gallery`：React 18 + TypeScript + tdesign-react + Vite
 
 ```bash
 pnpm install
-pnpm -r build          # 构建引擎 + 站点（产物 apps/gallery/dist）
+pnpm -r build               # 构建站点（产物 apps/gallery/dist）
 pnpm --filter gallery dev   # 本地开发
 ```
 
