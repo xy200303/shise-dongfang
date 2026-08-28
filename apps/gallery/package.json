@@ -9,7 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "shise-engine": "github:xy200303/shise-engine#a04d788",
+    "shise-engine": "github:xy200303/shise-engine#v1.0.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "tdesign-react": "^1.11.0"
