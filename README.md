@@ -19,12 +19,12 @@
 
 ## 技术栈
 
-- `packages/core`：`shise-engine` OKLCH 色阶引擎（与 shise-engine 仓库同源）
+- 色阶引擎 [`shise-engine`](https://github.com/xy200303/shise-engine)（Task 01 算法核心包）以 **git 依赖**形式直接安装使用，安装时自动构建，单一事实来源
 - `apps/gallery`：React 18 + TypeScript + tdesign-react + Vite
 
 ```bash
 pnpm install
-pnpm -r build          # 构建引擎 + 站点（产物 apps/gallery/dist）
+pnpm -r build               # 构建站点（产物 apps/gallery/dist）
 pnpm --filter gallery dev   # 本地开发
 ```
 
