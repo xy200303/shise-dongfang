@@ -1,0 +1,296 @@
+<body class="bg-dark text-cream font-body antialiased">
+
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+<link rel="stylesheet" href="https://fonts.googleapis.cn/css2?family=Noto+Serif+SC:wght@400;500;600;700&family=Noto+Sans+SC:wght@300;400;500;600&family=JetBrains+Mono:wght@300;400&display=swap" />
+
+<style type="text/tailwindcss">
+  @theme {
+    --color-dark: #141310;
+    --color-dark-surface: #1C1B17;
+    --color-dark-elevated: #222119;
+    --color-cream: #FAF8F4;
+    --color-cream-dim: #C8C4BA;
+    --color-cream-muted: #7A776E;
+    --color-divider-dark: #2A2825;
+    --color-cinnabar: #C8473F;
+    --color-cinnabar-glow: #D4655E;
+    --font-display: 'Noto Serif SC', 'Songti SC', serif;
+    --font-body: 'Noto Sans SC', 'PingFang SC', sans-serif;
+    --font-mono: 'JetBrains Mono', 'SF Mono', monospace;
+  }
+</style>
+
+<style>
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: 9999;
+    opacity: 0.025;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+    background-repeat: repeat;
+    background-size: 256px 256px;
+  }
+
+  .color-card {
+    transition: transform 0.3s cubic-bezier(0.23, 1, 0.32, 1), box-shadow 0.3s ease;
+  }
+  .color-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 28px rgba(0, 0, 0, 0.35);
+  }
+
+  .nav-link {
+    position: relative;
+  }
+  .nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background: #FAF8F4;
+    transition: width 0.3s ease;
+  }
+  .nav-link:hover::after {
+    width: 100%;
+  }
+
+  .season-btn {
+    transition: color 0.25s ease, border-color 0.25s ease;
+  }
+  .season-btn:hover {
+    color: #C8473F;
+    border-color: #C8473F;
+  }
+
+  .filter-tag {
+    transition: color 0.2s ease;
+  }
+  .filter-tag:hover {
+    color: #C8473F;
+  }
+  .filter-tag.active {
+    color: #C8473F;
+    border-bottom: 1px solid #C8473F;
+  }
+</style>
+
+<!-- ===== TOP BAR ===== -->
+<nav class="sticky top-0 z-50 bg-dark/95 backdrop-blur-sm border-b border-divider-dark">
+  <div class="max-w-[1440px] mx-auto px-12 h-16 flex items-center justify-between">
+    <!-- Logo -->
+    <div class="flex items-center gap-3">
+      <div class="w-7 h-7 rounded-sm border border-cinnabar flex items-center justify-center">
+        <span class="text-cinnabar font-display text-xs font-semibold leading-none">色</span>
+      </div>
+      <span class="font-display text-lg tracking-wide font-medium text-cream">拾色 · 东方</span>
+    </div>
+
+    <!-- Navigation -->
+    <div class="flex items-center gap-10">
+      <a href="#" class="nav-link text-sm text-cream-dim tracking-wider font-body">色谱</a>
+      <a href="#" class="nav-link text-sm text-cream-dim tracking-wider font-body">收藏</a>
+      <a href="#" class="nav-link text-sm text-cream-dim tracking-wider font-body">关于</a>
+    </div>
+
+    <!-- Right controls -->
+    <div class="flex items-center gap-5">
+      <!-- Theme toggle (dark active) -->
+      <div class="flex items-center gap-2">
+        <i data-lucide="sun" class="w-4 h-4 text-cream-muted"></i>
+        <div class="w-10 h-5 bg-dark-elevated rounded-full relative cursor-pointer border border-divider-dark">
+          <div class="w-3.5 h-3.5 bg-cream rounded-full absolute right-0.5 top-[3px] transition-all"></div>
+        </div>
+        <i data-lucide="moon" class="w-4 h-4 text-cream-dim"></i>
+      </div>
+      <!-- Accent dot -->
+      <div class="w-4 h-4 rounded-full bg-cinnabar ring-1 ring-cinnabar/30 ring-offset-2 ring-offset-dark"></div>
+    </div>
+  </div>
+</nav>
+
+<!-- ===== HERO ===== -->
+<section class="max-w-[1440px] mx-auto px-12 pt-32 pb-28 text-center">
+  <h1 class="font-display text-5xl font-semibold tracking-wider leading-tight text-cream">
+    中国色，不止于色
+  </h1>
+  <p class="mt-6 text-cream-dim text-base tracking-wide font-light leading-relaxed">
+    从传统色谱中，拾取属于东方的颜色
+  </p>
+
+  <!-- Season / Category Entrance -->
+  <div class="mt-16 flex items-center justify-center gap-4">
+    <button class="season-btn px-6 py-2.5 border border-divider-dark rounded-lg text-sm tracking-widest text-cream-muted font-display">
+      春
+    </button>
+    <button class="season-btn px-6 py-2.5 border border-divider-dark rounded-lg text-sm tracking-widest text-cream-muted font-display">
+      夏
+    </button>
+    <button class="season-btn px-6 py-2.5 border border-divider-dark rounded-lg text-sm tracking-widest text-cream-muted font-display">
+      秋
+    </button>
+    <button class="season-btn px-6 py-2.5 border border-divider-dark rounded-lg text-sm tracking-widest text-cream-muted font-display">
+      冬
+    </button>
+    <span class="w-px h-5 bg-divider-dark mx-2"></span>
+    <button class="season-btn px-6 py-2.5 border border-cinnabar/40 rounded-lg text-sm tracking-widest text-cinnabar font-display">
+      全色谱
+    </button>
+  </div>
+</section>
+
+<!-- ===== Divider ===== -->
+<div class="max-w-[1440px] mx-auto px-12">
+  <div class="border-t border-divider-dark"></div>
+</div>
+
+<!-- ===== COLOR SPECTRUM WALL ===== -->
+<section class="max-w-[1440px] mx-auto px-12 pt-16 pb-24">
+  <!-- Filter Row -->
+  <div class="flex items-center justify-between mb-12">
+    <!-- Color family filters -->
+    <div class="flex items-center gap-7">
+      <button class="filter-tag active text-sm tracking-wider font-display pb-1">红</button>
+      <button class="filter-tag text-sm tracking-wider text-cream-muted font-display pb-1">橙</button>
+      <button class="filter-tag text-sm tracking-wider text-cream-muted font-display pb-1">黄</button>
+      <button class="filter-tag text-sm tracking-wider text-cream-muted font-display pb-1">绿</button>
+      <button class="filter-tag text-sm tracking-wider text-cream-muted font-display pb-1">青</button>
+      <button class="filter-tag text-sm tracking-wider text-cream-muted font-display pb-1">蓝</button>
+      <button class="filter-tag text-sm tracking-wider text-cream-muted font-display pb-1">紫</button>
+      <button class="filter-tag text-sm tracking-wider text-cream-muted font-display pb-1">褐</button>
+      <button class="filter-tag text-sm tracking-wider text-cream-muted font-display pb-1">黑白灰</button>
+    </div>
+
+    <!-- Search -->
+    <div class="relative">
+      <i data-lucide="search" class="w-4 h-4 text-cream-muted absolute left-3 top-1/2 -translate-y-1/2"></i>
+      <input
+        type="text"
+        placeholder="搜索色名或拼音"
+        class="w-56 h-9 pl-9 pr-4 border border-divider-dark rounded-lg bg-transparent text-sm text-cream placeholder:text-cream-muted/50 focus:outline-none focus:border-cream-muted font-body"
+      />
+    </div>
+  </div>
+
+  <!-- Color Grid -->
+  <div class="grid grid-cols-6 gap-x-6 gap-y-10">
+
+    <!-- Card 1: 朱砂 -->
+    <div class="color-card cursor-pointer group">
+      <div class="aspect-square rounded-lg mb-3" style="background-color: #C8473F;"></div>
+      <p class="font-display text-sm tracking-wide text-cream">朱砂</p>
+      <p class="font-mono text-xs text-cream-muted mt-0.5 tracking-wider">zhū shā</p>
+    </div>
+
+    <!-- Card 2: 胭脂 -->
+    <div class="color-card cursor-pointer group">
+      <div class="aspect-square rounded-lg mb-3" style="background-color: #9B1E3C;"></div>
+      <p class="font-display text-sm tracking-wide text-cream">胭脂</p>
+      <p class="font-mono text-xs text-cream-muted mt-0.5 tracking-wider">yān zhī</p>
+    </div>
+
+    <!-- Card 3: 绯红 -->
+    <div class="color-card cursor-pointer group">
+      <div class="aspect-square rounded-lg mb-3" style="background-color: #C93756;"></div>
+      <p class="font-display text-sm tracking-wide text-cream">绯红</p>
+      <p class="font-mono text-xs text-cream-muted mt-0.5 tracking-wider">fēi hóng</p>
+    </div>
+
+    <!-- Card 4: 妃色 -->
+    <div class="color-card cursor-pointer group">
+      <div class="aspect-square rounded-lg mb-3" style="background-color: #ED5736;"></div>
+      <p class="font-display text-sm tracking-wide text-cream">妃色</p>
+      <p class="font-mono text-xs text-cream-muted mt-0.5 tracking-wider">fēi sè</p>
+    </div>
+
+    <!-- Card 5: 银红 -->
+    <div class="color-card cursor-pointer group">
+      <div class="aspect-square rounded-lg mb-3" style="background-color: #F05654;"></div>
+      <p class="font-display text-sm tracking-wide text-cream">银红</p>
+      <p class="font-mono text-xs text-cream-muted mt-0.5 tracking-wider">yín hóng</p>
+    </div>
+
+    <!-- Card 6: 石青 -->
+    <div class="color-card cursor-pointer group">
+      <div class="aspect-square rounded-lg mb-3" style="background-color: #1685A9;"></div>
+      <p class="font-display text-sm tracking-wide text-cream">石青</p>
+      <p class="font-mono text-xs text-cream-muted mt-0.5 tracking-wider">shí qīng</p>
+    </div>
+
+    <!-- Card 7: 藤黄 -->
+    <div class="color-card cursor-pointer group">
+      <div class="aspect-square rounded-lg mb-3" style="background-color: #FFB61E;"></div>
+      <p class="font-display text-sm tracking-wide text-cream">藤黄</p>
+      <p class="font-mono text-xs text-cream-muted mt-0.5 tracking-wider">téng huáng</p>
+    </div>
+
+    <!-- Card 8: 靛蓝 -->
+    <div class="color-card cursor-pointer group">
+      <div class="aspect-square rounded-lg mb-3" style="background-color: #065279;"></div>
+      <p class="font-display text-sm tracking-wide text-cream">靛蓝</p>
+      <p class="font-mono text-xs text-cream-muted mt-0.5 tracking-wider">diàn lán</p>
+    </div>
+
+    <!-- Card 9: 松花绿 -->
+    <div class="color-card cursor-pointer group">
+      <div class="aspect-square rounded-lg mb-3" style="background-color: #A4C2A8;"></div>
+      <p class="font-display text-sm tracking-wide text-cream">松花绿</p>
+      <p class="font-mono text-xs text-cream-muted mt-0.5 tracking-wider">sōng huā lǜ</p>
+    </div>
+
+    <!-- Card 10: 雪青 -->
+    <div class="color-card cursor-pointer group">
+      <div class="aspect-square rounded-lg mb-3" style="background-color: #B0A4E3;"></div>
+      <p class="font-display text-sm tracking-wide text-cream">雪青</p>
+      <p class="font-mono text-xs text-cream-muted mt-0.5 tracking-wider">xuě qīng</p>
+    </div>
+
+    <!-- Card 11: 赭石 -->
+    <div class="color-card cursor-pointer group">
+      <div class="aspect-square rounded-lg mb-3" style="background-color: #845A33;"></div>
+      <p class="font-display text-sm tracking-wide text-cream">赭石</p>
+      <p class="font-mono text-xs text-cream-muted mt-0.5 tracking-wider">zhě shí</p>
+    </div>
+
+    <!-- Card 12: 姜黄 -->
+    <div class="color-card cursor-pointer group">
+      <div class="aspect-square rounded-lg mb-3" style="background-color: #E2C027;"></div>
+      <p class="font-display text-sm tracking-wide text-cream">姜黄</p>
+      <p class="font-mono text-xs text-cream-muted mt-0.5 tracking-wider">jiāng huáng</p>
+    </div>
+
+    <!-- Card 13: 竹青 -->
+    <div class="color-card cursor-pointer group">
+      <div class="aspect-square rounded-lg mb-3" style="background-color: #789262;"></div>
+      <p class="font-display text-sm tracking-wide text-cream">竹青</p>
+      <p class="font-mono text-xs text-cream-muted mt-0.5 tracking-wider">zhú qīng</p>
+    </div>
+
+    <!-- Card 14: 紫棠 -->
+    <div class="color-card cursor-pointer group">
+      <div class="aspect-square rounded-lg mb-3" style="background-color: #56004F;"></div>
+      <p class="font-display text-sm tracking-wide text-cream">紫棠</p>
+      <p class="font-mono text-xs text-cream-muted mt-0.5 tracking-wider">zǐ táng</p>
+    </div>
+
+    <!-- Card 15: 月白 -->
+    <div class="color-card cursor-pointer group">
+      <div class="aspect-square rounded-lg mb-3 border border-divider-dark" style="background-color: #D6ECF0;"></div>
+      <p class="font-display text-sm tracking-wide text-cream">月白</p>
+      <p class="font-mono text-xs text-cream-muted mt-0.5 tracking-wider">yuè bái</p>
+    </div>
+
+    <!-- Card 16: 赤金 -->
+    <div class="color-card cursor-pointer group">
+      <div class="aspect-square rounded-lg mb-3" style="background-color: #C6A24E;"></div>
+      <p class="font-display text-sm tracking-wide text-cream">赤金</p>
+      <p class="font-mono text-xs text-cream-muted mt-0.5 tracking-wider">chì jīn</p>
+    </div>
+
+    <!-- Card 17: 杏黄 -->
+    <div class="color-card cursor-pointer group">
+      <div class="aspect-square rounded-lg mb-3" style="background-color: #F4A460;"></div>
+      <p class="font-display text-sm tracking</body>

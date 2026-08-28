@@ -1,0 +1,181 @@
+/* ===== 色彩星图页 =====
+ * 颜色一律走 TDesign token；数据点 fill 用各色自身 hex（数据内容）。
+ */
+
+.starmap-page {
+  padding-block: 64px 96px;
+}
+
+.starmap-head {
+  padding-bottom: 48px;
+}
+.starmap-title {
+  font-family: var(--font-display);
+  font-size: 40px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  margin: 0;
+}
+.starmap-sub {
+  margin: 16px 0 0;
+  color: var(--td-text-color-secondary);
+  font-size: 15px;
+  font-weight: 300;
+  letter-spacing: 0.1em;
+}
+
+/* 控制行 */
+.starmap-controls {
+  padding-block: 40px 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.starmap-ctrl-divider {
+  width: 1px;
+  height: 16px;
+  background: var(--td-component-border);
+  margin: 0 4px;
+  flex: none;
+}
+
+/* 星图画布 */
+.starmap-chart {
+  position: relative;
+  padding-block: 24px 48px;
+}
+.starmap-svg {
+  display: block;
+  width: 100%;
+  max-width: 860px;
+  margin: 0 auto;
+  height: auto;
+}
+.starmap-zone-label {
+  font-family: var(--font-display);
+  font-size: 14px;
+  letter-spacing: 0.1em;
+  fill: var(--td-text-color-secondary);
+}
+.starmap-zone-label-en {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 0.05em;
+  fill: var(--td-text-color-placeholder);
+}
+.starmap-ring-label,
+.starmap-axis-label {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  fill: var(--td-text-color-placeholder);
+}
+
+/* tooltip */
+.starmap-tooltip {
+  position: absolute;
+  z-index: 10;
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  max-width: 300px;
+  padding: 12px 16px;
+  border: 1px solid var(--td-component-border);
+  border-radius: 10px;
+  background: var(--td-bg-color-container);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  pointer-events: none;
+}
+.starmap-tooltip-chip {
+  width: 28px;
+  height: 28px;
+  border-radius: 8px;
+  border: 1px solid var(--td-component-border);
+  flex: none;
+}
+.starmap-tooltip-body {
+  min-width: 0;
+}
+.starmap-tooltip-name {
+  font-family: var(--font-display);
+  font-size: 14px;
+  letter-spacing: 0.08em;
+  margin: 0;
+  color: var(--td-text-color-primary);
+}
+.starmap-tooltip-name em {
+  font-style: normal;
+  font-size: 11px;
+  color: var(--td-text-color-placeholder);
+  margin-left: 8px;
+}
+.starmap-tooltip-poem {
+  margin: 6px 0 0;
+  font-size: 12px;
+  line-height: 1.7;
+  color: var(--td-text-color-secondary);
+  letter-spacing: 0.04em;
+}
+.starmap-tooltip-poem i {
+  font-style: normal;
+  opacity: 0.7;
+  margin-left: 6px;
+}
+
+/* 图例与说明 */
+.starmap-legend {
+  padding-top: 48px;
+}
+.starmap-legend-title {
+  font-family: var(--font-display);
+  font-size: 14px;
+  letter-spacing: 0.3em;
+  color: var(--td-text-color-secondary);
+  margin: 0 0 32px;
+}
+.starmap-legend-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 48px;
+}
+.starmap-legend-item {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+}
+.starmap-legend-item p {
+  margin: 0;
+  font-size: 13px;
+  line-height: 1.9;
+  color: var(--td-text-color-secondary);
+  letter-spacing: 0.03em;
+}
+.starmap-legend-item strong {
+  color: var(--td-text-color-primary);
+  font-weight: 500;
+}
+.starmap-legend-dot {
+  width: 16px;
+  height: 16px;
+  margin-top: 4px;
+  border-radius: 50%;
+  background: var(--td-brand-color);
+  flex: none;
+}
+.starmap-legend-dot-small {
+  width: 10px;
+  height: 10px;
+  margin-top: 7px;
+}
+.starmap-legend-dot-dim {
+  opacity: 0.4;
+}
+
+@media (max-width: 960px) {
+  .starmap-legend-grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+  .starmap-controls {
+    gap: 12px;
+  }
+}

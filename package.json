@@ -1,0 +1,19 @@
+{
+  "name": "shise-dongfang",
+  "private": true,
+  "version": "1.0.0",
+  "description": "拾色 · 东方 — 中国传统色主题馆：TDesign × OKLCH 色阶引擎",
+  "type": "module",
+  "scripts": {
+    "build": "pnpm -r build",
+    "test": "pnpm -r test",
+    "dev": "pnpm --filter gallery dev"
+  },
+  "devDependencies": {
+    "typescript": "^5.6.0",
+    "vitest": "^2.1.0"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

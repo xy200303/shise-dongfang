@@ -1,0 +1,358 @@
+/* ===== 组件沙盒 =====
+ * 外壳颜色走全站 TDesign token；预览容器由作用域注入的 token 驱动。
+ */
+
+.sandbox-page {
+  padding-block: 80px 96px;
+}
+
+.sandbox-head {
+  padding-bottom: 56px;
+}
+.sandbox-title {
+  font-family: var(--font-display);
+  font-size: 40px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  margin: 0;
+}
+.sandbox-sub {
+  margin: 16px 0 0;
+  color: var(--td-text-color-secondary);
+  font-size: 15px;
+  font-weight: 300;
+  letter-spacing: 0.1em;
+}
+
+.sandbox-body {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: 48px;
+  padding: 56px 0;
+  align-items: start;
+}
+
+.sandbox-section {
+  padding: 56px 0;
+}
+.sandbox-section-title {
+  font-family: var(--font-display);
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 0.4em;
+  color: var(--td-text-color-secondary);
+  margin: 0 0 32px;
+}
+.sandbox-note {
+  margin: 16px 0 0;
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  color: var(--td-text-color-placeholder);
+}
+
+/* ===== 控制区 ===== */
+.sandbox-controls .sandbox-section-title {
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+.sandbox-current {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+.sandbox-current i {
+  width: 48px;
+  height: 48px;
+  border-radius: 10px;
+  border: 1px solid var(--td-component-border);
+  flex: none;
+  transition: background 200ms ease-out;
+}
+.sandbox-current-name {
+  font-family: var(--font-display);
+  font-size: 18px;
+  letter-spacing: 0.12em;
+  margin: 0;
+}
+.sandbox-current-hex {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--td-text-color-placeholder);
+  margin: 4px 0 0;
+}
+.sandbox-hex-row {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+.sandbox-hex-input {
+  flex: 1;
+  min-width: 0;
+  height: 36px;
+  padding: 0 14px;
+  border: 1px solid var(--td-component-border);
+  border-radius: 8px;
+  background: transparent;
+  color: var(--td-text-color-primary);
+  font-family: var(--font-mono);
+  font-size: 13px;
+  outline: none;
+  transition: border-color 200ms ease-out;
+}
+.sandbox-hex-input:focus {
+  border-color: var(--td-text-color-secondary);
+}
+.sandbox-hex-input.invalid {
+  border-color: var(--td-error-color);
+}
+.sandbox-color-input {
+  width: 36px;
+  height: 36px;
+  padding: 0;
+  border: 1px solid var(--td-component-border);
+  border-radius: 8px;
+  background: transparent;
+  cursor: pointer;
+  flex: none;
+}
+.sandbox-search-title {
+  margin-top: 40px;
+}
+.sandbox-search-input {
+  width: 100%;
+  height: 36px;
+  padding: 0 14px;
+  border: 1px solid var(--td-component-border);
+  border-radius: 8px;
+  background: transparent;
+  color: var(--td-text-color-primary);
+  font-size: 13px;
+  font-family: var(--font-body);
+  outline: none;
+  transition: border-color 200ms ease-out;
+  margin-bottom: 8px;
+}
+.sandbox-search-input::placeholder {
+  color: var(--td-text-color-placeholder);
+}
+.sandbox-search-input:focus {
+  border-color: var(--td-text-color-secondary);
+}
+.sandbox-color-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  max-height: 420px;
+  overflow-y: auto;
+}
+.sandbox-color-item {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 8px 8px;
+  border: none;
+  border-radius: 8px;
+  background: none;
+  cursor: pointer;
+  font-family: var(--font-body);
+  transition: background 150ms ease-out;
+}
+.sandbox-color-item:hover {
+  background: var(--td-bg-color-container-hover);
+}
+.sandbox-color-item.active {
+  background: var(--td-bg-color-container-active);
+}
+.sandbox-color-item i {
+  width: 20px;
+  height: 20px;
+  border-radius: 6px;
+  border: 1px solid var(--td-component-border);
+  flex: none;
+}
+.sandbox-color-item-name {
+  font-family: var(--font-display);
+  font-size: 13px;
+  letter-spacing: 0.1em;
+  color: var(--td-text-color-primary);
+  flex: 1;
+  text-align: left;
+}
+.sandbox-color-item-hex {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--td-text-color-placeholder);
+}
+.sandbox-color-empty {
+  padding: 24px 8px;
+  font-size: 12px;
+  letter-spacing: 0.1em;
+  color: var(--td-text-color-placeholder);
+}
+
+/* ===== 作用域预览 =====
+ * .sandbox-scope 上的 --td-* 变量由 SandboxPage 注入，
+ * 这里只定义布局；组件颜色全部交给 token。
+ */
+.sandbox-scope {
+  background: var(--td-bg-color-container);
+  color: var(--td-text-color-primary);
+  border: 1px solid var(--td-component-border);
+  border-radius: 12px;
+  padding: 40px;
+  position: relative;
+  overflow: hidden;
+  transition: background 200ms ease-out;
+}
+.sandbox-scope-caption {
+  font-size: 11px;
+  letter-spacing: 0.3em;
+  color: var(--td-text-color-placeholder);
+  margin: 0 0 32px;
+}
+.sandbox-demo {
+  padding: 24px 0;
+  border-top: 1px solid var(--td-component-border);
+}
+.sandbox-demo:first-of-type {
+  border-top: none;
+  padding-top: 0;
+}
+.sandbox-demo-title {
+  font-size: 12px;
+  letter-spacing: 0.3em;
+  color: var(--td-text-color-placeholder);
+  margin: 0 0 16px;
+}
+.sandbox-demo-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+.sandbox-demo-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.sandbox-pagination {
+  margin-top: 16px;
+  display: flex;
+  justify-content: flex-end;
+}
+.sandbox-tab-note {
+  font-size: 13px;
+  line-height: 2;
+  letter-spacing: 0.05em;
+  color: var(--td-text-color-secondary);
+  margin: 0;
+}
+
+/* ===== Token 检视表 ===== */
+.sandbox-tokens {
+  border-top: 1px solid var(--td-component-border);
+}
+.sandbox-token-row {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 10px 4px;
+  border: none;
+  border-bottom: 1px solid var(--td-component-border);
+  background: none;
+  cursor: pointer;
+  font-family: var(--font-body);
+  transition: background 150ms ease-out;
+}
+.sandbox-token-row:hover {
+  background: var(--td-bg-color-container-hover);
+}
+.sandbox-token-row i {
+  width: 28px;
+  height: 28px;
+  border-radius: 6px;
+  border: 1px solid var(--td-component-border);
+  flex: none;
+}
+.sandbox-token-name {
+  font-family: var(--font-mono);
+  font-size: 13px;
+  color: var(--td-text-color-primary);
+  flex: 1;
+  text-align: left;
+}
+.sandbox-token-label {
+  font-size: 12px;
+  letter-spacing: 0.12em;
+  color: var(--td-text-color-placeholder);
+  width: 96px;
+  text-align: left;
+}
+.sandbox-token-value {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--td-text-color-secondary);
+  width: 90px;
+  text-align: right;
+}
+
+/* ===== 无障碍小结 ===== */
+.sandbox-a11y {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 48px;
+}
+.sandbox-a11y-label {
+  font-size: 12px;
+  letter-spacing: 0.3em;
+  color: var(--td-text-color-placeholder);
+  margin: 0 0 12px;
+}
+.sandbox-a11y-value {
+  font-family: var(--font-display);
+  font-size: 16px;
+  letter-spacing: 0.08em;
+  color: var(--td-text-color-primary);
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.sandbox-a11y-value i {
+  width: 20px;
+  height: 20px;
+  border-radius: 6px;
+  border: 1px solid var(--td-component-border);
+  flex: none;
+}
+
+/* ===== 响应式 ===== */
+@media (max-width: 992px) {
+  .sandbox-body {
+    grid-template-columns: 1fr;
+  }
+  .sandbox-a11y {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+}
+@media (max-width: 768px) {
+  .sandbox-title {
+    font-size: 28px;
+  }
+  .sandbox-scope {
+    padding: 24px;
+  }
+  .sandbox-token-label {
+    display: none;
+  }
+}
+
+.sandbox-export {
+  display: flex;
+  gap: 8px;
+  margin-top: 8px;
+}

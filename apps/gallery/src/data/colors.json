@@ -1,0 +1,5372 @@
+[
+  {
+    "id": "cang-yan-luo-zhao",
+    "name": "苍烟落照",
+    "pinyin": "cāng yān luò zhào",
+    "hex": "#c8b5b3",
+    "category": "red",
+    "poem": "家住苍烟落照间，丝毫尘事不相关",
+    "poemSource": "陆游《鹧鸪天》",
+    "season": "秋"
+  },
+  {
+    "id": "chang-chun",
+    "name": "长春",
+    "pinyin": "cháng chūn",
+    "hex": "#dc6b82",
+    "category": "red",
+    "poem": "顷刻开花公莫爱，四时俱好是长春",
+    "poemSource": "王安中《长春花口号》",
+    "season": "春"
+  },
+  {
+    "id": "chi",
+    "name": "赤",
+    "pinyin": "chì",
+    "hex": "#c3272b",
+    "category": "red",
+    "poem": "",
+    "poemSource": "",
+    "season": "四季"
+  },
+  {
+    "id": "chi-ling",
+    "name": "赤灵",
+    "pinyin": "chì líng",
+    "hex": "#954024",
+    "category": "red",
+    "poem": "松子神陂，赤灵解角",
+    "poemSource": "张衡《南都赋》",
+    "season": "夏"
+  },
+  {
+    "id": "chi-ti",
+    "name": "赤缇",
+    "pinyin": "chì tí",
+    "hex": "#ba5b49",
+    "category": "red",
+    "poem": "",
+    "poemSource": "",
+    "season": "春"
+  },
+  {
+    "id": "chi-you-qi",
+    "name": "蚩尤旗",
+    "pinyin": "chī yóu qí",
+    "hex": "#a85858",
+    "category": "red",
+    "poem": "中宵倚长剑，起视蚩尤旗",
+    "poemSource": "刘禹锡《和董庶中古散 调词赠尹果毅》",
+    "season": "冬"
+  },
+  {
+    "id": "chun-zhi",
+    "name": "唇脂",
+    "pinyin": "chún zhī",
+    "hex": "#c25160",
+    "category": "red",
+    "poem": "",
+    "poemSource": "",
+    "season": "夏"
+  },
+  {
+    "id": "ci-ni",
+    "name": "雌霓",
+    "pinyin": "cí ní",
+    "hex": "#cf929e",
+    "category": "red",
+    "poem": "建采虹之长旃，系雌霓而为旗",
+    "poemSource": "张衡《七辩》",
+    "season": "夏"
+  },
+  {
+    "id": "da-hong",
+    "name": "大红",
+    "pinyin": "dà hóng",
+    "hex": "#ff2121",
+    "category": "red",
+    "poem": "",
+    "poemSource": "",
+    "season": "四季"
+  },
+  {
+    "id": "da-ran",
+    "name": "大繎",
+    "pinyin": "dà rán",
+    "hex": "#822327",
+    "category": "red",
+    "poem": "烝栗绢绀缙红繎",
+    "poemSource": "史游《急就篇》",
+    "season": "夏"
+  },
+  {
+    "id": "dai-zhe",
+    "name": "岱赭",
+    "pinyin": "dài zhě",
+    "hex": "#dd6b4f",
+    "category": "red",
+    "poem": "",
+    "poemSource": "",
+    "season": "冬"
+  },
+  {
+    "id": "dan",
+    "name": "丹",
+    "pinyin": "dān",
+    "hex": "#ff4e20",
+    "category": "red",
+    "poem": "",
+    "poemSource": "",
+    "season": "四季"
+  },
+  {
+    "id": "dan-ji",
+    "name": "丹罽",
+    "pinyin": "dān jì",
+    "hex": "#e60012",
+    "category": "red",
+    "poem": "灼灼若朝霞之映日，离离如繁星之著天，皮似丹罽，肤若明珰",
+    "poemSource": "王逸《荔支赋》",
+    "season": "夏"
+  },
+  {
+    "id": "dan-shu",
+    "name": "丹秫",
+    "pinyin": "dān shú",
+    "hex": "#873424",
+    "category": "red",
+    "poem": "",
+    "poemSource": "",
+    "season": "夏"
+  },
+  {
+    "id": "dan-wo",
+    "name": "丹雘",
+    "pinyin": "dān wò",
+    "hex": "#c8161d",
+    "category": "red",
+    "poem": "邓林采楩楠，越裳贡丹雘",
+    "poemSource": "纪映钟《金陵故宫》",
+    "season": "春"
+  },
+  {
+    "id": "fei-hong",
+    "name": "绯红",
+    "pinyin": "fēi hóng",
+    "hex": "#c83c23",
+    "category": "red",
+    "poem": "",
+    "poemSource": "",
+    "season": "四季"
+  },
+  {
+    "id": "fei-se",
+    "name": "妃色",
+    "pinyin": "fēi sè",
+    "hex": "#ed5736",
+    "category": "red",
+    "poem": "",
+    "poemSource": "",
+    "season": "四季"
+  },
+  {
+    "id": "fen-hong",
+    "name": "粉红",
+    "pinyin": "fěn hóng",
+    "hex": "#ffb3a7",
+    "category": "red",
+    "poem": "",
+    "poemSource": "",
+    "season": "四季"
+  },
+  {
+    "id": "fen-mi",
+    "name": "粉米",
+    "pinyin": "fěn mǐ",
+    "hex": "#efc4ce",
+    "category": "red",
+    "poem": "节叶瘦且赤，蘼芜交翠箸；细蕊亦鲜洁，粉米糅丹素",
+    "poemSource": "郝经《甲子岁后园秋色四首》",
+    "season": "冬"
+  },
+  {
+    "id": "fu-se",
+    "name": "福色",
+    "pinyin": "fú sè",
+    "hex": "#662b2f",
+    "category": "red",
+    "poem": "",
+    "poemSource": "",
+    "season": "冬"
+  },
+  {
+    "id": "hai-tang-hong",
+    "name": "海棠红",
+    "pinyin": "hǎi táng hóng",
+    "hex": "#db5a6b",
+    "category": "red",
+    "poem": "海棠不惜胭脂色，独立蒙蒙细雨中",
+    "poemSource": "陈与义《春寒》",
+    "season": "春"
+  },
+  {
+    "id": "hai-tian-xia",
+    "name": "海天霞",
+    "pinyin": "hǎi tiān xiá",
+    "hex": "#f3a694",
+    "category": "red",
+    "poem": "漫花棚锦绣窠，海霞色上轻罗；斗鸡打马消长昼烂，春光戏里过",
+    "poemSource": "史梦兰《宫词》",
+    "season": "春"
+  },
+  {
+    "id": "he-chi",
+    "name": "赫赤",
+    "pinyin": "hè chì",
+    "hex": "#c91f37",
+    "category": "red",
+    "poem": "",
+    "poemSource": "",
+    "season": "四季"
+  },
+  {
+    "id": "he-ding-hong",
+    "name": "鹤顶红",
+    "pinyin": "hè dǐng hóng",
+    "hex": "#d24735",
+    "category": "red",
+    "poem": "掌中调丹砂，染此鹤顶红",
+    "poemSource": "苏轼《山茶》",
+    "season": "冬"
+  },
+  {
+    "id": "hong-mian",
+    "name": "红面",
+    "pinyin": "hóng miàn",
+    "hex": "#cd7372",
+    "category": "red",
+    "poem": "",
+    "poemSource": "",
+    "season": "冬"
+  },
+  {
+    "id": "huo-hong",
+    "name": "火红",
+    "pinyin": "huǒ hóng",
+    "hex": "#ff2d51",
+    "category": "red",
+    "poem": "",
+    "poemSource": "",
+    "season": "四季"
+  },
+  {
+    "id": "ji-hong",
+    "name": "霁红",
+    "pinyin": "jì hóng",
+    "hex": "#7c4449",
+    "category": "red",
+    "poem": "叶舞霁红枫映寺，蓓含霜紫菊迎人",
+    "poemSource": "刘挚《秋日即事》",
+    "season": "冬"
+  },
+  {
+    "id": "jiang-sha",
+    "name": "绛纱",
+    "pinyin": "jiàng shā",
+    "hex": "#b27777",
+    "category": "red",
+    "poem": "日陪鲤也趋文苑，谁道门生隔绛纱",
+    "poemSource": "钱起《登刘宾客高斋》",
+    "season": "夏"
+  },
+  {
+    "id": "jue-tou",
+    "name": "爵头",
+    "pinyin": "jué tóu",
+    "hex": "#631216",
+    "category": "red",
+    "poem": "",
+    "poemSource": "",
+    "season": "秋"
+  },
+  {
+    "id": "luo-shen-zhu",
+    "name": "洛神珠",
+    "pinyin": "luò shén zhū",
+    "hex": "#d23918",
+    "category": "red",
+    "poem": "",
+    "poemSource": "",
+    "season": "春"
+  },
+  {
+    "id": "mei-ren-ji",
+    "name": "美人祭",
+    "pinyin": "měi rén jì",
+    "hex": "#c35c6a",
+    "category": "red",
+    "poem": "",
+    "poemSource": "",
+    "season": "冬"
+  },
+  {
+    "id": "qi-lin-jie",
+    "name": "麒麟竭",
+    "pinyin": "qí lín jié",
+    "hex": "#4c1e1a",
+    "category": "red",
+    "poem": "",
+    "poemSource": "",
+    "season": "夏"
+  },
+  {
+    "id": "qian-fa",
+    "name": "𬘬茷",
+    "pinyin": "qiàn fá",
+    "hex": "#9e2a22",
+    "category": "red",
+    "poem": "",
+    "poemSource": "",
+    "season": "春"
+  },
+  {
+    "id": "qian-se",
+    "name": "茜色",
+    "pinyin": "qiàn sè",
+    "hex": "#cb3a56",
+    "category": "red",
+    "poem": "",
+    "poemSource": "",
+    "season": "四季"
+  },
+  {
+    "id": "qin-dan",
+    "name": "檎丹",
+    "pinyin": "qín dān",
+    "hex": "#e94829",
+    "category": "red",
+    "poem": "林擒味好来山鹊，啄破枝头数点红",
+    "poemSource": "徐庸《林禽山鹊》",
+    "season": "夏"
+  },
+  {
+    "id": "quan-yuan",
+    "name": "縓缘",
+    "pinyin": "quàn yuán",
+    "hex": "#ce8892",
+    "category": "red",
+    "poem": "",
+    "poemSource": "",
+    "season": "冬"
+  },
+  {
+    "id": "ru-lv",
+    "name": "茹藘",
+    "pinyin": "rú lǘ",
+    "hex": "#a35f65",
+    "category": "red",
+    "poem": "缟衣茹藘，聊可与娱",
+    "poemSource": "佚名《诗经·郑风·出其东门》",
+    "season": "夏"
+  },
+  {
+    "id": "shan-hu-he",
+    "name": "珊瑚赫",
+    "pinyin": "shān hú hè",
+    "hex": "#c12c1f",
+    "category": "red",
+    "poem": "四弦才罢醉蛮奴，酃醁馀香在翠炉。夜半醒来红蜡短，一枝寒泪作珊瑚",
+    "poemSource": "皮日休《春夕酒醒》",
+    "season": "春"
+  },
+  {
+    "id": "shi-liu-hong",
+    "name": "石榴红",
+    "pinyin": "shí liú hóng",
+    "hex": "#f20c00",
+    "category": "red",
+    "poem": "",
+    "poemSource": "",
+    "season": "四季"
+  },
+  {
+    "id": "shi-liu-qun",
+    "name": "石榴裙",
+    "pinyin": "shí liú qún",
+    "hex": "#b13b2e",
+    "category": "red",
+    "poem": "红粉青娥映楚云，桃花马上石榴裙",
+    "poemSource": "杜审言《戏赠赵使君美人》",
+    "season": "夏"
+  },
+  {
+    "id": "shi-yang-jin",
+    "name": "十样锦",
+    "pinyin": "shí yàng jǐn",
+    "hex": "#f8c6b5",
+    "category": "red",
+    "poem": "",
+    "poemSource": "",
+    "season": "秋"
+  },
+  {
+    "id": "shui-hua-zhu",
+    "name": "水华朱",
+    "pinyin": "shuǐ huá zhū",
+    "hex": "#a72126",
+    "category": "red",
+    "poem": "",
+    "poemSource": "",
+    "season": "春"
+  },
+  {
+    "id": "shun-sheng",
+    "name": "顺圣",
+    "pinyin": "shùn shèng",
+    "hex": "#7c191e",
+    "category": "red",
+    "poem": "杨妃醉醒晕犹在，顺圣名高价尽低",
+    "poemSource": "王鏊《重阳后五日延陵奉菊为寿 五色皆具而紫菊特奇因赋号》",
+    "season": "春"
+  },
+  {
+    "id": "su-fang",
+    "name": "苏方",
+    "pinyin": "sū fāng",
+    "hex": "#81474c",
+    "category": "red",
+    "poem": "虽得苏方木，犹贪玳瑁皮",
+    "poemSource": "崔涯《嘲妓》",
+    "season": "冬"
+  },
+  {
+    "id": "tan",
+    "name": "檀",
+    "pinyin": "tán",
+    "hex": "#b36d61",
+    "category": "red",
+    "poem": "",
+    "poemSource": "",
+    "season": "四季"
+  },
+  {
+    "id": "tan-se",
+    "name": "檀色",
+    "pinyin": "tán sè",
+    "hex": "#b26d5d",
+    "category": "red",
+    "poem": "",
+    "poemSource": "",
+    "season": "春"
+  },
+  {
+    "id": "tao-hong",
+    "name": "桃红",
+    "pinyin": "táo hóng",
+    "hex": "#f47983",
+    "category": "red",
+    "poem": "桃红复含宿雨，柳绿更带朝烟",
+    "poemSource": "王维《田园乐七首·其六》",
+    "season": "春"
+  },
+  {
+    "id": "tao-yao",
+    "name": "桃夭",
+    "pinyin": "táo yāo",
+    "hex": "#f6bec8",
+    "category": "red",
+    "poem": "桃之夭夭，灼灼其华。之子于归，宜其室家",
+    "poemSource": "诗经《周南·桃夭》",
+    "season": "春"
+  },
+  {
+    "id": "ting-hong",
+    "name": "鞓红",
+    "pinyin": "tīng hóng",
+    "hex": "#b04552",
+    "category": "red",
+    "poem": "白首归来玉堂署，君王殿后见鞓红",
+    "poemSource": "欧阳修《禁中见鞓红牡丹》",
+    "season": "冬"
+  },
+  {
+    "id": "tong",
+    "name": "彤",
+    "pinyin": "tóng",
+    "hex": "#f35336",
+    "category": "red",
+    "poem": "",
+    "poemSource": "",
+    "season": "四季"
+  },
+  {
+    "id": "tong-guan",
+    "name": "彤管",
+    "pinyin": "tóng guǎn",
+    "hex": "#e2a2ac",
+    "category": "red",
+    "poem": "静女其娈，贻我彤管。彤管有炜，说怿女美",
+    "poemSource": "佚名《诗经·邶风·静女》",
+    "season": "夏"
+  },
+  {
+    "id": "tuo-hong",
+    "name": "酡红",
+    "pinyin": "tuó hóng",
+    "hex": "#dc3023",
+    "category": "red",
+    "poem": "",
+    "poemSource": "",
+    "season": "四季"
+  },
+  {
+    "id": "tuo-yan",
+    "name": "酡颜",
+    "pinyin": "tuó yán",
+    "hex": "#f9906f",
+    "category": "red",
+    "poem": "",
+    "poemSource": "",
+    "season": "四季"
+  },
+  {
+    "id": "wo-zhe",
+    "name": "渥赭",
+    "pinyin": "wò zhě",
+    "hex": "#dd6b7b",
+    "category": "red",
+    "poem": "赫如渥赭，公言锡爵",
+    "poemSource": "佚名《诗经·邶风·简兮》",
+    "season": "夏"
+  },
+  {
+    "id": "xi-chi",
+    "name": "赩炽",
+    "pinyin": "xì chì",
+    "hex": "#cb523e",
+    "category": "red",
+    "poem": "丹沙赩炽出其坂，蜜房郁毓被其阜",
+    "poemSource": "左思《蜀都赋》",
+    "season": "夏"
+  },
+  {
+    "id": "xi-lan",
+    "name": "夕岚",
+    "pinyin": "xī lán",
+    "hex": "#e3adb9",
+    "category": "red",
+    "poem": "残雨斜阳照，夕岚飞鸟还",
+    "poemSource": "王维《崔濮阳兄季重前山兴》",
+    "season": "夏"
+  },
+  {
+    "id": "xian-chi",
+    "name": "咸池",
+    "pinyin": "xián chí",
+    "hex": "#daa9a9",
+    "category": "red",
+    "poem": "与女沐兮咸池，曦女发兮阳之阿",
+    "poemSource": "屈原《九歌》",
+    "season": "冬"
+  },
+  {
+    "id": "xiao-hong",
+    "name": "小红",
+    "pinyin": "xiǎo hóng",
+    "hex": "#e67762",
+    "category": "red",
+    "poem": "",
+    "poemSource": "",
+    "season": "冬"
+  },
+  {
+    "id": "xuan-tian",
+    "name": "玄天",
+    "pinyin": "xuán tiān",
+    "hex": "#6b5458",
+    "category": "red",
+    "poem": "",
+    "poemSource": "",
+    "season": "春"
+  },
+  {
+    "id": "xun-huang",
+    "name": "𫄸黄",
+    "pinyin": "xūn huáng",
+    "hex": "#ba5140",
+    "category": "red",
+    "poem": "一曲𫄸黄瓜蔓水，数峰苍翠华阴山",
+    "poemSource": "张问陶《潼关》",
+    "season": "春"
+  },
+  {
+    "id": "ya-fei",
+    "name": "牙绯",
+    "pinyin": "yá fēi",
+    "hex": "#c35c5d",
+    "category": "red",
+    "poem": "潘花底，陶柳外，细民肥。万家喜色，融端气拥牙绯",
+    "poemSource": "王炎《水调歌头·留宰生日》",
+    "season": "春"
+  },
+  {
+    "id": "yan",
+    "name": "炎",
+    "pinyin": "yán",
+    "hex": "#ff3300",
+    "category": "red",
+    "poem": "",
+    "poemSource": "",
+    "season": "四季"
+  },
+  {
+    "id": "yan-hong-2",
+    "name": "嫣红",
+    "pinyin": "yān hóng",
+    "hex": "#ef7a82",
+    "category": "red",
+    "poem": "",
+    "poemSource": "",
+    "season": "四季"
+  },
+  {
+    "id": "yan-hong-3",
+    "name": "殷红",
+    "pinyin": "yān hóng",
+    "hex": "#be002f",
+    "category": "red",
+    "poem": "",
+    "poemSource": "",
+    "season": "四季"
+  },
+  {
+    "id": "yan-zhi",
+    "name": "胭脂",
+    "pinyin": "yān zhi",
+    "hex": "#9d2933",
+    "category": "red",
+    "poem": "胭脂泪，相留醉，几时重",
+    "poemSource": "李煜《相见欢·林花谢了春红》",
+    "season": "春"
+  },
+  {
+    "id": "yan-zhi-chong",
+    "name": "胭脂虫",
+    "pinyin": "yān zhi chóng",
+    "hex": "#ab1d22",
+    "category": "red",
+    "poem": "谁碾朱砂拥菊丛，丹葩和露绽西风；一从番舶来中土，赢得扶桑晓日红",
+    "poemSource": "缪公恩《洋红》",
+    "season": "秋"
+  },
+  {
+    "id": "yan-zhi-shui",
+    "name": "胭脂水",
+    "pinyin": "yān zhi shuǐ",
+    "hex": "#b95a89",
+    "category": "red",
+    "poem": "翻疑误泼胭脂水，化出花身迥不同",
+    "poemSource": "金朝觐《紫丁香》",
+    "season": "冬"
+  },
+  {
+    "id": "yang-fei",
+    "name": "杨妃",
+    "pinyin": "yáng fēi",
+    "hex": "#f091a0",
+    "category": "red",
+    "poem": "杨妃醉醒晕犹在，顺圣名高价尽低",
+    "poemSource": "王鏊《重阳后五日延陵奉菊为寿 五色皆具而紫菊特奇因赋号》",
+    "season": "春"
+  },
+  {
+    "id": "yin-zhu",
+    "name": "银朱",
+    "pinyin": "yín zhū",
+    "hex": "#d12920",
+    "category": "red",
+    "poem": "职司虽翰墨，佩服已银朱",
+    "poemSource": "柳贯《赠别宋季任赴 甘肃提举二十韵》",
+    "season": "秋"
+  },
+  {
+    "id": "ying-tao-se",
+    "name": "樱桃色",
+    "pinyin": "yīng táo sè",
+    "hex": "#c93756",
+    "category": "red",
+    "poem": "",
+    "poemSource": "",
+    "season": "四季"
+  },
+  {
+    "id": "zao-hong",
+    "name": "枣红",
+    "pinyin": "zǎo hóng",
+    "hex": "#c32136",
+    "category": "red",
+    "poem": "",
+    "poemSource": "",
+    "season": "四季"
+  },
+  {
+    "id": "zhu-cao",
+    "name": "朱草",
+    "pinyin": "zhū cǎo",
+    "hex": "#a64036",
+    "category": "red",
+    "poem": "",
+    "poemSource": "",
+    "season": "春"
+  },
+  {
+    "id": "zhu-hong",
+    "name": "朱红",
+    "pinyin": "zhū hóng",
+    "hex": "#ff4c00",
+    "category": "red",
+    "poem": "",
+    "poemSource": "",
+    "season": "四季"
+  },
+  {
+    "id": "zhu-kong-yang",
+    "name": "朱孔阳",
+    "pinyin": "zhū kǒng yáng",
+    "hex": "#b81a35",
+    "category": "red",
+    "poem": "载玄载黄，我朱孔阳，为公子裳",
+    "poemSource": "佚名《诗经·豳风·七月》",
+    "season": "夏"
+  },
+  {
+    "id": "zhu-sha",
+    "name": "朱砂",
+    "pinyin": "zhū shā",
+    "hex": "#ff461f",
+    "category": "red",
+    "poem": "",
+    "poemSource": "",
+    "season": "四季"
+  },
+  {
+    "id": "zhu-shi",
+    "name": "朱柿",
+    "pinyin": "zhū shì",
+    "hex": "#ed6d46",
+    "category": "red",
+    "poem": "宛中朱柿，房陵缥李，酒泉白柰",
+    "poemSource": "王逸《荔支赋》",
+    "season": "夏"
+  },
+  {
+    "id": "zhu-yin",
+    "name": "朱殷",
+    "pinyin": "zhū yīn",
+    "hex": "#b93a26",
+    "category": "red",
+    "poem": "",
+    "poemSource": "",
+    "season": "冬"
+  },
+  {
+    "id": "zhu-ying",
+    "name": "朱樱",
+    "pinyin": "zhū yīng",
+    "hex": "#8f1d22",
+    "category": "red",
+    "poem": "朱樱春熟，素柰夏成",
+    "poemSource": "左思《三都赋》",
+    "season": "秋"
+  },
+  {
+    "id": "zhu-zhan",
+    "name": "朱湛",
+    "pinyin": "zhū zhàn",
+    "hex": "#95302e",
+    "category": "red",
+    "poem": "",
+    "poemSource": "",
+    "season": "夏"
+  },
+  {
+    "id": "zi-gao",
+    "name": "紫诰",
+    "pinyin": "zǐ gào",
+    "hex": "#76555d",
+    "category": "red",
+    "poem": "紫浩仍兼绾，黄麻似六经",
+    "poemSource": "杜甫《赠翰林张四学士》",
+    "season": "冬"
+  },
+  {
+    "id": "zi-kuang",
+    "name": "紫矿",
+    "pinyin": "zǐ kuàng",
+    "hex": "#9e4e56",
+    "category": "red",
+    "poem": "",
+    "poemSource": "",
+    "season": "冬"
+  },
+  {
+    "id": "cheng-huang",
+    "name": "橙黄",
+    "pinyin": "chéng huáng",
+    "hex": "#ffa400",
+    "category": "orange",
+    "poem": "",
+    "poemSource": "",
+    "season": "四季"
+  },
+  {
+    "id": "cheng-se",
+    "name": "橙色",
+    "pinyin": "chéng sè",
+    "hex": "#fa8c35",
+    "category": "orange",
+    "poem": "",
+    "poemSource": "",
+    "season": "四季"
+  },
+  {
+    "id": "cheng-wei",
+    "name": "赪尾",
+    "pinyin": "chēng wěi",
+    "hex": "#ef845d",
+    "category": "orange",
+    "poem": "鲂鱼赪尾，王室如毁",
+    "poemSource": "佚名《诗经·周南·汝坟》",
+    "season": "夏"
+  },
+  {
+    "id": "cheng-xia",
+    "name": "赪霞",
+    "pinyin": "chēng xiá",
+    "hex": "#f18f60",
+    "category": "orange",
+    "poem": "丹田微蒸香露溢，著面已觉赪霞生",
+    "poemSource": "刘崧《楚酒苦如蘗歌》",
+    "season": "夏"
+  },
+  {
+    "id": "chi-zhang",
+    "name": "赤璋",
+    "pinyin": "chì zhāng",
+    "hex": "#e1c199",
+    "category": "orange",
+    "poem": "",
+    "poemSource": "",
+    "season": "秋"
+  },
+  {
+    "id": "ci-huang",
+    "name": "雌黄",
+    "pinyin": "cí huáng",
+    "hex": "#b4884d",
+    "category": "orange",
+    "poem": "夕照雌黄笔，秋烟水墨屏",
+    "poemSource": "白玉蟾《景泰晚眺》",
+    "season": "夏"
+  },
+  {
+    "id": "da-kuai",
+    "name": "大块",
+    "pinyin": "dà kuài",
+    "hex": "#bfa782",
+    "category": "orange",
+    "poem": "茫茫大块，悠悠高旻，是生万物，余得为人",
+    "poemSource": "陶渊明《自祭文》",
+    "season": "夏"
+  },
+  {
+    "id": "e-huang",
+    "name": "蛾黄",
+    "pinyin": "é huáng",
+    "hex": "#be8a2f",
+    "category": "orange",
+    "poem": "琉璃剪芳葆，蛾黄拂仙裾",
+    "poemSource": "郦权《木樨》",
+    "season": "冬"
+  },
+  {
+    "id": "er-mu-yu",
+    "name": "二目鱼",
+    "pinyin": "èr mù yú",
+    "hex": "#cc5d20",
+    "category": "orange",
+    "poem": "",
+    "poemSource": "",
+    "season": "夏"
+  },
+  {
+    "id": "fu-guang",
+    "name": "扶光",
+    "pinyin": "fú guāng",
+    "hex": "#f0c2a2",
+    "category": "orange",
+    "poem": "日以阳德，月以阴灵。擅扶光于东沼，嗣若英于西冥",
+    "poemSource": "谢庄《月赋》",
+    "season": "夏"
+  },
+  {
+    "id": "fu-ken-hong",
+    "name": "弗肯红",
+    "pinyin": "fú kěn hóng",
+    "hex": "#ecd9c7",
+    "category": "orange",
+    "poem": "",
+    "poemSource": "",
+    "season": "秋"
+  },
+  {
+    "id": "guang-ming-sha",
+    "name": "光明砂",
+    "pinyin": "guāng míng shā",
+    "hex": "#cc5d20",
+    "category": "orange",
+    "poem": "曲龙丈人冠藕花，其颜色映光明砂",
+    "poemSource": "顾况《曲龙山歌》",
+    "season": "夏"
+  },
+  {
+    "id": "hong-you",
+    "name": "红友",
+    "pinyin": "hóng yǒu",
+    "hex": "#d9883d",
+    "category": "orange",
+    "poem": "兴来搦管呼红友，倦去移床就绿阴",
+    "poemSource": "韩日缵《次韵和夏濮山侍御园亭》",
+    "season": "夏"
+  },
+  {
+    "id": "hu-po",
+    "name": "琥珀",
+    "pinyin": "hǔ pò",
+    "hex": "#ca6924",
+    "category": "orange",
+    "poem": "",
+    "poemSource": "",
+    "season": "四季"
+  },
+  {
+    "id": "huang-ai",
+    "name": "黄埃",
+    "pinyin": "huáng āi",
+    "hex": "#b49273",
+    "category": "orange",
+    "poem": "新丰绿树起黄埃，数骑渔阳探使回",
+    "poemSource": "杜牧《过华清宫绝句三首》",
+    "season": "春"
+  },
+  {
+    "id": "huang-bu-lao",
+    "name": "黄不老",
+    "pinyin": "huáng bù lǎo",
+    "hex": "#db9b34",
+    "category": "orange",
+    "poem": "黄檗郁成林，当奈苦心多",
+    "poemSource": "佚名《子夜歌》",
+    "season": "春"
+  },
+  {
+    "id": "huang-cong",
+    "name": "黄琮",
+    "pinyin": "huáng cóng",
+    "hex": "#9e8c6b",
+    "category": "orange",
+    "poem": "",
+    "poemSource": "",
+    "season": "冬"
+  },
+  {
+    "id": "huang-dan",
+    "name": "黄丹",
+    "pinyin": "huáng dān",
+    "hex": "#ea5514",
+    "category": "orange",
+    "poem": "黄丹胡粉密陀僧，此是嘉州造化能",
+    "poemSource": "陈楠《金丹诗诀》",
+    "season": "春"
+  },
+  {
+    "id": "huang-he-liu-li",
+    "name": "黄河琉璃",
+    "pinyin": "huáng hé liú lí",
+    "hex": "#e5a84b",
+    "category": "orange",
+    "poem": "放眼三十里，日耀黄琉璃",
+    "poemSource": "纪坤《渡黄河作》",
+    "season": "春"
+  },
+  {
+    "id": "huang-lu",
+    "name": "黄栌",
+    "pinyin": "huáng lú",
+    "hex": "#e29c45",
+    "category": "orange",
+    "poem": "",
+    "poemSource": "",
+    "season": "四季"
+  },
+  {
+    "id": "jia-hui",
+    "name": "葭灰",
+    "pinyin": "jiā huī",
+    "hex": "#beb1aa",
+    "category": "orange",
+    "poem": "玉管葭灰细细吹，流莺上下燕参差",
+    "poemSource": "李商隐《池边》",
+    "season": "春"
+  },
+  {
+    "id": "jia-shan-nan",
+    "name": "假山南",
+    "pinyin": "jiǎ shān nán",
+    "hex": "#d4c1a6",
+    "category": "orange",
+    "poem": "",
+    "poemSource": "",
+    "season": "秋"
+  },
+  {
+    "id": "jian-se",
+    "name": "茧色",
+    "pinyin": "jiǎn sè",
+    "hex": "#c6a268",
+    "category": "orange",
+    "poem": "半岭晴云堆茧色，上方朝雨杂龙涎",
+    "poemSource": "丁复《送僧还径山》",
+    "season": "秋"
+  },
+  {
+    "id": "jiang-zhen-xiang",
+    "name": "降真香",
+    "pinyin": "jiàng zhēn xiāng",
+    "hex": "#9e8358",
+    "category": "orange",
+    "poem": "日尽窗前更无事，唯烧一炷降真香",
+    "poemSource": "白居易《赠朱道士》",
+    "season": "夏"
+  },
+  {
+    "id": "jiao-fang",
+    "name": "椒房",
+    "pinyin": "jiāo fáng",
+    "hex": "#db9c5e",
+    "category": "orange",
+    "poem": "梨园弟子白发新，椒房阿监青娥老",
+    "poemSource": "白居易《长恨歌》",
+    "season": "夏"
+  },
+  {
+    "id": "jin-lie",
+    "name": "金埒",
+    "pinyin": "jīn liè",
+    "hex": "#be9457",
+    "category": "orange",
+    "poem": "草迎金埒马，花伴玉楼人",
+    "poemSource": "孟浩然《长安早春》",
+    "season": "夏"
+  },
+  {
+    "id": "jin-yun",
+    "name": "缙云",
+    "pinyin": "jìn yún",
+    "hex": "#ee7959",
+    "category": "orange",
+    "poem": "蒸栗绢绀缙红繎，青绮绫谷靡润鲜",
+    "poemSource": "史游《急就篇》",
+    "season": "春"
+  },
+  {
+    "id": "jiu-jin-huang",
+    "name": "九斤黄",
+    "pinyin": "jiǔ jīn huáng",
+    "hex": "#ddb078",
+    "category": "orange",
+    "poem": "",
+    "poemSource": "",
+    "season": "秋"
+  },
+  {
+    "id": "ju-hong",
+    "name": "橘红",
+    "pinyin": "jú hóng",
+    "hex": "#ff7500",
+    "category": "orange",
+    "poem": "",
+    "poemSource": "",
+    "season": "四季"
+  },
+  {
+    "id": "ju-huang",
+    "name": "橘黄",
+    "pinyin": "jú huáng",
+    "hex": "#ff8936",
+    "category": "orange",
+    "poem": "",
+    "poemSource": "",
+    "season": "四季"
+  },
+  {
+    "id": "ju-lv",
+    "name": "巨吕",
+    "pinyin": "jù lǚ",
+    "hex": "#aa8e59",
+    "category": "orange",
+    "poem": "",
+    "poemSource": "",
+    "season": "夏"
+  },
+  {
+    "id": "ku-huang",
+    "name": "枯黄",
+    "pinyin": "kū huáng",
+    "hex": "#d3b17d",
+    "category": "orange",
+    "poem": "",
+    "poemSource": "",
+    "season": "四季"
+  },
+  {
+    "id": "ku-jin",
+    "name": "库金",
+    "pinyin": "kù jīn",
+    "hex": "#e18a3b",
+    "category": "orange",
+    "poem": "金箔微开扫玉床，离宫瞰水竹风凉",
+    "poemSource": "张浚《效唐人宫词》",
+    "season": "春"
+  },
+  {
+    "id": "lao-seng-yi",
+    "name": "老僧衣",
+    "pinyin": "lǎo sēng yī",
+    "hex": "#a46244",
+    "category": "orange",
+    "poem": "远公旧在渊明社，释氏应拈隐逸花",
+    "poemSource": "孙传庭《又菊四咏·老僧衣》",
+    "season": "春"
+  },
+  {
+    "id": "mei-die",
+    "name": "媚蝶",
+    "pinyin": "mèi dié",
+    "hex": "#bc6e37",
+    "category": "orange",
+    "poem": "乳莺啼晓销兰炷，媚蝶伤春失蕙丛",
+    "poemSource": "刘筠《代意》",
+    "season": "秋"
+  },
+  {
+    "id": "ming-yue-dang",
+    "name": "明月珰",
+    "pinyin": "míng yuè dāng",
+    "hex": "#cc5d20",
+    "category": "orange",
+    "poem": "头安金步摇，耳系明月珰",
+    "poemSource": "傅玄《艳歌行有女篇》",
+    "season": "夏"
+  },
+  {
+    "id": "pei-jiu",
+    "name": "佩玖",
+    "pinyin": "pèi jiǔ",
+    "hex": "#ac9f8a",
+    "category": "orange",
+    "poem": "彼留之子，贻我佩玖",
+    "poemSource": "佚名《丘中有麻》",
+    "season": "秋"
+  },
+  {
+    "id": "qiong-ju",
+    "name": "琼琚",
+    "pinyin": "qióng jū",
+    "hex": "#d77f66",
+    "category": "orange",
+    "poem": "投我以木瓜，报之以琼琚",
+    "poemSource": "佚名《诗经·卫风·木瓜》",
+    "season": "秋"
+  },
+  {
+    "id": "rou-hong",
+    "name": "肉红",
+    "pinyin": "ròu hóng",
+    "hex": "#ddc5b8",
+    "category": "orange",
+    "poem": "便丐春工，染得桃红似肉红",
+    "poemSource": "苏轼《减字木兰花·立春》",
+    "season": "冬"
+  },
+  {
+    "id": "ru-meng-ling",
+    "name": "如梦令",
+    "pinyin": "rú mèng lìng",
+    "hex": "#ddbb99",
+    "category": "orange",
+    "poem": "常记溪亭日暮，沉醉不知归路。兴尽晚回舟，误入藕花深处",
+    "poemSource": "李清照《如梦令·常记溪亭日暮》",
+    "season": "夏"
+  },
+  {
+    "id": "shan-fan",
+    "name": "山矾",
+    "pinyin": "shān fán",
+    "hex": "#cc5d20",
+    "category": "orange",
+    "poem": "山矾纷似玉，黄檗碎如金",
+    "poemSource": "刘倓《小玉蕊花》",
+    "season": "夏"
+  },
+  {
+    "id": "shao-rong",
+    "name": "苕荣",
+    "pinyin": "sháo róng",
+    "hex": "#ed6d3d",
+    "category": "orange",
+    "poem": "",
+    "poemSource": "",
+    "season": "夏"
+  },
+  {
+    "id": "tan-chun",
+    "name": "檀唇",
+    "pinyin": "tán chún",
+    "hex": "#da9e8c",
+    "category": "orange",
+    "poem": "檀唇呼吸宫商改，怨情渐逐清新举",
+    "poemSource": "秦韬玉《吹笙歌》",
+    "season": "秋"
+  },
+  {
+    "id": "tang-li",
+    "name": "棠梨",
+    "pinyin": "táng lí",
+    "hex": "#b15a43",
+    "category": "orange",
+    "poem": "棠梨花白春似雪，棠梨叶赤秋如血",
+    "poemSource": "王翰《棠梨墓歌》",
+    "season": "秋"
+  },
+  {
+    "id": "wan",
+    "name": "绾",
+    "pinyin": "wǎn",
+    "hex": "#a98175",
+    "category": "orange",
+    "poem": "",
+    "poemSource": "",
+    "season": "四季"
+  },
+  {
+    "id": "xia-yue",
+    "name": "夏籥",
+    "pinyin": "xià yuè",
+    "hex": "#d2af9d",
+    "category": "orange",
+    "poem": "",
+    "poemSource": "",
+    "season": "春"
+  },
+  {
+    "id": "xiang-pi",
+    "name": "香皮",
+    "pinyin": "xiāng pí",
+    "hex": "#d8d1c5",
+    "category": "orange",
+    "poem": "汗竹功犹浅，香皮世益珍",
+    "poemSource": "郭印《明复作文房四物诗因用其韵。》",
+    "season": "秋"
+  },
+  {
+    "id": "xing-gang",
+    "name": "骍刚",
+    "pinyin": "xīng gāng",
+    "hex": "#f5b087",
+    "category": "orange",
+    "poem": "秋而载尝，夏而楅衡，白牡骍刚",
+    "poemSource": "佚名《诗经·鲁颂·閟宫》",
+    "season": "夏"
+  },
+  {
+    "id": "xing-hong",
+    "name": "杏红",
+    "pinyin": "xìng hóng",
+    "hex": "#ff8c31",
+    "category": "orange",
+    "poem": "",
+    "poemSource": "",
+    "season": "四季"
+  },
+  {
+    "id": "xing-huang",
+    "name": "杏黄",
+    "pinyin": "xìng huáng",
+    "hex": "#ffa631",
+    "category": "orange",
+    "poem": "",
+    "poemSource": "",
+    "season": "四季"
+  },
+  {
+    "id": "xing-zi",
+    "name": "杏子",
+    "pinyin": "xìng zi",
+    "hex": "#da9233",
+    "category": "orange",
+    "poem": "杏子梢头香蕾破，淡红褪白胭脂涴",
+    "poemSource": "苏轼《蝶恋花》",
+    "season": "秋"
+  },
+  {
+    "id": "yang-sheng-zhu",
+    "name": "养生主",
+    "pinyin": "yǎng shēng zhǔ",
+    "hex": "#b49b7f",
+    "category": "orange",
+    "poem": "",
+    "poemSource": "",
+    "season": "夏"
+  },
+  {
+    "id": "yu-du-bai",
+    "name": "鱼肚白",
+    "pinyin": "yú dù bái",
+    "hex": "#fcefe8",
+    "category": "orange",
+    "poem": "",
+    "poemSource": "",
+    "season": "四季"
+  },
+  {
+    "id": "yu-jin-qun",
+    "name": "郁金裙",
+    "pinyin": "yù jīn qún",
+    "hex": "#d08635",
+    "category": "orange",
+    "poem": "垂手乱翻雕玉佩，折腰争舞郁金裙",
+    "poemSource": "李商隐《牡丹》",
+    "season": "夏"
+  },
+  {
+    "id": "yu-ping",
+    "name": "玉頩",
+    "pinyin": "yù pīng",
+    "hex": "#cc5d20",
+    "category": "orange",
+    "poem": "丹鼎夺胎那是宝，玉人頩颊更多姿",
+    "poemSource": "苏轼《红梅三首》",
+    "season": "夏"
+  },
+  {
+    "id": "yun-huang",
+    "name": "芸黄",
+    "pinyin": "yún huáng",
+    "hex": "#d2a36c",
+    "category": "orange",
+    "poem": "苕之华，芸其黄矣",
+    "poemSource": "佚名《诗经·小雅·苕之华》",
+    "season": "夏"
+  },
+  {
+    "id": "yun-mu",
+    "name": "云母",
+    "pinyin": "yún mǔ",
+    "hex": "#c6beb1",
+    "category": "orange",
+    "poem": "云母屏风烛影深，长河渐落晓星沉",
+    "poemSource": "李商隐《嫦娥》",
+    "season": "秋"
+  },
+  {
+    "id": "zhe-huang",
+    "name": "柘黄",
+    "pinyin": "zhè huáng",
+    "hex": "#c67915",
+    "category": "orange",
+    "poem": "中原日月用胡历，幽州老酋著柘黄",
+    "poemSource": "陆游《秋兴》",
+    "season": "春"
+  },
+  {
+    "id": "zheng-li",
+    "name": "蒸栗",
+    "pinyin": "zhēng lì",
+    "hex": "#a58a5f",
+    "category": "orange",
+    "poem": "烝栗绢绀缙红繎，青绮绫縠靡润鲜",
+    "poemSource": "史游《急就篇》",
+    "season": "秋"
+  },
+  {
+    "id": "zhu-yan-tuo",
+    "name": "朱颜酡",
+    "pinyin": "zhū yán tuó",
+    "hex": "#f29a76",
+    "category": "orange",
+    "poem": "美人既醉，朱颜酡些",
+    "poemSource": "屈原《楚辞·招魂》",
+    "season": "夏"
+  },
+  {
+    "id": "zi-hua-bu",
+    "name": "紫花布",
+    "pinyin": "zǐ huā bù",
+    "hex": "#bea78b",
+    "category": "orange",
+    "poem": "",
+    "poemSource": "",
+    "season": "秋"
+  },
+  {
+    "id": "zi-mo-jin",
+    "name": "紫磨金",
+    "pinyin": "zǐ mó jīn",
+    "hex": "#bc836b",
+    "category": "orange",
+    "poem": "金之优者，名曰紫磨，犹人之有圣也",
+    "poemSource": "孔融《圣人优劣论》",
+    "season": "春"
+  },
+  {
+    "id": "ban-jian",
+    "name": "半见",
+    "pinyin": "bàn jiàn",
+    "hex": "#fffbc7",
+    "category": "yellow",
+    "poem": "郁金半见缃白䋤，缥𫄫绿纨皂紫硟",
+    "poemSource": "史游《急就篇》",
+    "season": "冬"
+  },
+  {
+    "id": "cang-huang",
+    "name": "苍黄",
+    "pinyin": "cāng huáng",
+    "hex": "#b6a014",
+    "category": "yellow",
+    "poem": "土花漠碧云茫茫，黄河欲尽天苍黄",
+    "poemSource": "李商隐《李夫人歌》",
+    "season": "春"
+  },
+  {
+    "id": "chi-jin",
+    "name": "赤金",
+    "pinyin": "chì jīn",
+    "hex": "#f2be45",
+    "category": "yellow",
+    "poem": "",
+    "poemSource": "",
+    "season": "四季"
+  },
+  {
+    "id": "chu-xiu",
+    "name": "出岫",
+    "pinyin": "chū xiù",
+    "hex": "#a9a773",
+    "category": "yellow",
+    "poem": "云无心以出岫，鸟倦飞而知还",
+    "poemSource": "陶渊明《归去来兮辞》",
+    "season": "夏"
+  },
+  {
+    "id": "ci-mi",
+    "name": "瓷秘",
+    "pinyin": "cí mì",
+    "hex": "#bfc096",
+    "category": "yellow",
+    "poem": "",
+    "poemSource": "",
+    "season": "夏"
+  },
+  {
+    "id": "cong-qing",
+    "name": "葱青",
+    "pinyin": "cōng qīng",
+    "hex": "#edf1bb",
+    "category": "yellow",
+    "poem": "瞻荒榛之芜秽兮，顾东山之葱青",
+    "poemSource": "阮籍《东平赋》",
+    "season": "夏"
+  },
+  {
+    "id": "cui-zun",
+    "name": "翠樽",
+    "pinyin": "cuì zūn",
+    "hex": "#cdd171",
+    "category": "yellow",
+    "poem": "于是盛以翠樽，酌以雕觞，浮蚁鼎沸，酷烈馨香",
+    "poemSource": "曹植《七启》",
+    "season": "夏"
+  },
+  {
+    "id": "da-chi",
+    "name": "大赤",
+    "pinyin": "dà chì",
+    "hex": "#aa9649",
+    "category": "yellow",
+    "poem": "",
+    "poemSource": "",
+    "season": "秋"
+  },
+  {
+    "id": "duan-chang",
+    "name": "断肠",
+    "pinyin": "duàn cháng",
+    "hex": "#ecebc2",
+    "category": "yellow",
+    "poem": "江柳断肠色，黄丝垂未齐",
+    "poemSource": "戎昱《江上柳送人》",
+    "season": "冬"
+  },
+  {
+    "id": "e-huang-2",
+    "name": "鹅黄",
+    "pinyin": "é huáng",
+    "hex": "#fff143",
+    "category": "yellow",
+    "poem": "鹅儿黄似酒，对酒爱新鹅",
+    "poemSource": "杜甫《舟前小鹅儿》",
+    "season": "夏"
+  },
+  {
+    "id": "feng-ru-song",
+    "name": "风入松",
+    "pinyin": "fēng rù sōng",
+    "hex": "#868c4e",
+    "category": "yellow",
+    "poem": "",
+    "poemSource": "",
+    "season": "夏"
+  },
+  {
+    "id": "gu-piao",
+    "name": "骨缥",
+    "pinyin": "gǔ piāo",
+    "hex": "#ebe3c7",
+    "category": "yellow",
+    "poem": "",
+    "poemSource": "",
+    "season": "冬"
+  },
+  {
+    "id": "huang-bai-you",
+    "name": "黄白游",
+    "pinyin": "huáng bái yóu",
+    "hex": "#fff799",
+    "category": "yellow",
+    "poem": "欲识金银气，多从黄白游；一生痴绝处，无梦到徽州",
+    "poemSource": "汤显祖《有友人怜予乏劝 为黄山白岳之游》",
+    "season": "春"
+  },
+  {
+    "id": "huang-feng",
+    "name": "黄封",
+    "pinyin": "huáng fēng",
+    "hex": "#cab272",
+    "category": "yellow",
+    "poem": "",
+    "poemSource": "",
+    "season": "冬"
+  },
+  {
+    "id": "huang-li-liu",
+    "name": "黄栗留",
+    "pinyin": "huáng lì liú",
+    "hex": "#fedc5e",
+    "category": "yellow",
+    "poem": "山下飞鸣黄栗留，溪边饮啄白符鸠",
+    "poemSource": "王安石《怀舒州山水呈昌叔》",
+    "season": "春"
+  },
+  {
+    "id": "huang-liang",
+    "name": "黄粱",
+    "pinyin": "huáng liáng",
+    "hex": "#c4b798",
+    "category": "yellow",
+    "poem": "夜雨翦春韭，新炊间黄粱",
+    "poemSource": "杜甫《赠卫八处士》",
+    "season": "秋"
+  },
+  {
+    "id": "huang-luo",
+    "name": "黄螺",
+    "pinyin": "huáng luó",
+    "hex": "#b4a379",
+    "category": "yellow",
+    "poem": "黄螺圆出，垂蕤散舒",
+    "poemSource": "夏侯湛《芙蓉赋》",
+    "season": "夏"
+  },
+  {
+    "id": "huang-run",
+    "name": "黄润",
+    "pinyin": "huáng rùn",
+    "hex": "#dfd6b8",
+    "category": "yellow",
+    "poem": "筒中黄润，一端数金",
+    "poemSource": "扬雄《蜀都赋》",
+    "season": "秋"
+  },
+  {
+    "id": "hun-huang",
+    "name": "昏黄",
+    "pinyin": "hūn huáng",
+    "hex": "#c89b40",
+    "category": "yellow",
+    "poem": "",
+    "poemSource": "",
+    "season": "四季"
+  },
+  {
+    "id": "jian-xiang",
+    "name": "缣缃",
+    "pinyin": "jiān xiāng",
+    "hex": "#d5c8a0",
+    "category": "yellow",
+    "poem": "",
+    "poemSource": "",
+    "season": "秋"
+  },
+  {
+    "id": "jiang-huang",
+    "name": "姜黄",
+    "pinyin": "jiāng huáng",
+    "hex": "#d6c560",
+    "category": "yellow",
+    "poem": "漫空沙气蜀姜黄，一角高城漏日光",
+    "poemSource": "毛澄《饮西郊归作》",
+    "season": "冬"
+  },
+  {
+    "id": "jiao-yi",
+    "name": "绞衣",
+    "pinyin": "jiǎo yī",
+    "hex": "#7f754c",
+    "category": "yellow",
+    "poem": "",
+    "poemSource": "",
+    "season": "秋"
+  },
+  {
+    "id": "jin-qie",
+    "name": "荩箧",
+    "pinyin": "jìn qiè",
+    "hex": "#877d52",
+    "category": "yellow",
+    "poem": "顾我无衣搜荩箧，泥他沽酒拔金钗",
+    "poemSource": "元稹《遣悲怀三首》",
+    "season": "夏"
+  },
+  {
+    "id": "jin-se",
+    "name": "金色",
+    "pinyin": "jīn sè",
+    "hex": "#eacd76",
+    "category": "yellow",
+    "poem": "",
+    "poemSource": "",
+    "season": "四季"
+  },
+  {
+    "id": "ju-yi",
+    "name": "鞠衣",
+    "pinyin": "jū yī",
+    "hex": "#d3a237",
+    "category": "yellow",
+    "poem": "",
+    "poemSource": "",
+    "season": "夏"
+  },
+  {
+    "id": "juan-wan",
+    "name": "绢纨",
+    "pinyin": "juàn wán",
+    "hex": "#ece093",
+    "category": "yellow",
+    "poem": "",
+    "poemSource": "",
+    "season": "冬"
+  },
+  {
+    "id": "liu-huang-2",
+    "name": "柳黄",
+    "pinyin": "liǔ huáng",
+    "hex": "#c9dd22",
+    "category": "yellow",
+    "poem": "",
+    "poemSource": "",
+    "season": "四季"
+  },
+  {
+    "id": "luan-hua",
+    "name": "栾华",
+    "pinyin": "luán huá",
+    "hex": "#c0ad5e",
+    "category": "yellow",
+    "poem": "",
+    "poemSource": "",
+    "season": "秋"
+  },
+  {
+    "id": "mi-he-2",
+    "name": "蜜合",
+    "pinyin": "mì hé",
+    "hex": "#dfd7c2",
+    "category": "yellow",
+    "poem": "僧钵饭归三篾饱，蜂房蜜合百华香",
+    "poemSource": "释正觉《方上人持钵乞颂》",
+    "season": "秋"
+  },
+  {
+    "id": "mi-tang-jiao",
+    "name": "米汤娇",
+    "pinyin": "mǐ tāng jiāo",
+    "hex": "#eeead9",
+    "category": "yellow",
+    "poem": "缃色即今之谷色，京师呼米汤娇",
+    "poemSource": "平步青《霞外捃屑》",
+    "season": "冬"
+  },
+  {
+    "id": "mi-tuo-seng",
+    "name": "密陀僧",
+    "pinyin": "mì tuó sēng",
+    "hex": "#b3934b",
+    "category": "yellow",
+    "poem": "黄丹胡粉密陀僧，此是嘉州造化能",
+    "poemSource": "陈楠《金丹诗诀》",
+    "season": "秋"
+  },
+  {
+    "id": "ming-ke",
+    "name": "鸣珂",
+    "pinyin": "míng kē",
+    "hex": "#b3b59c",
+    "category": "yellow",
+    "poem": "官府鸣珂有底，崆峒散发何人",
+    "poemSource": "王维《田园乐七首》",
+    "season": "夏"
+  },
+  {
+    "id": "nen-e-huang",
+    "name": "嫩鹅黄",
+    "pinyin": "nèn é huáng",
+    "hex": "#f2c867",
+    "category": "yellow",
+    "poem": "已醺浮蚁嫩鹅黄，想见翻成雪浪",
+    "poemSource": "黄庭坚《西江月·茶》",
+    "season": "夏"
+  },
+  {
+    "id": "nv-zhen-huang",
+    "name": "女贞黄",
+    "pinyin": "nǚ zhēn huáng",
+    "hex": "#f7eead",
+    "category": "yellow",
+    "poem": "楚云低，潇潇暮雨，女贞细琐黄花",
+    "poemSource": "沈曾植《芳草·长吉多 神语，戏效其意》",
+    "season": "冬"
+  },
+  {
+    "id": "qi-qian",
+    "name": "绮钱",
+    "pinyin": "qǐ qián",
+    "hex": "#d8de8a",
+    "category": "yellow",
+    "poem": "长风隐细草，深堂没绮钱",
+    "poemSource": "沈约《咏青苔诗》",
+    "season": "夏"
+  },
+  {
+    "id": "qing-can",
+    "name": "青粲",
+    "pinyin": "qīng càn",
+    "hex": "#c3d94e",
+    "category": "yellow",
+    "poem": "",
+    "poemSource": "",
+    "season": "夏"
+  },
+  {
+    "id": "qing-gui",
+    "name": "青圭",
+    "pinyin": "qīng guī",
+    "hex": "#92905d",
+    "category": "yellow",
+    "poem": "",
+    "poemSource": "",
+    "season": "夏"
+  },
+  {
+    "id": "qiu-xiang",
+    "name": "秋香",
+    "pinyin": "qiū xiāng",
+    "hex": "#bf9c46",
+    "category": "yellow",
+    "poem": "画栏桂树悬秋香，三十六宫土花碧",
+    "poemSource": "李贺《金铜仙人辞汉歌》",
+    "season": "秋"
+  },
+  {
+    "id": "qiu-xiang-se",
+    "name": "秋香色",
+    "pinyin": "qiū xiāng sè",
+    "hex": "#d9b611",
+    "category": "yellow",
+    "poem": "",
+    "poemSource": "",
+    "season": "四季"
+  },
+  {
+    "id": "sang-lei",
+    "name": "桑蕾",
+    "pinyin": "sāng lěi",
+    "hex": "#ead89a",
+    "category": "yellow",
+    "poem": "小凭笋舆行稻田，麦芒桑蕾春无边",
+    "poemSource": "王炎《春日》",
+    "season": "秋"
+  },
+  {
+    "id": "sha-tang",
+    "name": "沙饧",
+    "pinyin": "shā táng",
+    "hex": "#bfa670",
+    "category": "yellow",
+    "poem": "沙饧石蜜，远国储珍",
+    "poemSource": "张衡《七辨》",
+    "season": "夏"
+  },
+  {
+    "id": "shao-ai",
+    "name": "少艾",
+    "pinyin": "shào ài",
+    "hex": "#e3eb98",
+    "category": "yellow",
+    "poem": "掌中看珠二少艾，捧腮却立鸦鬟奴",
+    "poemSource": "王炎《题徐参议所藏唐人浴儿图》",
+    "season": "夏"
+  },
+  {
+    "id": "shi-mi",
+    "name": "石蜜",
+    "pinyin": "shí mì",
+    "hex": "#d4bf89",
+    "category": "yellow",
+    "poem": "沙饧石蜜，远国储珍",
+    "poemSource": "张衡《七辨》",
+    "season": "夏"
+  },
+  {
+    "id": "song-hua",
+    "name": "松花",
+    "pinyin": "sōng huā",
+    "hex": "#ffee6f",
+    "category": "yellow",
+    "poem": "轻如松花落金粉，浓似苔锦含碧滋",
+    "poemSource": "李白《酬殷明佐见赠五云裘歌》",
+    "season": "春"
+  },
+  {
+    "id": "su-qi",
+    "name": "素綦",
+    "pinyin": "sù qí",
+    "hex": "#595333",
+    "category": "yellow",
+    "poem": "质如缃缛，文如素綦",
+    "poemSource": "公孙诡《文鹿赋》",
+    "season": "秋"
+  },
+  {
+    "id": "tai-yi-yu-liang",
+    "name": "太一余粮",
+    "pinyin": "tài yī yú liáng",
+    "hex": "#d5b45c",
+    "category": "yellow",
+    "poem": "太一馀粮，中黄侭玉",
+    "poemSource": "张衡《南都赋》",
+    "season": "秋"
+  },
+  {
+    "id": "teng-huang",
+    "name": "藤黄",
+    "pinyin": "téng huáng",
+    "hex": "#ffd111",
+    "category": "yellow",
+    "poem": "",
+    "poemSource": "",
+    "season": "夏"
+  },
+  {
+    "id": "tian-chi",
+    "name": "田赤",
+    "pinyin": "tián chì",
+    "hex": "#e1d384",
+    "category": "yellow",
+    "poem": "",
+    "poemSource": "",
+    "season": "冬"
+  },
+  {
+    "id": "tian-qiu",
+    "name": "天球",
+    "pinyin": "tiān qiú",
+    "hex": "#e0dfc6",
+    "category": "yellow",
+    "poem": "天球大贝在高阁，见之使我惭轻薄",
+    "poemSource": "陈恭尹《赠别陈季长》",
+    "season": "夏"
+  },
+  {
+    "id": "wan-yan",
+    "name": "琬琰",
+    "pinyin": "wǎn yǎn",
+    "hex": "#a9a886",
+    "category": "yellow",
+    "poem": "吸飞泉之微液兮， 怀琬琰之华英",
+    "poemSource": "屈原《楚辞远游》",
+    "season": "夏"
+  },
+  {
+    "id": "wang-chu",
+    "name": "王刍",
+    "pinyin": "wáng chú",
+    "hex": "#a99f70",
+    "category": "yellow",
+    "poem": "荒烟草映王刍绿，落日花开谢豹红",
+    "poemSource": "郑真《送春》",
+    "season": "夏"
+  },
+  {
+    "id": "wu-jin",
+    "name": "乌金",
+    "pinyin": "wū jīn",
+    "hex": "#a78e44",
+    "category": "yellow",
+    "poem": "",
+    "poemSource": "",
+    "season": "四季"
+  },
+  {
+    "id": "xian-mi",
+    "name": "仙米",
+    "pinyin": "xiān mǐ",
+    "hex": "#d4c9aa",
+    "category": "yellow",
+    "poem": "舂秫作美酒，酒熟吾自斟",
+    "poemSource": "陶渊明《和郭主簿二首》",
+    "season": "夏"
+  },
+  {
+    "id": "xiang-se",
+    "name": "缃色",
+    "pinyin": "xiāng sè",
+    "hex": "#f0c239",
+    "category": "yellow",
+    "poem": "",
+    "poemSource": "",
+    "season": "四季"
+  },
+  {
+    "id": "xiang-ye",
+    "name": "缃叶",
+    "pinyin": "xiāng yè",
+    "hex": "#ecd452",
+    "category": "yellow",
+    "poem": "鱼戏排缃叶，龟浮见绿池",
+    "poemSource": "李峤《荷》",
+    "season": "春"
+  },
+  {
+    "id": "xing-xiang-zi",
+    "name": "行香子",
+    "pinyin": "xíng xiāng zi",
+    "hex": "#bfb99c",
+    "category": "yellow",
+    "poem": "",
+    "poemSource": "",
+    "season": "夏"
+  },
+  {
+    "id": "xuan-xiao",
+    "name": "玄校",
+    "pinyin": "xuán xiào",
+    "hex": "#a9a082",
+    "category": "yellow",
+    "poem": "",
+    "poemSource": "",
+    "season": "冬"
+  },
+  {
+    "id": "ya-huang",
+    "name": "鸭黄",
+    "pinyin": "yā huáng",
+    "hex": "#faff72",
+    "category": "yellow",
+    "poem": "",
+    "poemSource": "",
+    "season": "四季"
+  },
+  {
+    "id": "ya-se",
+    "name": "牙色",
+    "pinyin": "yá sè",
+    "hex": "#eedeb0",
+    "category": "yellow",
+    "poem": "",
+    "poemSource": "",
+    "season": "四季"
+  },
+  {
+    "id": "yao-huang",
+    "name": "姚黄",
+    "pinyin": "yáo huáng",
+    "hex": "#d6bc46",
+    "category": "yellow",
+    "poem": "曾与诗翁定花品，一丘一壑过姚黄",
+    "poemSource": "陆游《梅花绝句十首其二》",
+    "season": "冬"
+  },
+  {
+    "id": "ying-cao-se",
+    "name": "樱草色",
+    "pinyin": "yīng cǎo sè",
+    "hex": "#eaff56",
+    "category": "yellow",
+    "poem": "",
+    "poemSource": "",
+    "season": "四季"
+  },
+  {
+    "id": "ying-er",
+    "name": "莺儿",
+    "pinyin": "yīng ér",
+    "hex": "#ebe1a9",
+    "category": "yellow",
+    "poem": "打起黄莺儿，莫教枝上啼",
+    "poemSource": "金昌绪《春怨》",
+    "season": "冬"
+  },
+  {
+    "id": "yu-se",
+    "name": "玉色",
+    "pinyin": "yù sè",
+    "hex": "#eae4d1",
+    "category": "yellow",
+    "poem": "玉色雌龙金络头，真妃骑出纵闲游",
+    "poemSource": "曹唐《小游仙诗九十八首》",
+    "season": "秋"
+  },
+  {
+    "id": "yu-yu-liang",
+    "name": "禹余粮",
+    "pinyin": "yǔ yú liáng",
+    "hex": "#e1d279",
+    "category": "yellow",
+    "poem": "山好真登秦望处，石桥偏拾禹余粮",
+    "poemSource": "释行海《送用上人》",
+    "season": "冬"
+  },
+  {
+    "id": "yun-wu",
+    "name": "筠雾",
+    "pinyin": "yún wù",
+    "hex": "#d5d1ae",
+    "category": "yellow",
+    "poem": "裁筠比雾，裂素轻蝉",
+    "poemSource": "庾肩吾《团扇铭》",
+    "season": "夏"
+  },
+  {
+    "id": "zhi-da-xiang",
+    "name": "执大象",
+    "pinyin": "zhí dà xiàng",
+    "hex": "#919177",
+    "category": "yellow",
+    "poem": "",
+    "poemSource": "",
+    "season": "春"
+  },
+  {
+    "id": "zhi-zi",
+    "name": "栀子",
+    "pinyin": "zhī zi",
+    "hex": "#fac03d",
+    "category": "yellow",
+    "poem": "栀子花比众木，人间诚未多",
+    "poemSource": "杜甫《江头五咏·栀子》",
+    "season": "春"
+  },
+  {
+    "id": "zong-lv",
+    "name": "棕绿",
+    "pinyin": "zōng lǜ",
+    "hex": "#827100",
+    "category": "yellow",
+    "poem": "",
+    "poemSource": "",
+    "season": "四季"
+  },
+  {
+    "id": "ai-lv",
+    "name": "艾绿",
+    "pinyin": "ài lǜ",
+    "hex": "#a4e2c6",
+    "category": "green",
+    "poem": "",
+    "poemSource": "",
+    "season": "四季"
+  },
+  {
+    "id": "bi-lv",
+    "name": "碧绿",
+    "pinyin": "bì lǜ",
+    "hex": "#2add9c",
+    "category": "green",
+    "poem": "",
+    "poemSource": "",
+    "season": "四季"
+  },
+  {
+    "id": "bi-shan",
+    "name": "碧山",
+    "pinyin": "bì shān",
+    "hex": "#779649",
+    "category": "green",
+    "poem": "碧山影里小红旗。侬是江南踏浪儿",
+    "poemSource": "苏轼《瑞鹧鸪·观潮》",
+    "season": "春"
+  },
+  {
+    "id": "bi-zi",
+    "name": "碧滋",
+    "pinyin": "bì zī",
+    "hex": "#90a07d",
+    "category": "green",
+    "poem": "庭树发红彩，闺草含碧滋",
+    "poemSource": "江淹《张司空华离情》",
+    "season": "秋"
+  },
+  {
+    "id": "bing-tai",
+    "name": "冰台",
+    "pinyin": "bīng tái",
+    "hex": "#becab7",
+    "category": "green",
+    "poem": "春将去、冰台初长，绮钱重叠",
+    "poemSource": "徐灿《满江红》",
+    "season": "秋"
+  },
+  {
+    "id": "cang-cui",
+    "name": "苍翠",
+    "pinyin": "cāng cuì",
+    "hex": "#519a73",
+    "category": "green",
+    "poem": "",
+    "poemSource": "",
+    "season": "四季"
+  },
+  {
+    "id": "cang-jia",
+    "name": "苍葭",
+    "pinyin": "cāng jiā",
+    "hex": "#a8bf8f",
+    "category": "green",
+    "poem": "其浅湿则生苍葭蒋蒲，藿芧青苹，草叶莲藕，茱华菱根",
+    "poemSource": "扬雄《蜀都赋》",
+    "season": "春"
+  },
+  {
+    "id": "cang-lang",
+    "name": "沧浪",
+    "pinyin": "cāng làng",
+    "hex": "#b1d5c8",
+    "category": "green",
+    "poem": "",
+    "poemSource": "",
+    "season": "春"
+  },
+  {
+    "id": "cang-lang-2",
+    "name": "苍筤",
+    "pinyin": "cāng láng",
+    "hex": "#99bcac",
+    "category": "green",
+    "poem": "石家炫炫珊瑚胜，不及苍莨一尺青",
+    "poemSource": "王应斗《题邹氏盆景四绝》",
+    "season": "春"
+  },
+  {
+    "id": "cao-lv",
+    "name": "草绿",
+    "pinyin": "cǎo lǜ",
+    "hex": "#40de5a",
+    "category": "green",
+    "poem": "",
+    "poemSource": "",
+    "season": "四季"
+  },
+  {
+    "id": "chun-bi",
+    "name": "春碧",
+    "pinyin": "chūn bì",
+    "hex": "#9d9d82",
+    "category": "green",
+    "poem": "朱雀航南绕香陌，谢郎东墅连春碧",
+    "poemSource": "温庭筠《谢公墅歌》",
+    "season": "春"
+  },
+  {
+    "id": "chun-chen",
+    "name": "春辰",
+    "pinyin": "chūn chén",
+    "hex": "#a9be7b",
+    "category": "green",
+    "poem": "虚心定乎昏中，龙星正乎春辰",
+    "poemSource": "傅玄《阳春赋》",
+    "season": "春"
+  },
+  {
+    "id": "cong-huang",
+    "name": "葱黄",
+    "pinyin": "cōng huáng",
+    "hex": "#a3d900",
+    "category": "green",
+    "poem": "",
+    "poemSource": "",
+    "season": "四季"
+  },
+  {
+    "id": "cong-lv",
+    "name": "葱绿",
+    "pinyin": "cōng lǜ",
+    "hex": "#9ed900",
+    "category": "green",
+    "poem": "",
+    "poemSource": "",
+    "season": "四季"
+  },
+  {
+    "id": "cong-qian",
+    "name": "葱倩",
+    "pinyin": "cōng qiàn",
+    "hex": "#6c8650",
+    "category": "green",
+    "poem": "当严劲而葱倩，承和煦而芬腴",
+    "poemSource": "谢灵运《山居赋》",
+    "season": "秋"
+  },
+  {
+    "id": "cui-piao",
+    "name": "翠缥",
+    "pinyin": "cuì piāo",
+    "hex": "#b7d332",
+    "category": "green",
+    "poem": "红采兮骍衣，翠缥兮为裳",
+    "poemSource": "王褒《楚辞·九怀·通路》",
+    "season": "夏"
+  },
+  {
+    "id": "cui-qiu",
+    "name": "翠虬",
+    "pinyin": "cuì qiú",
+    "hex": "#446a37",
+    "category": "green",
+    "poem": "渟清沼以泛舟，浮翠虬与玄武",
+    "poemSource": "傅毅《洛都赋》",
+    "season": "春"
+  },
+  {
+    "id": "cui-tao",
+    "name": "翠涛",
+    "pinyin": "cuì tāo",
+    "hex": "#819d8e",
+    "category": "green",
+    "poem": "碧瑶杯重翠涛深，笑领飞琼语",
+    "poemSource": "陈著《烛影摇红·寿 元实通判母》",
+    "season": "秋"
+  },
+  {
+    "id": "cui-wei",
+    "name": "翠微",
+    "pinyin": "cuì wēi",
+    "hex": "#4c8045",
+    "category": "green",
+    "poem": "澹然空水对斜晖，曲岛苍茫接翠微",
+    "poemSource": "温庭筠《利州南渡》",
+    "season": "春"
+  },
+  {
+    "id": "dai-lv",
+    "name": "黛绿",
+    "pinyin": "dài lǜ",
+    "hex": "#426666",
+    "category": "green",
+    "poem": "",
+    "poemSource": "",
+    "season": "四季"
+  },
+  {
+    "id": "di-lai",
+    "name": "地籁",
+    "pinyin": "dì lài",
+    "hex": "#84a729",
+    "category": "green",
+    "poem": "虚心闻地籁，妄意觅桃源",
+    "poemSource": "苏轼《风水洞二首和李节推》",
+    "season": "夏"
+  },
+  {
+    "id": "dou-lv",
+    "name": "豆绿",
+    "pinyin": "dòu lǜ",
+    "hex": "#9ed048",
+    "category": "green",
+    "poem": "",
+    "poemSource": "",
+    "season": "四季"
+  },
+  {
+    "id": "dou-qing",
+    "name": "豆青",
+    "pinyin": "dòu qīng",
+    "hex": "#96ce54",
+    "category": "green",
+    "poem": "",
+    "poemSource": "",
+    "season": "四季"
+  },
+  {
+    "id": "fei-cui-se",
+    "name": "翡翠色",
+    "pinyin": "fěi cuì sè",
+    "hex": "#3de1ad",
+    "category": "green",
+    "poem": "",
+    "poemSource": "",
+    "season": "四季"
+  },
+  {
+    "id": "guan-lv",
+    "name": "官绿",
+    "pinyin": "guān lǜ",
+    "hex": "#2a6e3f",
+    "category": "green",
+    "poem": "",
+    "poemSource": "",
+    "season": "夏"
+  },
+  {
+    "id": "ji-he",
+    "name": "芰荷",
+    "pinyin": "jì hé",
+    "hex": "#4f794a",
+    "category": "green",
+    "poem": "制芰荷以为衣兮，集芙蓉以为裳",
+    "poemSource": "屈原《楚辞·离骚》",
+    "season": "夏"
+  },
+  {
+    "id": "jia-tan",
+    "name": "葭菼",
+    "pinyin": "jiā tǎn",
+    "hex": "#cad7c5",
+    "category": "green",
+    "poem": "内阜川禽，外丰葭菼",
+    "poemSource": "张衡《东京赋》",
+    "season": "秋"
+  },
+  {
+    "id": "jie-lv",
+    "name": "结绿",
+    "pinyin": "jié lǜ",
+    "hex": "#555f4d",
+    "category": "green",
+    "poem": "",
+    "poemSource": "",
+    "season": "秋"
+  },
+  {
+    "id": "lan-shao",
+    "name": "兰苕",
+    "pinyin": "lán sháo",
+    "hex": "#a8b78c",
+    "category": "green",
+    "poem": "翡翠戏兰苕，容色更相鲜",
+    "poemSource": "郭璞《游仙诗》",
+    "season": "秋"
+  },
+  {
+    "id": "ling-lu",
+    "name": "醽醁",
+    "pinyin": "líng lù",
+    "hex": "#a6bab1",
+    "category": "green",
+    "poem": "波翻醽醁醆，雾暖芙蓉绣",
+    "poemSource": "周紫芝《千秋岁·生日》",
+    "season": "秋"
+  },
+  {
+    "id": "liu-lv",
+    "name": "柳绿",
+    "pinyin": "liǔ lǜ",
+    "hex": "#afdd22",
+    "category": "green",
+    "poem": "桃红复含宿雨，柳绿更带朝烟",
+    "poemSource": "王维《田园乐七首·其六》",
+    "season": "春"
+  },
+  {
+    "id": "lu-bo",
+    "name": "渌波",
+    "pinyin": "lù bō",
+    "hex": "#9bb496",
+    "category": "green",
+    "poem": "春草碧色，春水渌波",
+    "poemSource": "江淹《别赋》",
+    "season": "夏"
+  },
+  {
+    "id": "lu-zhu",
+    "name": "菉竹",
+    "pinyin": "lù zhú",
+    "hex": "#698e6a",
+    "category": "green",
+    "poem": "",
+    "poemSource": "",
+    "season": "夏"
+  },
+  {
+    "id": "luo-qing",
+    "name": "螺青",
+    "pinyin": "luó qīng",
+    "hex": "#3f503b",
+    "category": "green",
+    "poem": "瓦屋螺青披雾出，锦江鸭绿抱山来",
+    "poemSource": "陆游《快晴》",
+    "season": "冬"
+  },
+  {
+    "id": "lv-se",
+    "name": "绿色",
+    "pinyin": "lǜ sè",
+    "hex": "#00e500",
+    "category": "green",
+    "poem": "",
+    "poemSource": "",
+    "season": "四季"
+  },
+  {
+    "id": "lv-shen",
+    "name": "绿沈",
+    "pinyin": "lǜ shěn",
+    "hex": "#938f4c",
+    "category": "green",
+    "poem": "",
+    "poemSource": "",
+    "season": "秋"
+  },
+  {
+    "id": "mei-mei",
+    "name": "莓莓",
+    "pinyin": "méi méi",
+    "hex": "#4e6548",
+    "category": "green",
+    "poem": "兰渚莓莓，石濑汤汤",
+    "poemSource": "左思《三都赋》",
+    "season": "冬"
+  },
+  {
+    "id": "nen-lv",
+    "name": "嫩绿",
+    "pinyin": "nèn lǜ",
+    "hex": "#bddd22",
+    "category": "green",
+    "poem": "",
+    "poemSource": "",
+    "season": "四季"
+  },
+  {
+    "id": "ou-bi",
+    "name": "欧碧",
+    "pinyin": "ōu bì",
+    "hex": "#c0d695",
+    "category": "green",
+    "poem": "",
+    "poemSource": "",
+    "season": "春"
+  },
+  {
+    "id": "piao",
+    "name": "缥",
+    "pinyin": "piǎo",
+    "hex": "#7fecad",
+    "category": "green",
+    "poem": "",
+    "poemSource": "",
+    "season": "四季"
+  },
+  {
+    "id": "piao-bi",
+    "name": "缥碧",
+    "pinyin": "piāo bì",
+    "hex": "#80a492",
+    "category": "green",
+    "poem": "缥色玉擎柔，醅浮盏面清",
+    "poemSource": "李煜《子夜歌》",
+    "season": "春"
+  },
+  {
+    "id": "qi-gu",
+    "name": "漆姑",
+    "pinyin": "qī gū",
+    "hex": "#5d8351",
+    "category": "green",
+    "poem": "",
+    "poemSource": "",
+    "season": "夏"
+  },
+  {
+    "id": "qian-shan-cui",
+    "name": "千山翠",
+    "pinyin": "qiān shān cuì",
+    "hex": "#6b7d73",
+    "category": "green",
+    "poem": "九秋风露越窑开，夺得千峰翠色来",
+    "poemSource": "陆龟蒙《秘色越器》",
+    "season": "秋"
+  },
+  {
+    "id": "qing-bai",
+    "name": "青白",
+    "pinyin": "qīng bái",
+    "hex": "#c0ebd7",
+    "category": "green",
+    "poem": "",
+    "poemSource": "",
+    "season": "四季"
+  },
+  {
+    "id": "qing-bai-yu",
+    "name": "青白玉",
+    "pinyin": "qīng bái yù",
+    "hex": "#cac5a0",
+    "category": "green",
+    "poem": "",
+    "poemSource": "",
+    "season": "冬"
+  },
+  {
+    "id": "qing-cong",
+    "name": "青葱",
+    "pinyin": "qīng cōng",
+    "hex": "#0aa344",
+    "category": "green",
+    "poem": "",
+    "poemSource": "",
+    "season": "四季"
+  },
+  {
+    "id": "qing-cui",
+    "name": "青翠",
+    "pinyin": "qīng cuì",
+    "hex": "#00e079",
+    "category": "green",
+    "poem": "",
+    "poemSource": "",
+    "season": "四季"
+  },
+  {
+    "id": "qing-gu",
+    "name": "青古",
+    "pinyin": "qīng gǔ",
+    "hex": "#b3bda9",
+    "category": "green",
+    "poem": "",
+    "poemSource": "",
+    "season": "秋"
+  },
+  {
+    "id": "qing-mei",
+    "name": "青梅",
+    "pinyin": "qīng méi",
+    "hex": "#778a77",
+    "category": "green",
+    "poem": "茂绿满繁枝，青梅结子时",
+    "poemSource": "蔡伸《菩萨蛮》",
+    "season": "秋"
+  },
+  {
+    "id": "qing-qing",
+    "name": "青青",
+    "pinyin": "qīng qīng",
+    "hex": "#4f6f46",
+    "category": "green",
+    "poem": "青青子衿，悠悠我心",
+    "poemSource": "诗经《郑风·子衿》",
+    "season": "春"
+  },
+  {
+    "id": "qing-qiu",
+    "name": "青楸",
+    "pinyin": "qīng qiū",
+    "hex": "#81a380",
+    "category": "green",
+    "poem": "见红兰之受露，望青楸之离霜",
+    "poemSource": "江淹《别赋》",
+    "season": "夏"
+  },
+  {
+    "id": "qing-se",
+    "name": "青色",
+    "pinyin": "qīng sè",
+    "hex": "#00e09e",
+    "category": "green",
+    "poem": "",
+    "poemSource": "",
+    "season": "四季"
+  },
+  {
+    "id": "qing-yu-an",
+    "name": "青玉案",
+    "pinyin": "qīng yù àn",
+    "hex": "#a8b092",
+    "category": "green",
+    "poem": "美人赠我锦绣段，何以报之青玉案",
+    "poemSource": "张衡《四愁诗》",
+    "season": "夏"
+  },
+  {
+    "id": "qu-chen",
+    "name": "曲尘",
+    "pinyin": "qū chén",
+    "hex": "#c0d09d",
+    "category": "green",
+    "poem": "",
+    "poemSource": "",
+    "season": "秋"
+  },
+  {
+    "id": "que-mei",
+    "name": "雀梅",
+    "pinyin": "què méi",
+    "hex": "#788a6f",
+    "category": "green",
+    "poem": "树头蚕葚熟，篱下雀梅香",
+    "poemSource": "王谌《入邑》",
+    "season": "冬"
+  },
+  {
+    "id": "ren-lai",
+    "name": "人籁",
+    "pinyin": "rén lài",
+    "hex": "#9ebc19",
+    "category": "green",
+    "poem": "竹简书汗青，高吟当人籁",
+    "poemSource": "程俱《八音歌赠别赵子雍》",
+    "season": "夏"
+  },
+  {
+    "id": "shan-lan",
+    "name": "山岚",
+    "pinyin": "shān lán",
+    "hex": "#bed2bb",
+    "category": "green",
+    "poem": "江水弯弯漾碧波，山岚冉冉映青螺",
+    "poemSource": "薛时雨《浣溪纱·咏江山船》",
+    "season": "夏"
+  },
+  {
+    "id": "shi-fa",
+    "name": "石发",
+    "pinyin": "shí fā",
+    "hex": "#6a8d52",
+    "category": "green",
+    "poem": "",
+    "poemSource": "",
+    "season": "夏"
+  },
+  {
+    "id": "shui-long-yin",
+    "name": "水龙吟",
+    "pinyin": "shuǐ lóng yín",
+    "hex": "#84a729",
+    "category": "green",
+    "poem": "笛奏龙吟水，箫鸣凤下空",
+    "poemSource": "李白《宫中行乐词八首》",
+    "season": "夏"
+  },
+  {
+    "id": "shui-lv",
+    "name": "水绿",
+    "pinyin": "shuǐ lǜ",
+    "hex": "#d4f2e7",
+    "category": "green",
+    "poem": "",
+    "poemSource": "",
+    "season": "四季"
+  },
+  {
+    "id": "song-bai-lv",
+    "name": "松柏绿",
+    "pinyin": "sōng bǎi lǜ",
+    "hex": "#21a675",
+    "category": "green",
+    "poem": "",
+    "poemSource": "",
+    "season": "四季"
+  },
+  {
+    "id": "song-hua-lv",
+    "name": "松花绿",
+    "pinyin": "sōng huā lǜ",
+    "hex": "#057748",
+    "category": "green",
+    "poem": "",
+    "poemSource": "",
+    "season": "四季"
+  },
+  {
+    "id": "song-hua-se",
+    "name": "松花色",
+    "pinyin": "sōng huā sè",
+    "hex": "#bce672",
+    "category": "green",
+    "poem": "轻如松花落金粉，浓似苔锦含碧滋",
+    "poemSource": "李白《酬殷明佐见赠五云裘歌》",
+    "season": "春"
+  },
+  {
+    "id": "tai-gu",
+    "name": "苔古",
+    "pinyin": "tái gǔ",
+    "hex": "#79836c",
+    "category": "green",
+    "poem": "园荒一径新，苔古半阶斜",
+    "poemSource": "李世民《过旧宅二首》",
+    "season": "春"
+  },
+  {
+    "id": "tian-piao",
+    "name": "天缥",
+    "pinyin": "tiān piǎo",
+    "hex": "#d5ebe1",
+    "category": "green",
+    "poem": "篷窗窥天缥，江水真安流；雪霁艳朱炎，相思登北楼",
+    "poemSource": "吴敬梓《腊月将之宣城留别蘧门》",
+    "season": "春"
+  },
+  {
+    "id": "ting-wu-lv",
+    "name": "庭芜绿",
+    "pinyin": "tíng wú lǜ",
+    "hex": "#68945c",
+    "category": "green",
+    "poem": "是时三月半，花落庭芜绿；舍上晨鸠鸣，窗间春睡足",
+    "poemSource": "白居易《春日闲居三首》",
+    "season": "春"
+  },
+  {
+    "id": "xi-xi",
+    "name": "翕赩",
+    "pinyin": "xī xì",
+    "hex": "#5f766a",
+    "category": "green",
+    "poem": "朝野盛文物，衣冠何翕赩",
+    "poemSource": "李白《君子有所思行》",
+    "season": "秋"
+  },
+  {
+    "id": "you-lv",
+    "name": "油绿",
+    "pinyin": "yóu lǜ",
+    "hex": "#5d7259",
+    "category": "green",
+    "poem": "叶丰发油绿，香心刻黄琮",
+    "poemSource": "张镃《分韵赋簷卜得松字》",
+    "season": "冬"
+  },
+  {
+    "id": "zhu-qing",
+    "name": "竹青",
+    "pinyin": "zhú qīng",
+    "hex": "#789262",
+    "category": "green",
+    "poem": "",
+    "poemSource": "",
+    "season": "四季"
+  },
+  {
+    "id": "bi-lan",
+    "name": "碧蓝",
+    "pinyin": "bì lán",
+    "hex": "#3eede7",
+    "category": "cyan",
+    "poem": "",
+    "poemSource": "",
+    "season": "四季"
+  },
+  {
+    "id": "bi-se",
+    "name": "碧色",
+    "pinyin": "bì sè",
+    "hex": "#1bd1a5",
+    "category": "cyan",
+    "poem": "",
+    "poemSource": "",
+    "season": "四季"
+  },
+  {
+    "id": "bian-qing",
+    "name": "扁青",
+    "pinyin": "biǎn qīng",
+    "hex": "#509296",
+    "category": "cyan",
+    "poem": "帝赐后村奎画在，作堂安用扁青涂",
+    "poemSource": "刘克庄《四和其二》",
+    "season": "冬"
+  },
+  {
+    "id": "cang-se",
+    "name": "苍色",
+    "pinyin": "cāng sè",
+    "hex": "#75878a",
+    "category": "cyan",
+    "poem": "",
+    "poemSource": "",
+    "season": "四季"
+  },
+  {
+    "id": "cong-jie",
+    "name": "繱犗",
+    "pinyin": "cōng jiè",
+    "hex": "#88bfb8",
+    "category": "cyan",
+    "poem": "",
+    "poemSource": "",
+    "season": "冬"
+  },
+  {
+    "id": "dao-se",
+    "name": "䌦色",
+    "pinyin": "dào sè",
+    "hex": "#226b68",
+    "category": "cyan",
+    "poem": "",
+    "poemSource": "",
+    "season": "冬"
+  },
+  {
+    "id": "er-lv",
+    "name": "二绿",
+    "pinyin": "èr lǜ",
+    "hex": "#5da39d",
+    "category": "cyan",
+    "poem": "",
+    "poemSource": "",
+    "season": "冬"
+  },
+  {
+    "id": "fa-cui",
+    "name": "法翠",
+    "pinyin": "fǎ cuì",
+    "hex": "#108b96",
+    "category": "cyan",
+    "poem": "",
+    "poemSource": "",
+    "season": "秋"
+  },
+  {
+    "id": "hu-lan",
+    "name": "湖蓝",
+    "pinyin": "hú lán",
+    "hex": "#30dff3",
+    "category": "cyan",
+    "poem": "",
+    "poemSource": "",
+    "season": "四季"
+  },
+  {
+    "id": "hu-lv",
+    "name": "湖绿",
+    "pinyin": "hú lǜ",
+    "hex": "#25f8cb",
+    "category": "cyan",
+    "poem": "",
+    "poemSource": "",
+    "season": "四季"
+  },
+  {
+    "id": "jing-tian",
+    "name": "井天",
+    "pinyin": "jǐng tiān",
+    "hex": "#a4c9cc",
+    "category": "cyan",
+    "poem": "修垣蔽轩楹，如观坐井天",
+    "poemSource": "陈棣《再次韵柏桐轩》",
+    "season": "冬"
+  },
+  {
+    "id": "lan",
+    "name": "蓝",
+    "pinyin": "lán",
+    "hex": "#44cef6",
+    "category": "cyan",
+    "poem": "",
+    "poemSource": "",
+    "season": "四季"
+  },
+  {
+    "id": "luo-zi-dai",
+    "name": "螺子黛",
+    "pinyin": "luó zi dài",
+    "hex": "#13393e",
+    "category": "cyan",
+    "poem": "浅螺黛，淡燕脂。闲妆取次宜",
+    "poemSource": "欧阳修《阮郎归》",
+    "season": "春"
+  },
+  {
+    "id": "qing-bi",
+    "name": "青碧",
+    "pinyin": "qīng bì",
+    "hex": "#48c0a3",
+    "category": "cyan",
+    "poem": "",
+    "poemSource": "",
+    "season": "四季"
+  },
+  {
+    "id": "qing-gua",
+    "name": "青緺",
+    "pinyin": "qīng guā",
+    "hex": "#284852",
+    "category": "cyan",
+    "poem": "官拜少常休，青緺换鹿裘",
+    "poemSource": "黄滔《寄少常卢同年。》",
+    "season": "春"
+  },
+  {
+    "id": "qing-wo",
+    "name": "青雘",
+    "pinyin": "qīng wò",
+    "hex": "#007175",
+    "category": "cyan",
+    "poem": "绿碧紫英，青雘丹粟",
+    "poemSource": "张衡《南都赋》",
+    "season": "春"
+  },
+  {
+    "id": "ruan-cui",
+    "name": "软翠",
+    "pinyin": "ruǎn cuì",
+    "hex": "#006d87",
+    "category": "cyan",
+    "poem": "鸭绿澹不波，软翠净如洗",
+    "poemSource": "程公许《解缆凌云快晴》",
+    "season": "秋"
+  },
+  {
+    "id": "shi-lv",
+    "name": "石绿",
+    "pinyin": "shí lǜ",
+    "hex": "#206864",
+    "category": "cyan",
+    "poem": "石绿藤黄间麝煤，半枯瘦筿羽毰毸",
+    "poemSource": "方回《题宣和黄头画》",
+    "season": "冬"
+  },
+  {
+    "id": "shi-qing",
+    "name": "石青",
+    "pinyin": "shí qīng",
+    "hex": "#7bcfa6",
+    "category": "cyan",
+    "poem": "",
+    "poemSource": "",
+    "season": "四季"
+  },
+  {
+    "id": "shui-lan",
+    "name": "水蓝",
+    "pinyin": "shuǐ lán",
+    "hex": "#d2f0f4",
+    "category": "cyan",
+    "poem": "",
+    "poemSource": "",
+    "season": "四季"
+  },
+  {
+    "id": "shui-se",
+    "name": "水色",
+    "pinyin": "shuǐ sè",
+    "hex": "#88ada6",
+    "category": "cyan",
+    "poem": "",
+    "poemSource": "",
+    "season": "四季"
+  },
+  {
+    "id": "tian-shui-bi",
+    "name": "天水碧",
+    "pinyin": "tiān shuǐ bì",
+    "hex": "#5aa4ae",
+    "category": "cyan",
+    "poem": "",
+    "poemSource": "",
+    "season": "秋"
+  },
+  {
+    "id": "tong-lv",
+    "name": "铜绿",
+    "pinyin": "tóng lǜ",
+    "hex": "#549688",
+    "category": "cyan",
+    "poem": "",
+    "poemSource": "",
+    "season": "四季"
+  },
+  {
+    "id": "tong-qing",
+    "name": "铜青",
+    "pinyin": "tóng qīng",
+    "hex": "#3d8e86",
+    "category": "cyan",
+    "poem": "铜青衫子紫香囊；清歌一曲送霞觞",
+    "poemSource": "杨慎《浣溪沙》",
+    "season": "冬"
+  },
+  {
+    "id": "wei-lan",
+    "name": "蔚蓝",
+    "pinyin": "wèi lán",
+    "hex": "#70f3ff",
+    "category": "cyan",
+    "poem": "",
+    "poemSource": "",
+    "season": "四季"
+  },
+  {
+    "id": "xi-zi",
+    "name": "西子",
+    "pinyin": "xī zi",
+    "hex": "#87c0ca",
+    "category": "cyan",
+    "poem": "欲把西湖比西子，淡妆浓抹总相宜",
+    "poemSource": "苏轼《饮湖上初晴后雨二首》",
+    "season": "秋"
+  },
+  {
+    "id": "xie-ke-qing",
+    "name": "蟹壳青",
+    "pinyin": "xiè ké qīng",
+    "hex": "#bbcdc5",
+    "category": "cyan",
+    "poem": "",
+    "poemSource": "",
+    "season": "四季"
+  },
+  {
+    "id": "ya-qing",
+    "name": "鸦青",
+    "pinyin": "yā qīng",
+    "hex": "#424c50",
+    "category": "cyan",
+    "poem": "",
+    "poemSource": "",
+    "season": "四季"
+  },
+  {
+    "id": "ying-bai",
+    "name": "莹白",
+    "pinyin": "yíng bái",
+    "hex": "#e3f9fd",
+    "category": "cyan",
+    "poem": "",
+    "poemSource": "",
+    "season": "四季"
+  },
+  {
+    "id": "yu-shi-qing",
+    "name": "鱼师青",
+    "pinyin": "yú shī qīng",
+    "hex": "#32788a",
+    "category": "cyan",
+    "poem": "",
+    "poemSource": "",
+    "season": "秋"
+  },
+  {
+    "id": "yue-bai",
+    "name": "月白",
+    "pinyin": "yuè bái",
+    "hex": "#d6ecf0",
+    "category": "cyan",
+    "poem": "东船西舫悄无言，唯见江心秋月白",
+    "poemSource": "白居易《琵琶行》",
+    "season": "秋"
+  },
+  {
+    "id": "zheng-qing",
+    "name": "正青",
+    "pinyin": "zhèng qīng",
+    "hex": "#6ca8af",
+    "category": "cyan",
+    "poem": "缲成白雪桑重绿，割尽黄云稻正青",
+    "poemSource": "王安石《木末》",
+    "season": "冬"
+  },
+  {
+    "id": "an",
+    "name": "黯",
+    "pinyin": "àn",
+    "hex": "#41555d",
+    "category": "blue",
+    "poem": "",
+    "poemSource": "",
+    "season": "四季"
+  },
+  {
+    "id": "bai-qing",
+    "name": "白青",
+    "pinyin": "bái qīng",
+    "hex": "#98b6c2",
+    "category": "blue",
+    "poem": "",
+    "poemSource": "",
+    "season": "秋"
+  },
+  {
+    "id": "bao-lan",
+    "name": "宝蓝",
+    "pinyin": "bǎo lán",
+    "hex": "#4b5cc4",
+    "category": "blue",
+    "poem": "",
+    "poemSource": "",
+    "season": "四季"
+  },
+  {
+    "id": "bi-cheng",
+    "name": "碧城",
+    "pinyin": "bì chéng",
+    "hex": "#12507b",
+    "category": "blue",
+    "poem": "",
+    "poemSource": "",
+    "season": "夏"
+  },
+  {
+    "id": "bi-luo",
+    "name": "碧落",
+    "pinyin": "bì luò",
+    "hex": "#aed0ee",
+    "category": "blue",
+    "poem": "乘风游碧落，踏浪溯黄河",
+    "poemSource": "陈玄《游仙梦》",
+    "season": "春"
+  },
+  {
+    "id": "cang-cang",
+    "name": "苍苍",
+    "pinyin": "cāng cāng",
+    "hex": "#5976ba",
+    "category": "blue",
+    "poem": "",
+    "poemSource": "",
+    "season": "秋"
+  },
+  {
+    "id": "cang-hei",
+    "name": "苍黑",
+    "pinyin": "cāng hēi",
+    "hex": "#395260",
+    "category": "blue",
+    "poem": "",
+    "poemSource": "",
+    "season": "四季"
+  },
+  {
+    "id": "cang-qing",
+    "name": "苍青",
+    "pinyin": "cāng qīng",
+    "hex": "#7397ab",
+    "category": "blue",
+    "poem": "",
+    "poemSource": "",
+    "season": "四季"
+  },
+  {
+    "id": "ceng-qing",
+    "name": "曾青",
+    "pinyin": "céng qīng",
+    "hex": "#535164",
+    "category": "blue",
+    "poem": "石黛刷幽草，曾青泽古苔",
+    "poemSource": "李白《求崔山人百丈崖瀑布图》",
+    "season": "夏"
+  },
+  {
+    "id": "dai-lan",
+    "name": "黛蓝",
+    "pinyin": "dài lán",
+    "hex": "#425066",
+    "category": "blue",
+    "poem": "",
+    "poemSource": "",
+    "season": "四季"
+  },
+  {
+    "id": "dan-qing",
+    "name": "淡青",
+    "pinyin": "dàn qīng",
+    "hex": "#d3e0f3",
+    "category": "blue",
+    "poem": "",
+    "poemSource": "",
+    "season": "四季"
+  },
+  {
+    "id": "di-shi-qing",
+    "name": "帝释青",
+    "pinyin": "dì shì qīng",
+    "hex": "#003460",
+    "category": "blue",
+    "poem": "霜余远水呈天碧，雨过遥空现帝青",
+    "poemSource": "楼钥《题桃源王少卿占山亭》",
+    "season": "夏"
+  },
+  {
+    "id": "dian-lan",
+    "name": "靛蓝",
+    "pinyin": "diàn lán",
+    "hex": "#065279",
+    "category": "blue",
+    "poem": "",
+    "poemSource": "",
+    "season": "四季"
+  },
+  {
+    "id": "dian-qing",
+    "name": "靛青",
+    "pinyin": "diàn qīng",
+    "hex": "#177cb0",
+    "category": "blue",
+    "poem": "",
+    "poemSource": "",
+    "season": "四季"
+  },
+  {
+    "id": "dong-fang-ji-bai",
+    "name": "东方既白",
+    "pinyin": "dōng fāng jì bái",
+    "hex": "#8ba3c7",
+    "category": "blue",
+    "poem": "相与枕藉乎舟中，不知东方之既白",
+    "poemSource": "苏轼《赤壁赋》",
+    "season": "秋"
+  },
+  {
+    "id": "fu-tou-qing",
+    "name": "佛头青",
+    "pinyin": "fú tóu qīng",
+    "hex": "#19325f",
+    "category": "blue",
+    "poem": "潮花人鬓白，山色佛头青",
+    "poemSource": "白玉蟾《景泰晚眺》",
+    "season": "秋"
+  },
+  {
+    "id": "gan-qing-gan-zi",
+    "name": "绀青绀紫",
+    "pinyin": "gàn qīng gàn zǐ",
+    "hex": "#003371",
+    "category": "blue",
+    "poem": "",
+    "poemSource": "",
+    "season": "四季"
+  },
+  {
+    "id": "gan-yu",
+    "name": "绀宇",
+    "pinyin": "gàn yǔ",
+    "hex": "#003d74",
+    "category": "blue",
+    "poem": "白发金山续旧游，依然绀宇压中流",
+    "poemSource": "文征明《金山诗追赋》",
+    "season": "秋"
+  },
+  {
+    "id": "hua-qing",
+    "name": "花青",
+    "pinyin": "huā qīng",
+    "hex": "#1a2847",
+    "category": "blue",
+    "poem": "笑老去心情，也将醉眼，镇为花青",
+    "poemSource": "赵以夫《忆旧游慢》",
+    "season": "秋"
+  },
+  {
+    "id": "ji-lan",
+    "name": "霁蓝",
+    "pinyin": "jì lán",
+    "hex": "#3c4654",
+    "category": "blue",
+    "poem": "",
+    "poemSource": "",
+    "season": "冬"
+  },
+  {
+    "id": "jian-de",
+    "name": "监德",
+    "pinyin": "jiān dé",
+    "hex": "#6f94cd",
+    "category": "blue",
+    "poem": "",
+    "poemSource": "",
+    "season": "秋"
+  },
+  {
+    "id": "jin-yu",
+    "name": "瑾瑜",
+    "pinyin": "jǐn yú",
+    "hex": "#1e2732",
+    "category": "blue",
+    "poem": "",
+    "poemSource": "",
+    "season": "夏"
+  },
+  {
+    "id": "kong-qing",
+    "name": "空青",
+    "pinyin": "kōng qīng",
+    "hex": "#66889e",
+    "category": "blue",
+    "poem": "况空青之丽宝，亦挺山海之不测",
+    "poemSource": "江淹《空青赋》",
+    "season": "秋"
+  },
+  {
+    "id": "kong-que-lan",
+    "name": "孔雀蓝",
+    "pinyin": "kǒng què lán",
+    "hex": "#4994c4",
+    "category": "blue",
+    "poem": "",
+    "poemSource": "",
+    "season": "秋"
+  },
+  {
+    "id": "lan-cai-he",
+    "name": "蓝采和",
+    "pinyin": "lán cǎi hé",
+    "hex": "#06436f",
+    "category": "blue",
+    "poem": "踏歌踏歌蓝采和，世界能几何",
+    "poemSource": "蓝采和《踏歌》",
+    "season": "夏"
+  },
+  {
+    "id": "lan-hui-se",
+    "name": "蓝灰色",
+    "pinyin": "lán huī sè",
+    "hex": "#a1afc9",
+    "category": "blue",
+    "poem": "",
+    "poemSource": "",
+    "season": "四季"
+  },
+  {
+    "id": "ming-qing",
+    "name": "䒌靘",
+    "pinyin": "mìng qìng",
+    "hex": "#454659",
+    "category": "blue",
+    "poem": "何时倒银汉，与世开䒌靘",
+    "poemSource": "郝经《原古上元学士》",
+    "season": "夏"
+  },
+  {
+    "id": "mu-shan-zi",
+    "name": "暮山紫",
+    "pinyin": "mù shān zǐ",
+    "hex": "#a4abd6",
+    "category": "blue",
+    "poem": "潦水尽而寒潭清，烟光凝而暮山紫",
+    "poemSource": "王勃《滕王阁序》",
+    "season": "冬"
+  },
+  {
+    "id": "pin-yue",
+    "name": "品月",
+    "pinyin": "pǐn yuè",
+    "hex": "#8aabcc",
+    "category": "blue",
+    "poem": "宝枕垂云选梦，玉萧品月偷声",
+    "poemSource": "杨慎《题周昉琼枝夜醉图》",
+    "season": "冬"
+  },
+  {
+    "id": "qi-lin",
+    "name": "骐𬴊",
+    "pinyin": "qí lín",
+    "hex": "#12264f",
+    "category": "blue",
+    "poem": "骐𬴊踏云天马狞，牛山撼碎珊瑚声",
+    "poemSource": "李商隐《无愁果有愁曲北齐歌》",
+    "season": "春"
+  },
+  {
+    "id": "qie-lan",
+    "name": "窃蓝",
+    "pinyin": "qiè lán",
+    "hex": "#88abda",
+    "category": "blue",
+    "poem": "",
+    "poemSource": "",
+    "season": "秋"
+  },
+  {
+    "id": "qing-dai",
+    "name": "青黛",
+    "pinyin": "qīng dài",
+    "hex": "#45465e",
+    "category": "blue",
+    "poem": "小头鞵履窄衣裳，青黛点眉眉细长",
+    "poemSource": "白居易《上阳白发人》",
+    "season": "春"
+  },
+  {
+    "id": "qing-luan",
+    "name": "青鸾",
+    "pinyin": "qīng luán",
+    "hex": "#9aa7b1",
+    "category": "blue",
+    "poem": "青鸾杳， 碧天云海音绝",
+    "poemSource": "纳兰性德《月上海棠·中元塞外》",
+    "season": "春"
+  },
+  {
+    "id": "qing-ming",
+    "name": "青冥",
+    "pinyin": "qīng míng",
+    "hex": "#3271ae",
+    "category": "blue",
+    "poem": "青冥浩荡不见底，日月照耀金银台；霓为衣兮风为马，云之君兮纷纷而来下",
+    "poemSource": "李白《梦游天姥吟留别》",
+    "season": "春"
+  },
+  {
+    "id": "qing-que-tou-dai",
+    "name": "青雀头黛",
+    "pinyin": "qīng què tóu dài",
+    "hex": "#354e6b",
+    "category": "blue",
+    "poem": "",
+    "poemSource": "",
+    "season": "春"
+  },
+  {
+    "id": "qing-shan",
+    "name": "晴山",
+    "pinyin": "qíng shān",
+    "hex": "#a3bbdb",
+    "category": "blue",
+    "poem": "云散晴山几万重，烟收春色更冲融",
+    "poemSource": "宣宗《幸华严寺》",
+    "season": "冬"
+  },
+  {
+    "id": "qiu-lan",
+    "name": "秋蓝",
+    "pinyin": "qiū lán",
+    "hex": "#7d929f",
+    "category": "blue",
+    "poem": "染罗衣，秋蓝难著色；不是无心人，为作台邛客",
+    "poemSource": "李贺《河阳歌》",
+    "season": "冬"
+  },
+  {
+    "id": "qun-qing",
+    "name": "群青",
+    "pinyin": "qún qīng",
+    "hex": "#2e59a7",
+    "category": "blue",
+    "poem": "回头却顾人间世，但见群青似小童",
+    "poemSource": "楼异《嵩山二十四咏华盖峰》",
+    "season": "秋"
+  },
+  {
+    "id": "rou-lan",
+    "name": "柔蓝",
+    "pinyin": "róu lán",
+    "hex": "#106898",
+    "category": "blue",
+    "poem": "欲教鱼目无分别，须学揉蓝染钓丝",
+    "poemSource": "方干《赠江上老人》",
+    "season": "夏"
+  },
+  {
+    "id": "rua-lan",
+    "name": "挼蓝",
+    "pinyin": "ruá lán",
+    "hex": "#6e9bc5",
+    "category": "blue",
+    "poem": "山泼黛，水挼蓝，翠相搀",
+    "poemSource": "黄庭坚《诉衷情》",
+    "season": "春"
+  },
+  {
+    "id": "song-lan",
+    "name": "菘蓝",
+    "pinyin": "sōng lán",
+    "hex": "#6b798e",
+    "category": "blue",
+    "poem": "",
+    "poemSource": "",
+    "season": "春"
+  },
+  {
+    "id": "tai-shi-qing",
+    "name": "太师青",
+    "pinyin": "tài shī qīng",
+    "hex": "#547689",
+    "category": "blue",
+    "poem": "",
+    "poemSource": "",
+    "season": "秋"
+  },
+  {
+    "id": "tian-qing",
+    "name": "天青",
+    "pinyin": "tiān qīng",
+    "hex": "#6c9bca",
+    "category": "blue",
+    "poem": "",
+    "poemSource": "",
+    "season": "夏"
+  },
+  {
+    "id": "tu-shou-lan",
+    "name": "吐绶蓝",
+    "pinyin": "tǔ shòu lán",
+    "hex": "#4182a4",
+    "category": "blue",
+    "poem": "吐绶鸟，其身大如鸐，五色，出巴东山中",
+    "poemSource": "任昉《吐绶鸟》",
+    "season": "秋"
+  },
+  {
+    "id": "xing-lang",
+    "name": "星郎",
+    "pinyin": "xīng láng",
+    "hex": "#bcd4e7",
+    "category": "blue",
+    "poem": "红迷天子帆边日，紫夺星郎帐外兰",
+    "poemSource": "郑谷《锦二首》",
+    "season": "冬"
+  },
+  {
+    "id": "xue-qing",
+    "name": "雪青",
+    "pinyin": "xuě qīng",
+    "hex": "#b0a4e3",
+    "category": "blue",
+    "poem": "",
+    "poemSource": "",
+    "season": "四季"
+  },
+  {
+    "id": "yan-wei",
+    "name": "延维",
+    "pinyin": "yán wéi",
+    "hex": "#4a4b9d",
+    "category": "blue",
+    "poem": "",
+    "poemSource": "",
+    "season": "冬"
+  },
+  {
+    "id": "ying-qing",
+    "name": "影青",
+    "pinyin": "yǐng qīng",
+    "hex": "#bdcbd2",
+    "category": "blue",
+    "poem": "",
+    "poemSource": "",
+    "season": "秋"
+  },
+  {
+    "id": "you-tan-rui",
+    "name": "优昙瑞",
+    "pinyin": "yōu tán ruì",
+    "hex": "#615ea8",
+    "category": "blue",
+    "poem": "",
+    "poemSource": "",
+    "season": "冬"
+  },
+  {
+    "id": "yu-yang-ran",
+    "name": "育阳染",
+    "pinyin": "yù yáng rǎn",
+    "hex": "#576470",
+    "category": "blue",
+    "poem": "",
+    "poemSource": "",
+    "season": "冬"
+  },
+  {
+    "id": "yuan-shan-dai",
+    "name": "远山黛",
+    "pinyin": "yuǎn shān dài",
+    "hex": "#344b5c",
+    "category": "blue",
+    "poem": "远山眉黛长，细柳腰肢袅",
+    "poemSource": "晏几道《生查子·远山眉黛长》",
+    "season": "四季"
+  },
+  {
+    "id": "yun-men",
+    "name": "云门",
+    "pinyin": "yún mén",
+    "hex": "#a2d2e2",
+    "category": "blue",
+    "poem": "男耕女桑不相失，宫中圣人奏云门",
+    "poemSource": "杜甫《忆昔二首》",
+    "season": "秋"
+  },
+  {
+    "id": "zang-lan",
+    "name": "藏蓝",
+    "pinyin": "zàng lán",
+    "hex": "#3b2e7e",
+    "category": "blue",
+    "poem": "",
+    "poemSource": "",
+    "season": "四季"
+  },
+  {
+    "id": "zang-qing",
+    "name": "藏青",
+    "pinyin": "zàng qīng",
+    "hex": "#2e4e7e",
+    "category": "blue",
+    "poem": "",
+    "poemSource": "",
+    "season": "四季"
+  },
+  {
+    "id": "zhu-yue",
+    "name": "竹月",
+    "pinyin": "zhú yuè",
+    "hex": "#7f9faf",
+    "category": "blue",
+    "poem": "竹月泛凉影，萱露澹幽丛",
+    "poemSource": "张籍《奉和舍人叔直省时思琴》",
+    "season": "秋"
+  },
+  {
+    "id": "zi-yuan",
+    "name": "紫苑",
+    "pinyin": "zǐ yuàn",
+    "hex": "#757cbb",
+    "category": "blue",
+    "poem": "春晖开紫苑，淑景媚兰场",
+    "poemSource": "李世民《芳兰》",
+    "season": "冬"
+  },
+  {
+    "id": "can-zi",
+    "name": "黪紫",
+    "pinyin": "cǎn zǐ",
+    "hex": "#cc73a0",
+    "category": "purple",
+    "poem": "",
+    "poemSource": "",
+    "season": "冬"
+  },
+  {
+    "id": "chang-rong",
+    "name": "昌荣",
+    "pinyin": "chāng róng",
+    "hex": "#dcc7e1",
+    "category": "purple",
+    "poem": "",
+    "poemSource": "",
+    "season": "春"
+  },
+  {
+    "id": "cheng-zi",
+    "name": "赪紫",
+    "pinyin": "chēng zǐ",
+    "hex": "#8a1874",
+    "category": "purple",
+    "poem": "芬菲芳事毕，木芍药晚出；于中姚魏更倾城，扫退目前頳紫色",
+    "poemSource": "卫宗武《莺花吟为良友作》",
+    "season": "春"
+  },
+  {
+    "id": "ci-miao",
+    "name": "茈藐",
+    "pinyin": "cí miǎo",
+    "hex": "#a67eb7",
+    "category": "purple",
+    "poem": "",
+    "poemSource": "",
+    "season": "春"
+  },
+  {
+    "id": "dai",
+    "name": "黛",
+    "pinyin": "dài",
+    "hex": "#4a4266",
+    "category": "purple",
+    "poem": "",
+    "poemSource": "",
+    "season": "四季"
+  },
+  {
+    "id": "dai-zi",
+    "name": "黛紫",
+    "pinyin": "dài zǐ",
+    "hex": "#574266",
+    "category": "purple",
+    "poem": "",
+    "poemSource": "",
+    "season": "四季"
+  },
+  {
+    "id": "di-xue",
+    "name": "地血",
+    "pinyin": "dì xuè",
+    "hex": "#814662",
+    "category": "purple",
+    "poem": "龙精埋地血，马革绣苔衣",
+    "poemSource": "王余佑《过立节吊袁紫烟将军》",
+    "season": "冬"
+  },
+  {
+    "id": "ding-xiang",
+    "name": "丁香",
+    "pinyin": "dīng xiāng",
+    "hex": "#ce93bf",
+    "category": "purple",
+    "poem": "青鸟不传云外信，丁香空结雨中愁",
+    "poemSource": "李璟《摊破浣溪沙· 手卷真珠上玉钩》",
+    "season": "秋"
+  },
+  {
+    "id": "ding-xiang-se",
+    "name": "丁香色",
+    "pinyin": "dīng xiāng sè",
+    "hex": "#cca4e3",
+    "category": "purple",
+    "poem": "",
+    "poemSource": "",
+    "season": "四季"
+  },
+  {
+    "id": "fu-zi-mian",
+    "name": "拂紫绵",
+    "pinyin": "fú zǐ mián",
+    "hex": "#7e527f",
+    "category": "purple",
+    "poem": "浅画香膏拂紫线。牡丹花重翠云偏",
+    "poemSource": "陈克《浣溪沙》",
+    "season": "春"
+  },
+  {
+    "id": "hong-zhi-zhu",
+    "name": "红踯躅",
+    "pinyin": "hóng zhí zhú",
+    "hex": "#b83570",
+    "category": "purple",
+    "poem": "晚叶尚开红踯躅，秋芳初结白芙蓉",
+    "poemSource": "白居易《题元八溪居》",
+    "season": "春"
+  },
+  {
+    "id": "jiang-zi",
+    "name": "绛紫",
+    "pinyin": "jiàng zǐ",
+    "hex": "#8c4356",
+    "category": "purple",
+    "poem": "",
+    "poemSource": "",
+    "season": "四季"
+  },
+  {
+    "id": "jiang-zi-2",
+    "name": "酱紫",
+    "pinyin": "jiàng zǐ",
+    "hex": "#815476",
+    "category": "purple",
+    "poem": "",
+    "poemSource": "",
+    "season": "四季"
+  },
+  {
+    "id": "jie-shi-zi",
+    "name": "芥拾紫",
+    "pinyin": "jiè shí zǐ",
+    "hex": "#602641",
+    "category": "purple",
+    "poem": "隽手芥拾紫，忠肝蒲伏青",
+    "poemSource": "洪咨夔《何正言挽诗》",
+    "season": "冬"
+  },
+  {
+    "id": "lang-gan-zi",
+    "name": "琅玕紫",
+    "pinyin": "láng gān zǐ",
+    "hex": "#cb5c83",
+    "category": "purple",
+    "poem": "玉转湿丝牵晓水，热粉生香琅玕紫",
+    "poemSource": "李贺《夜饮朝眠曲》",
+    "season": "春"
+  },
+  {
+    "id": "lian-hong",
+    "name": "莲红",
+    "pinyin": "lián hóng",
+    "hex": "#d9a0b3",
+    "category": "purple",
+    "poem": "游女泛江晴，莲红水复清",
+    "poemSource": "张敬徽《采莲曲》",
+    "season": "冬"
+  },
+  {
+    "id": "long-gao-zhu",
+    "name": "龙膏烛",
+    "pinyin": "lóng gāo zhú",
+    "hex": "#de82a7",
+    "category": "purple",
+    "poem": "灯掩香云坠宝花，龙膏照影月笼纱",
+    "poemSource": "黎𬸣《七夕作》",
+    "season": "冬"
+  },
+  {
+    "id": "mu-jin",
+    "name": "木槿",
+    "pinyin": "mù jǐn",
+    "hex": "#ba79b1",
+    "category": "purple",
+    "poem": "有女同车，颜如舜华",
+    "poemSource": "佚名《有女同车》",
+    "season": "秋"
+  },
+  {
+    "id": "ning-ye-zi",
+    "name": "凝夜紫",
+    "pinyin": "níng yè zǐ",
+    "hex": "#422256",
+    "category": "purple",
+    "poem": "角声满天秋色里，塞上燕脂凝夜紫",
+    "poemSource": "韩非子《雁门太守行》",
+    "season": "春"
+  },
+  {
+    "id": "ou-he-se",
+    "name": "藕荷色",
+    "pinyin": "ǒu hé sè",
+    "hex": "#e4c6d0",
+    "category": "purple",
+    "poem": "",
+    "poemSource": "",
+    "season": "四季"
+  },
+  {
+    "id": "ou-se",
+    "name": "藕色",
+    "pinyin": "ǒu sè",
+    "hex": "#edd1d8",
+    "category": "purple",
+    "poem": "",
+    "poemSource": "",
+    "season": "四季"
+  },
+  {
+    "id": "pin-hong",
+    "name": "品红",
+    "pinyin": "pǐn hóng",
+    "hex": "#f00056",
+    "category": "purple",
+    "poem": "",
+    "poemSource": "",
+    "season": "四季"
+  },
+  {
+    "id": "qi-zi",
+    "name": "齐紫",
+    "pinyin": "qí zǐ",
+    "hex": "#6c216d",
+    "category": "purple",
+    "poem": "",
+    "poemSource": "",
+    "season": "春"
+  },
+  {
+    "id": "qing-lian",
+    "name": "青莲",
+    "pinyin": "qīng lián",
+    "hex": "#801dae",
+    "category": "purple",
+    "poem": "",
+    "poemSource": "",
+    "season": "四季"
+  },
+  {
+    "id": "san-gong-zi",
+    "name": "三公子",
+    "pinyin": "sān gōng zi",
+    "hex": "#663d74",
+    "category": "purple",
+    "poem": "",
+    "poemSource": "",
+    "season": "春"
+  },
+  {
+    "id": "shi-ying",
+    "name": "石英",
+    "pinyin": "shí yīng",
+    "hex": "#c8b6bb",
+    "category": "purple",
+    "poem": "香甘方士青精饭，润滑仙家紫石英",
+    "poemSource": "何乔新《斋居赐蜜饵》",
+    "season": "冬"
+  },
+  {
+    "id": "shui-hong",
+    "name": "水红",
+    "pinyin": "shuǐ hóng",
+    "hex": "#ecb0c1",
+    "category": "purple",
+    "poem": "栴木应前绿树新。水红衫子藕丝裙",
+    "poemSource": "曾廉《浣溪纱·前题》",
+    "season": "春"
+  },
+  {
+    "id": "su-mei",
+    "name": "苏梅",
+    "pinyin": "sū méi",
+    "hex": "#dd7694",
+    "category": "purple",
+    "poem": "偶作小红桃杏色，闲雅，尚余孤瘦雪霜姿",
+    "poemSource": "苏轼《定风波·红梅》",
+    "season": "春"
+  },
+  {
+    "id": "tui-hong",
+    "name": "退红",
+    "pinyin": "tuì hóng",
+    "hex": "#f0cfe3",
+    "category": "purple",
+    "poem": "",
+    "poemSource": "",
+    "season": "秋"
+  },
+  {
+    "id": "wei-hong",
+    "name": "魏红",
+    "pinyin": "wèi hóng",
+    "hex": "#a73766",
+    "category": "purple",
+    "poem": "当时绝品可数者，魏红窈窕姚黄妃",
+    "poemSource": "欧阳修《洛阳牡丹图》",
+    "season": "春"
+  },
+  {
+    "id": "wei-zi",
+    "name": "魏紫",
+    "pinyin": "wèi zǐ",
+    "hex": "#903754",
+    "category": "purple",
+    "poem": "",
+    "poemSource": "",
+    "season": "春"
+  },
+  {
+    "id": "wu-se",
+    "name": "乌色",
+    "pinyin": "wū sè",
+    "hex": "#725e82",
+    "category": "purple",
+    "poem": "",
+    "poemSource": "",
+    "season": "四季"
+  },
+  {
+    "id": "ya-chu",
+    "name": "鸦雏",
+    "pinyin": "yā chú",
+    "hex": "#6a5b6d",
+    "category": "purple",
+    "poem": "单衫杏子红，双鬓鸦雏色",
+    "poemSource": "佚名《西洲曲》",
+    "season": "秋"
+  },
+  {
+    "id": "yan-hong",
+    "name": "烟红",
+    "pinyin": "yān hóng",
+    "hex": "#9d858f",
+    "category": "purple",
+    "poem": "翠微泛樽绿，苔藓分烟红",
+    "poemSource": "张为《秋醉歌》",
+    "season": "冬"
+  },
+  {
+    "id": "yan-zhi-zi",
+    "name": "胭脂紫",
+    "pinyin": "yān zhi zǐ",
+    "hex": "#b0436f",
+    "category": "purple",
+    "poem": "檀唇深注胭脂紫，琪树匀排火齐圆",
+    "poemSource": "华镇《食樱桃思越中风俗》",
+    "season": "冬"
+  },
+  {
+    "id": "yang-hong",
+    "name": "洋红",
+    "pinyin": "yáng hóng",
+    "hex": "#ff0097",
+    "category": "purple",
+    "poem": "",
+    "poemSource": "",
+    "season": "四季"
+  },
+  {
+    "id": "yin-hong",
+    "name": "银红",
+    "pinyin": "yín hóng",
+    "hex": "#e7cad3",
+    "category": "purple",
+    "poem": "银红裙裥皱宫纱。风前坐，闲斗郁金芽",
+    "poemSource": "蒋捷《小重山》",
+    "season": "冬"
+  },
+  {
+    "id": "ying-hua",
+    "name": "樱花",
+    "pinyin": "yīng huā",
+    "hex": "#e4b8d5",
+    "category": "purple",
+    "poem": "何处哀筝随急管，樱花永巷垂杨岸",
+    "poemSource": "李商隐《无题四首》",
+    "season": "秋"
+  },
+  {
+    "id": "ying-ying",
+    "name": "盈盈",
+    "pinyin": "yíng yíng",
+    "hex": "#f9d3e3",
+    "category": "purple",
+    "poem": "蛾儿雪柳黄金缕。笑语盈盈暗香去",
+    "poemSource": "辛弃疾《青玉案·元夕》",
+    "season": "春"
+  },
+  {
+    "id": "you-zi",
+    "name": "油紫",
+    "pinyin": "yóu zǐ",
+    "hex": "#420b2f",
+    "category": "purple",
+    "poem": "",
+    "poemSource": "",
+    "season": "冬"
+  },
+  {
+    "id": "zi-bao-han",
+    "name": "紫薄汗",
+    "pinyin": "zǐ báo hàn",
+    "hex": "#bba1cb",
+    "category": "purple",
+    "poem": "胡瓶落膊紫薄汗，碎叶城西秋月团；明敕星驰封宝剑，辞君一夜取楼兰",
+    "poemSource": "王昌龄《从军行七首》",
+    "season": "春"
+  },
+  {
+    "id": "zi-di",
+    "name": "紫菂",
+    "pinyin": "zǐ dì",
+    "hex": "#9b8ea9",
+    "category": "purple",
+    "poem": "浪静鲜鳞跃，风恬紫菂妍",
+    "poemSource": "玄烨《玉泉春晓》",
+    "season": "春"
+  },
+  {
+    "id": "zi-fu",
+    "name": "紫府",
+    "pinyin": "zǐ fǔ",
+    "hex": "#995d7f",
+    "category": "purple",
+    "poem": "紫府仙人号宝灯，云浆未饮结成冰",
+    "poemSource": "李商隐《无题》",
+    "season": "冬"
+  },
+  {
+    "id": "zi-jiang",
+    "name": "紫酱",
+    "pinyin": "zǐ jiàng",
+    "hex": "#815463",
+    "category": "purple",
+    "poem": "",
+    "poemSource": "",
+    "season": "四季"
+  },
+  {
+    "id": "zi-jing-ping-feng",
+    "name": "紫茎屏风",
+    "pinyin": "zǐ jīng píng fēng",
+    "hex": "#a76283",
+    "category": "purple",
+    "poem": "净淘红粒罯香饭，薄切紫鳞烹水葵。雨滴篷声青雀舫，浪摇花影白莲池",
+    "poemSource": "白居易《池上小宴问程秀才》",
+    "season": "春"
+  },
+  {
+    "id": "zi-mei",
+    "name": "紫梅",
+    "pinyin": "zǐ méi",
+    "hex": "#bb7a8c",
+    "category": "purple",
+    "poem": "紫梅发初遍，黄鸟歌犹涩",
+    "poemSource": "王维《早春行》",
+    "season": "冬"
+  },
+  {
+    "id": "zi-pu",
+    "name": "紫蒲",
+    "pinyin": "zǐ pú",
+    "hex": "#a6559d",
+    "category": "purple",
+    "poem": "紫蒲低水槛，红叶半江船",
+    "poemSource": "许浑《夜归丁卯桥村舍》",
+    "season": "春"
+  },
+  {
+    "id": "zi-qu",
+    "name": "紫紶",
+    "pinyin": "zǐ qū",
+    "hex": "#7d5284",
+    "category": "purple",
+    "poem": "",
+    "poemSource": "",
+    "season": "春"
+  },
+  {
+    "id": "zi-se",
+    "name": "紫色",
+    "pinyin": "zǐ sè",
+    "hex": "#8d4bbb",
+    "category": "purple",
+    "poem": "",
+    "poemSource": "",
+    "season": "四季"
+  },
+  {
+    "id": "zi-tang",
+    "name": "紫棠",
+    "pinyin": "zǐ táng",
+    "hex": "#56004f",
+    "category": "purple",
+    "poem": "",
+    "poemSource": "",
+    "season": "四季"
+  },
+  {
+    "id": "cang-ai",
+    "name": "苍艾",
+    "pinyin": "cāng ài",
+    "hex": "#5a4b3b",
+    "category": "brown",
+    "poem": "苍艾浸成色，素丝飒垂领",
+    "poemSource": "释文珦《老景》",
+    "season": "冬"
+  },
+  {
+    "id": "cha-se",
+    "name": "茶色",
+    "pinyin": "chá sè",
+    "hex": "#887657",
+    "category": "brown",
+    "poem": "来衣茶色袍，归变椹色服",
+    "poemSource": "梅尧臣《送良玉人上还昆山》",
+    "season": "冬"
+  },
+  {
+    "id": "chen-xiang",
+    "name": "沉香",
+    "pinyin": "chén xiāng",
+    "hex": "#99806c",
+    "category": "brown",
+    "poem": "宁知谪仙子，捧研在沉香",
+    "poemSource": "胡应麟《嘲老杜》",
+    "season": "秋"
+  },
+  {
+    "id": "da-yun",
+    "name": "大云",
+    "pinyin": "dà yún",
+    "hex": "#94784f",
+    "category": "brown",
+    "poem": "老子当归兴已浓，令君何事寄苁蓉",
+    "poemSource": "王十朋《丁惠安赠肉苁蓉》",
+    "season": "夏"
+  },
+  {
+    "id": "ding-xiang-he",
+    "name": "丁香褐",
+    "pinyin": "dīng xiāng hè",
+    "hex": "#bd9683",
+    "category": "brown",
+    "poem": "",
+    "poemSource": "",
+    "season": "冬"
+  },
+  {
+    "id": "fu-chi",
+    "name": "佛赤",
+    "pinyin": "fú chì",
+    "hex": "#8f3d2c",
+    "category": "brown",
+    "poem": "",
+    "poemSource": "",
+    "season": "秋"
+  },
+  {
+    "id": "ga-luo",
+    "name": "伽罗",
+    "pinyin": "gā luó",
+    "hex": "#6d5c3d",
+    "category": "brown",
+    "poem": "",
+    "poemSource": "",
+    "season": "冬"
+  },
+  {
+    "id": "he-se",
+    "name": "褐色",
+    "pinyin": "hè sè",
+    "hex": "#6e511e",
+    "category": "brown",
+    "poem": "",
+    "poemSource": "",
+    "season": "四季"
+  },
+  {
+    "id": "hei-zhu",
+    "name": "黑朱",
+    "pinyin": "hēi zhū",
+    "hex": "#70695d",
+    "category": "brown",
+    "poem": "",
+    "poemSource": "",
+    "season": "夏"
+  },
+  {
+    "id": "huang-liu",
+    "name": "黄流",
+    "pinyin": "huáng liú",
+    "hex": "#9f6027",
+    "category": "brown",
+    "poem": "瑟彼玉瓒，黄流在中",
+    "poemSource": "佚名《诗经·大雅·旱麓》",
+    "season": "夏"
+  },
+  {
+    "id": "ji-jin",
+    "name": "吉金",
+    "pinyin": "jí jīn",
+    "hex": "#896d47",
+    "category": "brown",
+    "poem": "",
+    "poemSource": "",
+    "season": "夏"
+  },
+  {
+    "id": "jiao-he",
+    "name": "椒褐",
+    "pinyin": "jiāo hè",
+    "hex": "#72453a",
+    "category": "brown",
+    "poem": "",
+    "poemSource": "",
+    "season": "冬"
+  },
+  {
+    "id": "jing-he",
+    "name": "荆褐",
+    "pinyin": "jīng hè",
+    "hex": "#906c4a",
+    "category": "brown",
+    "poem": "",
+    "poemSource": "",
+    "season": "冬"
+  },
+  {
+    "id": "lao-fu-shen",
+    "name": "老茯神",
+    "pinyin": "lǎo fú shén",
+    "hex": "#aa8534",
+    "category": "brown",
+    "poem": "曾为老茯神，本是寒松液",
+    "poemSource": "韦应物《咏琥珀》",
+    "season": "秋"
+  },
+  {
+    "id": "li-ke",
+    "name": "栗壳",
+    "pinyin": "lì ké",
+    "hex": "#775039",
+    "category": "brown",
+    "poem": "栗壳黄腴猿哺子，松巢碧冷鹤温雏；道人炼罢芙蓉鼎，紫玉箫横凤绕梧",
+    "poemSource": "陶安《葆和观》",
+    "season": "春"
+  },
+  {
+    "id": "li-se",
+    "name": "栗色",
+    "pinyin": "lì sè",
+    "hex": "#60281e",
+    "category": "brown",
+    "poem": "",
+    "poemSource": "",
+    "season": "四季"
+  },
+  {
+    "id": "liu-huang",
+    "name": "流黄",
+    "pinyin": "liú huáng",
+    "hex": "#8b7042",
+    "category": "brown",
+    "poem": "慙幽闺之琴瑟，晦高台之流黄",
+    "poemSource": "江淹《别赋》",
+    "season": "春"
+  },
+  {
+    "id": "long-zhan",
+    "name": "龙战",
+    "pinyin": "lóng zhàn",
+    "hex": "#5f4321",
+    "category": "brown",
+    "poem": "登舟既虎啸，激水方龙战",
+    "poemSource": "李白《观饮飞斩蛟龙图赞》",
+    "season": "春"
+  },
+  {
+    "id": "lu-he",
+    "name": "露褐",
+    "pinyin": "lù hè",
+    "hex": "#bd8253",
+    "category": "brown",
+    "poem": "",
+    "poemSource": "",
+    "season": "春"
+  },
+  {
+    "id": "lv-dou-he",
+    "name": "绿豆褐",
+    "pinyin": "lǜ dòu hè",
+    "hex": "#92896b",
+    "category": "brown",
+    "poem": "",
+    "poemSource": "",
+    "season": "冬"
+  },
+  {
+    "id": "mei-ge",
+    "name": "韎韐",
+    "pinyin": "mèi gé",
+    "hex": "#9f5221",
+    "category": "brown",
+    "poem": "君子至止，福禄如茨；韎韐有奭，以作六师",
+    "poemSource": "佚名《瞻彼洛矣》",
+    "season": "秋"
+  },
+  {
+    "id": "mi-he",
+    "name": "蜜褐",
+    "pinyin": "mì hè",
+    "hex": "#683632",
+    "category": "brown",
+    "poem": "王家池上见芙蕖，蜜褐装成态有余",
+    "poemSource": "程敏政《丹徒王玺家蜜 褐莲卷追赋明》",
+    "season": "秋"
+  },
+  {
+    "id": "ming-cha-he",
+    "name": "明茶褐",
+    "pinyin": "míng chá hè",
+    "hex": "#9e8368",
+    "category": "brown",
+    "poem": "",
+    "poemSource": "",
+    "season": "冬"
+  },
+  {
+    "id": "ming-se",
+    "name": "冥色",
+    "pinyin": "míng sè",
+    "hex": "#665f4d",
+    "category": "brown",
+    "poem": "",
+    "poemSource": "",
+    "season": "冬"
+  },
+  {
+    "id": "mu-tong-zi",
+    "name": "目童子",
+    "pinyin": "mù tóng zi",
+    "hex": "#5b3222",
+    "category": "brown",
+    "poem": "",
+    "poemSource": "",
+    "season": "春"
+  },
+  {
+    "id": "ou-si-he",
+    "name": "藕丝褐",
+    "pinyin": "ǒu sī hè",
+    "hex": "#a88787",
+    "category": "brown",
+    "poem": "",
+    "poemSource": "",
+    "season": "冬"
+  },
+  {
+    "id": "pu-tao-he",
+    "name": "葡萄褐",
+    "pinyin": "pú táo hè",
+    "hex": "#9e696d",
+    "category": "brown",
+    "poem": "",
+    "poemSource": "",
+    "season": "冬"
+  },
+  {
+    "id": "qing-li",
+    "name": "青骊",
+    "pinyin": "qīng lí",
+    "hex": "#422517",
+    "category": "brown",
+    "poem": "长安侠客矜年少，青骊缓步章台道",
+    "poemSource": "卢楠《少年行二首》",
+    "season": "春"
+  },
+  {
+    "id": "qiu-se",
+    "name": "秋色",
+    "pinyin": "qiū sè",
+    "hex": "#896c39",
+    "category": "brown",
+    "poem": "",
+    "poemSource": "",
+    "season": "四季"
+  },
+  {
+    "id": "she-xiang-he",
+    "name": "麝香褐",
+    "pinyin": "shè xiāng hè",
+    "hex": "#694b3c",
+    "category": "brown",
+    "poem": "",
+    "poemSource": "",
+    "season": "冬"
+  },
+  {
+    "id": "shi-lian-he",
+    "name": "石莲褐",
+    "pinyin": "shí lián hè",
+    "hex": "#92897b",
+    "category": "brown",
+    "poem": "鱼生玉藕下，人在石莲中",
+    "poemSource": "李贺《恼公》",
+    "season": "夏"
+  },
+  {
+    "id": "shu-lan",
+    "name": "术兰",
+    "pinyin": "shù lán",
+    "hex": "#662b1f",
+    "category": "brown",
+    "poem": "",
+    "poemSource": "",
+    "season": "夏"
+  },
+  {
+    "id": "sui-shou",
+    "name": "𫄫绶",
+    "pinyin": "suì shòu",
+    "hex": "#756c4b",
+    "category": "brown",
+    "poem": "郁金半见缃白䋤，缥𫄫绿纨皂紫硟",
+    "poemSource": "史游《急就篇》",
+    "season": "冬"
+  },
+  {
+    "id": "tan-he",
+    "name": "檀褐",
+    "pinyin": "tán hè",
+    "hex": "#945635",
+    "category": "brown",
+    "poem": "",
+    "poemSource": "",
+    "season": "春"
+  },
+  {
+    "id": "tang-li-he",
+    "name": "棠梨褐",
+    "pinyin": "táng lí hè",
+    "hex": "#955a42",
+    "category": "brown",
+    "poem": "",
+    "poemSource": "",
+    "season": "冬"
+  },
+  {
+    "id": "tuo-he",
+    "name": "驼褐",
+    "pinyin": "tuó hè",
+    "hex": "#7c5b3e",
+    "category": "brown",
+    "poem": "露侵驼褐晓寒轻，星斗阑干分外明",
+    "poemSource": "陈与义《早行》",
+    "season": "冬"
+  },
+  {
+    "id": "tuo-se",
+    "name": "驼色",
+    "pinyin": "tuó sè",
+    "hex": "#a88462",
+    "category": "brown",
+    "poem": "",
+    "poemSource": "",
+    "season": "四季"
+  },
+  {
+    "id": "xuan-se",
+    "name": "玄色",
+    "pinyin": "xuán sè",
+    "hex": "#622a1d",
+    "category": "brown",
+    "poem": "",
+    "poemSource": "",
+    "season": "四季"
+  },
+  {
+    "id": "ye-gan",
+    "name": "射干",
+    "pinyin": "yè gàn",
+    "hex": "#7c623f",
+    "category": "brown",
+    "poem": "青荃射干，揭车苞并",
+    "poemSource": "秦宋玉《高唐赋》",
+    "season": "秋"
+  },
+  {
+    "id": "yin-he",
+    "name": "银褐",
+    "pinyin": "yín hè",
+    "hex": "#9c8d9b",
+    "category": "brown",
+    "poem": "",
+    "poemSource": "",
+    "season": "冬"
+  },
+  {
+    "id": "ying-bei-he",
+    "name": "鹰背褐",
+    "pinyin": "yīng bèi hè",
+    "hex": "#8f6d5f",
+    "category": "brown",
+    "poem": "",
+    "poemSource": "",
+    "season": "冬"
+  },
+  {
+    "id": "you-hu-lu",
+    "name": "油葫芦",
+    "pinyin": "yóu hú lú",
+    "hex": "#644d31",
+    "category": "brown",
+    "poem": "",
+    "poemSource": "",
+    "season": "秋"
+  },
+  {
+    "id": "yuan-zhi",
+    "name": "远志",
+    "pinyin": "yuǎn zhì",
+    "hex": "#81663b",
+    "category": "brown",
+    "poem": "",
+    "poemSource": "",
+    "season": "夏"
+  },
+  {
+    "id": "yun-fu",
+    "name": "缊韨",
+    "pinyin": "yūn fú",
+    "hex": "#984f31",
+    "category": "brown",
+    "poem": "",
+    "poemSource": "",
+    "season": "春"
+  },
+  {
+    "id": "zao-he",
+    "name": "枣褐",
+    "pinyin": "zǎo hè",
+    "hex": "#68361a",
+    "category": "brown",
+    "poem": "",
+    "poemSource": "",
+    "season": "冬"
+  },
+  {
+    "id": "zhe",
+    "name": "赭",
+    "pinyin": "zhě",
+    "hex": "#9c5333",
+    "category": "brown",
+    "poem": "",
+    "poemSource": "",
+    "season": "四季"
+  },
+  {
+    "id": "zhe-luo",
+    "name": "赭罗",
+    "pinyin": "zhě luó",
+    "hex": "#9a6655",
+    "category": "brown",
+    "poem": "月瓣团栾剪赭罗，长条排蕊缀鸣珂",
+    "poemSource": "唐彦谦《秋葵》",
+    "season": "春"
+  },
+  {
+    "id": "zhe-se",
+    "name": "赭色",
+    "pinyin": "zhě sè",
+    "hex": "#955539",
+    "category": "brown",
+    "poem": "",
+    "poemSource": "",
+    "season": "四季"
+  },
+  {
+    "id": "zhu-shi-li",
+    "name": "朱石栗",
+    "pinyin": "zhū shí lì",
+    "hex": "#81492c",
+    "category": "brown",
+    "poem": "",
+    "poemSource": "",
+    "season": "冬"
+  },
+  {
+    "id": "zhu-zi-he",
+    "name": "珠子褐",
+    "pinyin": "zhū zi hè",
+    "hex": "#bea89d",
+    "category": "brown",
+    "poem": "",
+    "poemSource": "",
+    "season": "冬"
+  },
+  {
+    "id": "zhuo-jiang",
+    "name": "濯绛",
+    "pinyin": "zhuó jiàng",
+    "hex": "#796860",
+    "category": "brown",
+    "poem": "素波濯绛华，惠风时纷披",
+    "poemSource": "欧大任《芙蓉园》",
+    "season": "冬"
+  },
+  {
+    "id": "zi-ou",
+    "name": "紫瓯",
+    "pinyin": "zǐ ōu",
+    "hex": "#7c461e",
+    "category": "brown",
+    "poem": "喜共紫瓯吟且酌，羡君潇洒有余清",
+    "poemSource": "欧阳修《和梅公仪尝茶》",
+    "season": "春"
+  },
+  {
+    "id": "zi-tan",
+    "name": "紫檀",
+    "pinyin": "zǐ tán",
+    "hex": "#4c221b",
+    "category": "brown",
+    "poem": "",
+    "poemSource": "",
+    "season": "四季"
+  },
+  {
+    "id": "zong-hei",
+    "name": "棕黑",
+    "pinyin": "zōng hēi",
+    "hex": "#7c4b00",
+    "category": "brown",
+    "poem": "",
+    "poemSource": "",
+    "season": "四季"
+  },
+  {
+    "id": "zong-hong",
+    "name": "棕红",
+    "pinyin": "zōng hóng",
+    "hex": "#9b4400",
+    "category": "brown",
+    "poem": "",
+    "poemSource": "",
+    "season": "四季"
+  },
+  {
+    "id": "zong-huang",
+    "name": "棕黄",
+    "pinyin": "zōng huáng",
+    "hex": "#ae7000",
+    "category": "brown",
+    "poem": "",
+    "poemSource": "",
+    "season": "四季"
+  },
+  {
+    "id": "zong-se",
+    "name": "棕色",
+    "pinyin": "zōng sè",
+    "hex": "#b25d25",
+    "category": "brown",
+    "poem": "",
+    "poemSource": "",
+    "season": "四季"
+  },
+  {
+    "id": "zou-chi",
+    "name": "緅𫄨",
+    "pinyin": "zōu chī",
+    "hex": "#804c2e",
+    "category": "brown",
+    "poem": "",
+    "poemSource": "",
+    "season": "春"
+  },
+  {
+    "id": "bu-zao",
+    "name": "不皂",
+    "pinyin": "bù zào",
+    "hex": "#a7aaa1",
+    "category": "neutral",
+    "poem": "粉光深紫腻，肉色退红娇",
+    "poemSource": "王建《题所赁宅牡丹花》",
+    "season": "夏"
+  },
+  {
+    "id": "cang-bai",
+    "name": "苍白",
+    "pinyin": "cāng bái",
+    "hex": "#d1d9e0",
+    "category": "neutral",
+    "poem": "",
+    "poemSource": "",
+    "season": "四季"
+  },
+  {
+    "id": "cao-bai",
+    "name": "草白",
+    "pinyin": "cǎo bái",
+    "hex": "#bfc1a9",
+    "category": "neutral",
+    "poem": "松色随野深，月露依草白",
+    "poemSource": "鲍照《过铜山掘黄精诗》",
+    "season": "冬"
+  },
+  {
+    "id": "cuo-bai",
+    "name": "酂白",
+    "pinyin": "cuó bái",
+    "hex": "#f6f9e4",
+    "category": "neutral",
+    "poem": "登高新酒倾酂白，吊古空山涌帝青",
+    "poemSource": "唐伯虎《与朱彦明诸 子同游保叔寺》",
+    "season": "冬"
+  },
+  {
+    "id": "dong-piao",
+    "name": "冻缥",
+    "pinyin": "dòng piāo",
+    "hex": "#bec2b3",
+    "category": "neutral",
+    "poem": "乃有春清缥酒，康狄所营，应化则变，感气而成",
+    "poemSource": "曹植《七启》",
+    "season": "春"
+  },
+  {
+    "id": "gan-die",
+    "name": "绀蝶",
+    "pinyin": "gàn dié",
+    "hex": "#2c2f3b",
+    "category": "neutral",
+    "poem": "逐伴飘来新绀蝶，成群分出小秧鱼",
+    "poemSource": "弘历《池上居》",
+    "season": "春"
+  },
+  {
+    "id": "gan-shi",
+    "name": "甘石",
+    "pinyin": "gān shí",
+    "hex": "#bdb2b2",
+    "category": "neutral",
+    "poem": "",
+    "poemSource": "",
+    "season": "秋"
+  },
+  {
+    "id": "gao",
+    "name": "缟",
+    "pinyin": "gǎo",
+    "hex": "#f2ecde",
+    "category": "neutral",
+    "poem": "",
+    "poemSource": "",
+    "season": "四季"
+  },
+  {
+    "id": "gao-yu",
+    "name": "缟羽",
+    "pinyin": "gǎo yǔ",
+    "hex": "#efefef",
+    "category": "neutral",
+    "poem": "",
+    "poemSource": "",
+    "season": "秋"
+  },
+  {
+    "id": "hei-se",
+    "name": "黑色",
+    "pinyin": "hēi sè",
+    "hex": "#000000",
+    "category": "neutral",
+    "poem": "",
+    "poemSource": "",
+    "season": "四季"
+  },
+  {
+    "id": "hong-teng-zhang",
+    "name": "红藤杖",
+    "pinyin": "hóng téng zhàng",
+    "hex": "#928187",
+    "category": "neutral",
+    "poem": "唯有红藤杖，相随万里来",
+    "poemSource": "白居易《红藤杖》",
+    "season": "秋"
+  },
+  {
+    "id": "hua-bai",
+    "name": "花白",
+    "pinyin": "huā bái",
+    "hex": "#c2ccd0",
+    "category": "neutral",
+    "poem": "",
+    "poemSource": "",
+    "season": "四季"
+  },
+  {
+    "id": "hui-se",
+    "name": "灰色",
+    "pinyin": "huī sè",
+    "hex": "#808080",
+    "category": "neutral",
+    "poem": "",
+    "poemSource": "",
+    "season": "四季"
+  },
+  {
+    "id": "ji-liang",
+    "name": "吉量",
+    "pinyin": "jí liàng",
+    "hex": "#ebeddf",
+    "category": "neutral",
+    "poem": "",
+    "poemSource": "",
+    "season": "春"
+  },
+  {
+    "id": "jiao-yu",
+    "name": "皦玉",
+    "pinyin": "jiǎo yù",
+    "hex": "#ebeee8",
+    "category": "neutral",
+    "poem": "皦玉粲以曜目，荣日华以舒光",
+    "poemSource": "刘桢《遂志赋》",
+    "season": "春"
+  },
+  {
+    "id": "jiao-yue",
+    "name": "蕉月",
+    "pinyin": "jiāo yuè",
+    "hex": "#86908a",
+    "category": "neutral",
+    "poem": "芭蕉月上露枝迟，促织声先到耳痴",
+    "poemSource": "霍韬《中秋夜饮》",
+    "season": "秋"
+  },
+  {
+    "id": "jing-bai",
+    "name": "精白",
+    "pinyin": "jīng bái",
+    "hex": "#ffffff",
+    "category": "neutral",
+    "poem": "",
+    "poemSource": "",
+    "season": "四季"
+  },
+  {
+    "id": "jing-yuan",
+    "name": "京元",
+    "pinyin": "jīng yuán",
+    "hex": "#31322c",
+    "category": "neutral",
+    "poem": "",
+    "poemSource": "",
+    "season": "冬"
+  },
+  {
+    "id": "lao-yin",
+    "name": "老银",
+    "pinyin": "lǎo yín",
+    "hex": "#bacac6",
+    "category": "neutral",
+    "poem": "",
+    "poemSource": "",
+    "season": "四季"
+  },
+  {
+    "id": "lei-yu-chui",
+    "name": "雷雨垂",
+    "pinyin": "léi yǔ chuí",
+    "hex": "#7a7b78",
+    "category": "neutral",
+    "poem": "白摧朽骨龙虎死，黑入太阴雷雨垂",
+    "poemSource": "杜甫《戏为韦偃双松图歌》",
+    "season": "夏"
+  },
+  {
+    "id": "li",
+    "name": "黧",
+    "pinyin": "lí",
+    "hex": "#5d513c",
+    "category": "neutral",
+    "poem": "",
+    "poemSource": "",
+    "season": "四季"
+  },
+  {
+    "id": "li-2",
+    "name": "黎",
+    "pinyin": "lí",
+    "hex": "#75664d",
+    "category": "neutral",
+    "poem": "",
+    "poemSource": "",
+    "season": "四季"
+  },
+  {
+    "id": "luan-se",
+    "name": "卵色",
+    "pinyin": "luǎn sè",
+    "hex": "#d5e3d4",
+    "category": "neutral",
+    "poem": "夜月琉璃水，春风卵色天",
+    "poemSource": "沈青箱《过台城感旧》",
+    "season": "秋"
+  },
+  {
+    "id": "lv-yun",
+    "name": "绿云",
+    "pinyin": "lǜ yún",
+    "hex": "#45493d",
+    "category": "neutral",
+    "poem": "绿云扰扰，梳晓鬟也",
+    "poemSource": "杜牧《阿房宫赋》",
+    "season": "秋"
+  },
+  {
+    "id": "mei-hei",
+    "name": "煤黑",
+    "pinyin": "méi hēi",
+    "hex": "#312520",
+    "category": "neutral",
+    "poem": "",
+    "poemSource": "",
+    "season": "四季"
+  },
+  {
+    "id": "mi-lou-hui",
+    "name": "迷楼灰",
+    "pinyin": "mí lóu huī",
+    "hex": "#91828f",
+    "category": "neutral",
+    "poem": "神器失所托，化作迷楼灰",
+    "poemSource": "曹勋《隋堤柳》",
+    "season": "秋"
+  },
+  {
+    "id": "mo-can",
+    "name": "墨黪",
+    "pinyin": "mò cǎn",
+    "hex": "#585248",
+    "category": "neutral",
+    "poem": "",
+    "poemSource": "",
+    "season": "冬"
+  },
+  {
+    "id": "mo-hui",
+    "name": "墨灰",
+    "pinyin": "mò huī",
+    "hex": "#758a99",
+    "category": "neutral",
+    "poem": "",
+    "poemSource": "",
+    "season": "四季"
+  },
+  {
+    "id": "mo-se",
+    "name": "墨色",
+    "pinyin": "mò sè",
+    "hex": "#50616d",
+    "category": "neutral",
+    "poem": "",
+    "poemSource": "",
+    "season": "四季"
+  },
+  {
+    "id": "ning-zhi",
+    "name": "凝脂",
+    "pinyin": "níng zhī",
+    "hex": "#f5f2e9",
+    "category": "neutral",
+    "poem": "春寒赐浴华清池，温泉水滑洗凝脂",
+    "poemSource": "白居易《长恨歌》",
+    "season": "秋"
+  },
+  {
+    "id": "ou-si-qiu-ban",
+    "name": "藕丝秋半",
+    "pinyin": "ǒu sī qiū bàn",
+    "hex": "#d3cbc5",
+    "category": "neutral",
+    "poem": "藕丝衫子柳花裙，空著沈香慢火熏",
+    "poemSource": "元稹《白衣裳二首》",
+    "season": "秋"
+  },
+  {
+    "id": "qi-hei",
+    "name": "漆黑",
+    "pinyin": "qī hēi",
+    "hex": "#161823",
+    "category": "neutral",
+    "poem": "",
+    "poemSource": "",
+    "season": "四季"
+  },
+  {
+    "id": "qian-bai",
+    "name": "铅白",
+    "pinyin": "qiān bái",
+    "hex": "#f0f0f4",
+    "category": "neutral",
+    "poem": "",
+    "poemSource": "",
+    "season": "四季"
+  },
+  {
+    "id": "qian-yun",
+    "name": "浅云",
+    "pinyin": "qiǎn yún",
+    "hex": "#eaeef1",
+    "category": "neutral",
+    "poem": "小抹淡随寒露立，半横细入浅云笼",
+    "poemSource": "雁字三十首次韵《雁字三十首次韵》",
+    "season": "秋"
+  },
+  {
+    "id": "qiu-lin",
+    "name": "璆琳",
+    "pinyin": "qiú lín",
+    "hex": "#343041",
+    "category": "neutral",
+    "poem": "",
+    "poemSource": "",
+    "season": "夏"
+  },
+  {
+    "id": "rong-rong-yue",
+    "name": "溶溶月",
+    "pinyin": "róng róng yuè",
+    "hex": "#bec2bc",
+    "category": "neutral",
+    "poem": "梨花院落溶溶月，柳絮池塘淡淡风",
+    "poemSource": "晏殊《寓意》",
+    "season": "夏"
+  },
+  {
+    "id": "shao-fen",
+    "name": "韶粉",
+    "pinyin": "sháo fěn",
+    "hex": "#e0e0d0",
+    "category": "neutral",
+    "poem": "石髓多年化韶粉，冰华无意属东风",
+    "poemSource": "陈樵《玉雪亭》",
+    "season": "春"
+  },
+  {
+    "id": "shao-yi",
+    "name": "绍衣",
+    "pinyin": "shào yī",
+    "hex": "#a8a19c",
+    "category": "neutral",
+    "poem": "",
+    "poemSource": "",
+    "season": "夏"
+  },
+  {
+    "id": "shi-nie",
+    "name": "石涅",
+    "pinyin": "shí niè",
+    "hex": "#686a67",
+    "category": "neutral",
+    "poem": "",
+    "poemSource": "",
+    "season": "夏"
+  },
+  {
+    "id": "shuang-di",
+    "name": "霜地",
+    "pinyin": "shuāng dì",
+    "hex": "#c7c6b6",
+    "category": "neutral",
+    "poem": "浓霜满地作微雪，落叶投空似飞鸟",
+    "poemSource": "苏辙《新霜》",
+    "season": "春"
+  },
+  {
+    "id": "shuang-se",
+    "name": "霜色",
+    "pinyin": "shuāng sè",
+    "hex": "#e9f1f6",
+    "category": "neutral",
+    "poem": "",
+    "poemSource": "",
+    "season": "四季"
+  },
+  {
+    "id": "su",
+    "name": "素",
+    "pinyin": "sù",
+    "hex": "#e0f0e9",
+    "category": "neutral",
+    "poem": "",
+    "poemSource": "",
+    "season": "四季"
+  },
+  {
+    "id": "su-cai",
+    "name": "素采",
+    "pinyin": "sù cǎi",
+    "hex": "#d4dde1",
+    "category": "neutral",
+    "poem": "波间素彩涵秋净，天际清光映树低",
+    "poemSource": "林环《卢沟晓日》",
+    "season": "秋"
+  },
+  {
+    "id": "ta-jian",
+    "name": "獭见",
+    "pinyin": "tǎ jiàn",
+    "hex": "#151d29",
+    "category": "neutral",
+    "poem": "花妥莺捎蝶，溪喧獭趁鱼",
+    "poemSource": "杜甫《重过何氏五首》",
+    "season": "冬"
+  },
+  {
+    "id": "tie-li",
+    "name": "驖骊",
+    "pinyin": "tiě lí",
+    "hex": "#46433b",
+    "category": "neutral",
+    "poem": "驷驖孔阜，六辔在手；公之媚子，从公于狩",
+    "poemSource": "佚名《诗经·秦风·驷驖》",
+    "season": "冬"
+  },
+  {
+    "id": "tu-bai",
+    "name": "荼白",
+    "pinyin": "tú bái",
+    "hex": "#f3f9f1",
+    "category": "neutral",
+    "poem": "",
+    "poemSource": "",
+    "season": "四季"
+  },
+  {
+    "id": "wu-hei",
+    "name": "乌黑",
+    "pinyin": "wū hēi",
+    "hex": "#392f41",
+    "category": "neutral",
+    "poem": "",
+    "poemSource": "",
+    "season": "四季"
+  },
+  {
+    "id": "xiang-lu-zi-yan",
+    "name": "香炉紫烟",
+    "pinyin": "xiāng lú zǐ yān",
+    "hex": "#d3ccd6",
+    "category": "neutral",
+    "poem": "日照香炉生紫烟，遥看瀑布挂前川",
+    "poemSource": "李白《望庐山瀑布》",
+    "season": "春"
+  },
+  {
+    "id": "xiang-ya-bai",
+    "name": "象牙白",
+    "pinyin": "xiàng yá bái",
+    "hex": "#fffbf0",
+    "category": "neutral",
+    "poem": "",
+    "poemSource": "",
+    "season": "四季"
+  },
+  {
+    "id": "xiao-yao-you",
+    "name": "逍遥游",
+    "pinyin": "xiāo yáo yóu",
+    "hex": "#b2bfc3",
+    "category": "neutral",
+    "poem": "自言其中有至乐，适意无异逍遥游",
+    "poemSource": "苏轼《石苍舒醉墨堂》",
+    "season": "秋"
+  },
+  {
+    "id": "xuan-qing",
+    "name": "玄青",
+    "pinyin": "xuán qīng",
+    "hex": "#3d3b4f",
+    "category": "neutral",
+    "poem": "",
+    "poemSource": "",
+    "season": "四季"
+  },
+  {
+    "id": "xue-bai",
+    "name": "雪白",
+    "pinyin": "xuě bái",
+    "hex": "#f2fdff",
+    "category": "neutral",
+    "poem": "",
+    "poemSource": "",
+    "season": "四季"
+  },
+  {
+    "id": "ya-luan-qing",
+    "name": "鸭卵青",
+    "pinyin": "yā luǎn qīng",
+    "hex": "#e0eee8",
+    "category": "neutral",
+    "poem": "",
+    "poemSource": "",
+    "season": "四季"
+  },
+  {
+    "id": "yan-mo",
+    "name": "烟墨",
+    "pinyin": "yān mò",
+    "hex": "#5c4f55",
+    "category": "neutral",
+    "poem": "",
+    "poemSource": "",
+    "season": "秋"
+  },
+  {
+    "id": "yin-bai",
+    "name": "银白",
+    "pinyin": "yín bái",
+    "hex": "#e9e7ef",
+    "category": "neutral",
+    "poem": "",
+    "poemSource": "",
+    "season": "四季"
+  },
+  {
+    "id": "you",
+    "name": "黝",
+    "pinyin": "yǒu",
+    "hex": "#6b6882",
+    "category": "neutral",
+    "poem": "",
+    "poemSource": "",
+    "season": "四季"
+  },
+  {
+    "id": "you-hei",
+    "name": "黝黑",
+    "pinyin": "yǒu hēi",
+    "hex": "#665757",
+    "category": "neutral",
+    "poem": "",
+    "poemSource": "",
+    "season": "四季"
+  },
+  {
+    "id": "yu-bai",
+    "name": "余白",
+    "pinyin": "yú bái",
+    "hex": "#c9cfc1",
+    "category": "neutral",
+    "poem": "",
+    "poemSource": "",
+    "season": "秋"
+  },
+  {
+    "id": "yue-po",
+    "name": "月魄",
+    "pinyin": "yuè pò",
+    "hex": "#b2b6b6",
+    "category": "neutral",
+    "poem": "疏帘留月魄，珍簟接烟波",
+    "poemSource": "李商隐《街西池馆》",
+    "season": "夏"
+  },
+  {
+    "id": "zi-se-2",
+    "name": "缁色",
+    "pinyin": "zī sè",
+    "hex": "#493131",
+    "category": "neutral",
+    "poem": "",
+    "poemSource": "",
+    "season": "四季"
+  },
+  {
+    "id": "zi-shu",
+    "name": "紫鼠",
+    "pinyin": "zǐ shǔ",
+    "hex": "#594c57",
+    "category": "neutral",
+    "poem": "将军纵博场场胜，赌得单于貂鼠袍",
+    "poemSource": "岑参《赵将军歌》",
+    "season": "秋"
+  }
+]
