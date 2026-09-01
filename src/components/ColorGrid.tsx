@@ -23,10 +23,15 @@ export default function ColorGrid({ colors, total, onPick, onLoadMore }: Props) 
   return (
     <>
       <div className="color-grid">
-        {colors.map((c) => {
+        {colors.map((c, idx) => {
           const fav = favIds.includes(c.id);
           return (
-            <div key={c.id} className="color-card" onClick={() => onPick(c)}>
+            <div
+              key={c.id}
+              className="color-card"
+              style={{ '--i': Math.min(idx, 24) } as React.CSSProperties}
+              onClick={() => onPick(c)}
+            >
               <div className="color-swatch" style={{ backgroundColor: c.hex }}>
                 <button
                   className={`fav-btn${fav ? ' faved' : ''}`}

@@ -1,4 +1,4 @@
-import { lazy, Suspense, useMemo } from 'react';
+import { lazy, Suspense, useEffect, useMemo } from 'react';
 import { Button, Drawer, MessagePlugin } from 'tdesign-react';
 import { bestTextOn, generateTheme, harmonyColors, resolveBase, usageHint } from 'shise-engine';
 import { toggleFavorite, useFavorites } from '../favorites';
@@ -12,9 +12,13 @@ interface Props {
   color: ColorEntry | null;
   mode: ThemeMode;
   byHex: Map<string, ColorEntry>;
+  /** 当前色墙的候选列表（首页进入时提供），启用相邻色导航 */
+  siblings?: ColorEntry[];
   onClose: () => void;
   onSetTheme: (hex: string) => void;
   onPickColor: (c: ColorEntry) => void;
+  /** 跳入器物馆（携带当前色） */
+  onEnterVessels?: (hex: string) => void;
 }
 
 function hexToRgb(hex: string): [number, number, number] {
@@ -36,9 +40,24 @@ async function copyText(text: string, label: string) {
   MessagePlugin.success(`已复制 ${label}：${text}`);
 }
 
-export default function ColorDrawer({ color, mode, byHex, onClose, onSetTheme, onPickColor }: Props) {
+export default function ColorDrawer({ color, mode, byHex, siblings, onClose, onSetTheme, onPickColor, onEnterVessels }: Props) {
   const favIds = useFavorites();
   const faved = color ? favIds.includes(color.id) : false;
+
+  // 相邻色导航：在打开抽屉的色墙列表里前移/后移，支持 ← → 键
+  const sibIdx = color && siblings ? siblings.findIndex((c) => c.id === color.id) : -1;
+  const prevColor = sibIdx > 0 ? siblings![sibIdx - 1] : null;
+  const nextColor = sibIdx >= 0 && siblings && sibIdx < siblings.length - 1 ? siblings[sibIdx + 1] : null;
+
+  useEffect(() => {
+    if (!color || (!prevColor && !nextColor)) return;
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key === 'ArrowLeft' && prevColor) onPickColor(prevColor);
+      else if (e.key === 'ArrowRight' && nextColor) onPickColor(nextColor);
+    };
+    window.addEventListener('keydown', onKey);
+    return () => window.removeEventListener('keydown', onKey);
+  }, [color, prevColor, nextColor, onPickColor]);
 
   const detail = useMemo(() => {
     if (!color) return null;
@@ -124,6 +143,26 @@ export default function ColorDrawer({ color, mode, byHex, onClose, onSetTheme, o
     >
       {color && detail && (
         <>
+          {siblings && sibIdx >= 0 && (
+            <div className="drawer-sib">
+              {prevColor ? (
+                <button className="drawer-sib-btn" onClick={() => onPickColor(prevColor)}>
+                  ← {prevColor.name}
+                </button>
+              ) : (
+                <span />
+              )}
+              <span className="drawer-sib-hint">← → 换色</span>
+              {nextColor ? (
+                <button className="drawer-sib-btn" onClick={() => onPickColor(nextColor)}>
+                  {nextColor.name} →
+                </button>
+              ) : (
+                <span />
+              )}
+            </div>
+          )}
+
           <div className="drawer-hero" style={{ backgroundColor: color.hex, ...textOn(color.hex) }}>
             <h2 className="drawer-hero-name">{color.name}</h2>
             <p className="drawer-hero-pinyin">{color.pinyin}</p>
@@ -190,6 +229,11 @@ export default function ColorDrawer({ color, mode, byHex, onClose, onSetTheme, o
               <GlazeCanvas hex={color.hex} />
             </Suspense>
             <p className="a11y-note">釉面随所选色实时换染 · 拖拽旋转</p>
+            {onEnterVessels && (
+              <button className="vessels-entry-btn" onClick={() => onEnterVessels(color.hex)}>
+                携此色入器物馆 →
+              </button>
+            )}
           </div>
 
           <div className="drawer-section">

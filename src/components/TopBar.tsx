@@ -4,11 +4,9 @@ import type { ThemeMode } from '../theme';
 
 export type Route =
   | 'home'
-  | 'picker'
-  | 'lab'
-  | 'sandbox'
   | 'terms'
-  | 'starmap'
+  | 'gallery'
+  | 'bench'
   | 'favorites'
   | 'about';
 
@@ -20,15 +18,12 @@ interface Props {
   themeColor: string;
 }
 
+/** 主导航：两条叙事线——看色（色谱/节气/观色）与用色（工作台） */
 const NAV: { key: Route; label: string }[] = [
   { key: 'home', label: '色谱' },
-  { key: 'picker', label: '拾色' },
-  { key: 'lab', label: '实验室' },
-  { key: 'sandbox', label: '沙盒' },
   { key: 'terms', label: '节气' },
-  { key: 'starmap', label: '星图' },
-  { key: 'favorites', label: '收藏' },
-  { key: 'about', label: '关于' },
+  { key: 'gallery', label: '观色' },
+  { key: 'bench', label: '工作台' },
 ];
 
 export default function TopBar({ route, onNavigate, mode, onModeChange, themeColor }: Props) {
@@ -49,13 +44,23 @@ export default function TopBar({ route, onNavigate, mode, onModeChange, themeCol
               onClick={() => onNavigate(n.key)}
             >
               {n.label}
-              {n.key === 'favorites' && favCount > 0 && (
-                <span className="nav-badge">{favCount}</span>
-              )}
             </button>
           ))}
         </nav>
         <div className="topbar-controls">
+          <button
+            className={`nav-link nav-util${route === 'favorites' ? ' active' : ''}`}
+            onClick={() => onNavigate('favorites')}
+          >
+            收藏
+            {favCount > 0 && <span className="nav-badge">{favCount}</span>}
+          </button>
+          <button
+            className={`nav-link nav-util${route === 'about' ? ' active' : ''}`}
+            onClick={() => onNavigate('about')}
+          >
+            关于
+          </button>
           <Switch
             value={mode === 'dark'}
             onChange={(v) => onModeChange(v ? 'dark' : 'light')}

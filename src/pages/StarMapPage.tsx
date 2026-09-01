@@ -150,14 +150,7 @@ export default function StarMapPage({ colors, onPickColor }: Props) {
   });
 
   return (
-    <main className="wrap starmap-page">
-      <header className="starmap-head">
-        <h1 className="starmap-title">色彩星图</h1>
-        <p className="starmap-sub">五百三十七色，各安其位</p>
-      </header>
-
-      <hr className="hairline" />
-
+    <div className="starmap-page">
       {/* 控制行：视图切换 + 筛选 */}
       <div className="starmap-controls">
         <div className="filter-tabs">
@@ -377,6 +370,6 @@ export default function StarMapPage({ colors, onPickColor }: Props) {
           </div>
         </div>
       </section>
-    </main>
+    </div>
   );
 }

@@ -17,11 +17,9 @@ import Footer from './components/Footer';
 import FavoritesPage from './components/FavoritesPage';
 import AboutPage from './components/AboutPage';
 import ColorDrawer from './components/ColorDrawer';
-import PickerPage from './pages/PickerPage';
-import LabPage from './pages/LabPage';
-import SandboxPage from './pages/SandboxPage';
 import TermsPage from './pages/TermsPage';
-import StarMapPage from './pages/StarMapPage';
+import GalleryPage, { type GalleryTab } from './pages/GalleryPage';
+import BenchPage from './pages/BenchPage';
 
 const COLORS = rawColors as unknown as ColorEntry[];
 const COLORS_BY_HEX = new Map(COLORS.map((c) => [c.hex.toLowerCase(), c]));
@@ -48,10 +46,20 @@ function colorFromUrl(): ColorEntry | null {
   }
 }
 
-/** 分享链接 ?lab=rrggbb → 实验室初始基色 */
+/** 分享链接 ?lab=rrggbb → 工作台配色步初始基色 */
 function labBaseFromUrl(): string | null {
   try {
     const v = new URLSearchParams(window.location.search).get('lab');
+    return v && /^#?[0-9a-fA-F]{3}([0-9a-fA-F]{3})?$/.test(v.trim()) ? v : null;
+  } catch {
+    return null;
+  }
+}
+
+/** ?vessel=rrggbb → 观色页器物签初始釉色 */
+function vesselHexFromUrl(): string | null {
+  try {
+    const v = new URLSearchParams(window.location.search).get('vessel');
     return v && /^#?[0-9a-fA-F]{3}([0-9a-fA-F]{3})?$/.test(v.trim()) ? v : null;
   } catch {
     return null;
@@ -62,7 +70,13 @@ export default function App() {
   const [mode, setMode] = useState<ThemeMode>(initialMode);
   const [themeColor, setThemeColor] = useState(initialColor);
   const [labBase] = useState(labBaseFromUrl);
-  const [route, setRoute] = useState<Route>(labBase ? 'lab' : 'home');
+  const [vesselHex, setVesselHex] = useState(vesselHexFromUrl);
+  const [galleryTab, setGalleryTab] = useState<GalleryTab>(
+    vesselHexFromUrl() ? 'vessels' : 'starmap',
+  );
+  const [route, setRoute] = useState<Route>(
+    labBase ? 'bench' : vesselHexFromUrl() ? 'gallery' : 'home',
+  );
 
   const [season, setSeason] = useState<Season | '全'>('全');
   const [category, setCategory] = useState<Category | 'all'>('all');
@@ -123,6 +137,13 @@ export default function App() {
     MessagePlugin.success(`已将「${entry?.name ?? hex}」设为全站主题`);
   };
 
+  const enterVessels = (hex: string) => {
+    setVesselHex(hex);
+    setGalleryTab('vessels');
+    setSelected(null);
+    setRoute('gallery');
+  };
+
   return (
     <>
       <TopBar
@@ -133,53 +154,65 @@ export default function App() {
         themeColor={themeColor}
       />
 
-      {route === 'home' && (
-        <main>
-          <div className="wrap">
-            <Hero season={season} onSelect={pickSeason} />
-          </div>
-          <div className="wrap">
-            <hr className="hairline" />
-          </div>
-          <section className="wrap wall" ref={wallRef}>
-            <FilterBar
-              category={category}
-              onCategoryChange={setCategory}
-              search={search}
-              onSearchChange={setSearch}
-            />
-            <ColorGrid
-              colors={filtered.slice(0, limit)}
-              total={filtered.length}
-              onPick={setSelected}
-              onLoadMore={() => setLimit((n) => n + PAGE_SIZE)}
-            />
-          </section>
-        </main>
-      )}
+      <div className="route-stage" key={route}>
+        {route === 'home' && (
+          <main>
+            <div className="wrap">
+              <Hero season={season} onSelect={pickSeason} />
+            </div>
+            <div className="wrap">
+              <hr className="hairline" />
+            </div>
+            <section className="wrap wall" ref={wallRef}>
+              <FilterBar
+                category={category}
+                onCategoryChange={setCategory}
+                search={search}
+                onSearchChange={setSearch}
+              />
+              <ColorGrid
+                colors={filtered.slice(0, limit)}
+                total={filtered.length}
+                onPick={setSelected}
+                onLoadMore={() => setLimit((n) => n + PAGE_SIZE)}
+              />
+            </section>
+          </main>
+        )}
 
-      {route === 'picker' && (
-        <PickerPage colors={COLORS} onPickColor={setSelected} />
-      )}
-      {route === 'lab' && (
-        <LabPage colors={COLORS} onPickColor={setSelected} initialBase={labBase ?? undefined} />
-      )}
-      {route === 'sandbox' && (
-        <SandboxPage colors={COLORS} onApplyTheme={handleSetTheme} />
-      )}
-      {route === 'terms' && <TermsPage colors={COLORS} onPickColor={setSelected} />}
-      {route === 'starmap' && (
-        <StarMapPage colors={COLORS} onPickColor={setSelected} />
-      )}
+        {route === 'terms' && <TermsPage colors={COLORS} onPickColor={setSelected} />}
 
-      {route === 'favorites' && (
-        <FavoritesPage
-          colors={COLORS}
-          onPick={setSelected}
-          onGoHome={() => setRoute('home')}
-        />
-      )}
-      {route === 'about' && <AboutPage />}
+        {route === 'gallery' && (
+          <GalleryPage
+            colors={COLORS}
+            mode={mode}
+            onModeChange={setMode}
+            onPickColor={setSelected}
+            tab={galleryTab}
+            onTabChange={setGalleryTab}
+            vesselHex={vesselHex ?? undefined}
+          />
+        )}
+
+        {route === 'bench' && (
+          <BenchPage
+            colors={COLORS}
+            initialStep={labBase ? 'lab' : undefined}
+            initialBase={labBase ?? undefined}
+            onPickColor={setSelected}
+            onApplyTheme={handleSetTheme}
+          />
+        )}
+
+        {route === 'favorites' && (
+          <FavoritesPage
+            colors={COLORS}
+            onPick={setSelected}
+            onGoHome={() => setRoute('home')}
+          />
+        )}
+        {route === 'about' && <AboutPage />}
+      </div>
 
       <Footer />
 
@@ -187,9 +220,11 @@ export default function App() {
         color={selected}
         mode={mode}
         byHex={COLORS_BY_HEX}
+        siblings={route === 'home' ? filtered : undefined}
         onClose={() => setSelected(null)}
         onSetTheme={handleSetTheme}
         onPickColor={setSelected}
+        onEnterVessels={enterVessels}
       />
     </>
   );
