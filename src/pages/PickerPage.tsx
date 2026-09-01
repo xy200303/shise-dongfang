@@ -13,6 +13,8 @@ const PREVIEW_EDGE = 1200; // 像素拾取画布上限边长
 interface Props {
   colors: ColorEntry[];
   onPickColor: (c: ColorEntry) => void;
+  /** 工作台三步流：拾得色带去配色 */
+  onUseColor?: (hex: string) => void;
 }
 
 interface Swatch {
@@ -208,7 +210,7 @@ function MatchList({
   );
 }
 
-export default function PickerPage({ colors, onPickColor }: Props) {
+export default function PickerPage({ colors, onPickColor, onUseColor }: Props) {
   const [imgUrl, setImgUrl] = useState<string | null>(null);
   const [imgName, setImgName] = useState('');
   const [swatches, setSwatches] = useState<Swatch[]>([]);
@@ -336,14 +338,7 @@ export default function PickerPage({ colors, onPickColor }: Props) {
   };
 
   return (
-    <main className="wrap picker-page">
-      <header className="picker-head">
-        <h1 className="picker-title">拾色</h1>
-        <p className="picker-sub">从一帧光影里，拾取东方之色</p>
-      </header>
-
-      <hr className="hairline" />
-
+    <div className="picker-page">
       <input
         ref={fileInputRef}
         type="file"
@@ -466,9 +461,22 @@ export default function PickerPage({ colors, onPickColor }: Props) {
                 在左侧图片上点一下，「拾」起那一粒像素的颜色。
               </p>
             )}
+
+            {onUseColor && (picked || selSwatch) && (
+              <button
+                className="bench-next picker-use-btn"
+                onClick={() => onUseColor((picked ?? selSwatch)!.hex)}
+              >
+                <span
+                  className="bench-next-dot"
+                  style={{ background: (picked ?? selSwatch)!.hex }}
+                />
+                携此色去配色 →
+              </button>
+            )}
           </section>
         </div>
       )}
-    </main>
+    </div>
   );
 }

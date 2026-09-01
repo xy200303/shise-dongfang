@@ -92,11 +92,13 @@ const SELECT_OPTIONS = [
 interface Props {
   colors: ColorEntry[];
   onApplyTheme: (hex: string) => void;
+  /** 工作台三步流：从配色带来的基色 */
+  initialHex?: string;
 }
 
-export default function SandboxPage({ colors, onApplyTheme }: Props) {
-  const [hex, setHex] = useState(DEFAULT_HEX);
-  const [hexText, setHexText] = useState(DEFAULT_HEX);
+export default function SandboxPage({ colors, onApplyTheme, initialHex }: Props) {
+  const [hex, setHex] = useState(() => initialHex ?? DEFAULT_HEX);
+  const [hexText, setHexText] = useState(() => initialHex ?? DEFAULT_HEX);
   const [query, setQuery] = useState('');
   const [dialogVisible, setDialogVisible] = useState(false);
   const [switchOn, setSwitchOn] = useState(true);
@@ -193,14 +195,7 @@ export default function SandboxPage({ colors, onApplyTheme }: Props) {
   }, [tokens]);
 
   return (
-    <main className="wrap sandbox-page">
-      <header className="sandbox-head">
-        <h1 className="sandbox-title">组件沙盒</h1>
-        <p className="sandbox-sub">选一色，看整套 TDesign 组件实时换装</p>
-      </header>
-
-      <hr className="hairline" />
-
+    <div className="sandbox-page">
       <div className="sandbox-body">
         {/* 左：控制区 */}
         <aside className="sandbox-controls">
@@ -414,6 +409,6 @@ export default function SandboxPage({ colors, onApplyTheme }: Props) {
         </div>
         <p className="sandbox-note">评估基准：亮色容器底（{tokens.light['--td-bg-color-container']}）。</p>
       </section>
-    </main>
+    </div>
   );
 }

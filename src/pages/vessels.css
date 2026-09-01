@@ -1,0 +1,224 @@
+/* 器物馆：展台、图注与釉色栏 */
+
+.vessels-page {
+  padding-bottom: 48px;
+}
+
+.vessels-head {
+  padding: 56px 0 24px;
+}
+
+.vessels-title {
+  font-size: 32px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  margin: 0 0 8px;
+}
+
+.vessels-sub {
+  margin: 0;
+  color: var(--td-text-color-secondary);
+  font-size: 14px;
+  letter-spacing: 0.2em;
+}
+
+.vessels-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 24px;
+  justify-content: space-between;
+  padding: 16px 0;
+}
+
+/* 展台：宣纸/墨色随全局 token 走，器下有极淡投影 */
+.vessels-stage {
+  position: relative;
+  border: 1px solid var(--td-component-border);
+  border-radius: 16px;
+  background:
+    radial-gradient(120% 90% at 50% 0%, var(--td-bg-color-container) 0%, var(--td-bg-color-page) 78%);
+  overflow: hidden;
+}
+
+.vessels-canvas {
+  display: block;
+  width: 100%;
+  height: 520px;
+  cursor: grab;
+  touch-action: none;
+}
+
+.vessels-canvas:active {
+  cursor: grabbing;
+}
+
+.vessels-stage::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: 8%;
+  width: 46%;
+  height: 8%;
+  transform: translateX(-50%);
+  background: radial-gradient(closest-side, var(--td-bg-color-component-hover), transparent 72%);
+  pointer-events: none;
+}
+
+.vessels-stage.is-array::after {
+  width: 88%;
+}
+
+.vessels-stage-caption {
+  position: absolute;
+  left: 24px;
+  bottom: 18px;
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+  pointer-events: none;
+}
+
+.vessels-vessel-name {
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+}
+
+.vessels-vessel-desc {
+  font-size: 12px;
+  color: var(--td-text-color-secondary);
+  letter-spacing: 0.06em;
+}
+
+.vessels-failed {
+  height: 520px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--td-text-color-placeholder);
+  font-size: 12px;
+  letter-spacing: 0.3em;
+}
+
+/* 阵列图注：十级釉色芯片 */
+.vessels-scale-row {
+  display: flex;
+  justify-content: center;
+  gap: 4px;
+  margin-top: 14px;
+}
+
+.vessels-scale-chip {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  min-width: 56px;
+}
+
+.vessels-scale-dot {
+  width: 100%;
+  height: 10px;
+  border-radius: 5px;
+}
+
+.vessels-scale-label {
+  font-size: 11px;
+  color: var(--td-text-color-placeholder);
+}
+
+/* 当前釉色栏 */
+.vessels-colorbar {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-top: 24px;
+  padding: 16px 20px;
+  border: 1px solid var(--td-component-border);
+  border-radius: 12px;
+  background: var(--td-bg-color-container);
+}
+
+.vessels-colorchip {
+  width: 44px;
+  height: 44px;
+  border-radius: 10px;
+  flex: none;
+  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.06);
+}
+
+.vessels-colorinfo {
+  flex: 1;
+  min-width: 0;
+}
+
+.vessels-colorname {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+}
+
+.vessels-colorname em {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  color: var(--td-text-color-secondary);
+}
+
+.vessels-colorpoem {
+  margin: 4px 0 0;
+  font-size: 12px;
+  color: var(--td-text-color-secondary);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.vessels-colorpoem i {
+  font-style: normal;
+  opacity: 0.75;
+}
+
+.vessels-detail-btn {
+  flex: none;
+  padding: 8px 18px;
+  border: 1px solid var(--td-component-border);
+  border-radius: 8px;
+  background: transparent;
+  color: var(--td-text-color-primary);
+  font-size: 13px;
+  letter-spacing: 0.08em;
+  cursor: pointer;
+  transition: border-color 160ms ease-out, color 160ms ease-out;
+}
+
+.vessels-detail-btn:hover {
+  border-color: var(--td-brand-color);
+  color: var(--td-brand-color);
+}
+
+@media (max-width: 720px) {
+  .vessels-canvas {
+    height: 380px;
+  }
+
+  .vessels-failed {
+    height: 380px;
+  }
+
+  .vessels-stage-caption {
+    left: 16px;
+    bottom: 12px;
+    flex-direction: column;
+    gap: 2px;
+  }
+
+  .vessels-scale-chip {
+    min-width: 0;
+    flex: 1;
+  }
+}

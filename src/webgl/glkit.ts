@@ -37,6 +37,22 @@ export function mat4Perspective(fovY: number, aspect: number, near: number, far:
   return m;
 }
 
+export function mat4Translation(x: number, y: number, z: number): Mat4 {
+  const m = mat4Identity();
+  m[12] = x;
+  m[13] = y;
+  m[14] = z;
+  return m;
+}
+
+export function mat4UniformScale(s: number): Mat4 {
+  const m = mat4Identity();
+  m[0] = s;
+  m[5] = s;
+  m[10] = s;
+  return m;
+}
+
 export function mat4RotateY(rad: number): Mat4 {
   const c = Math.cos(rad);
   const s = Math.sin(rad);
@@ -211,6 +227,20 @@ export class OrbitCamera {
     this.disposers.forEach((d) => d());
     this.disposers = [];
     this.el = null;
+  }
+
+  /** 平滑转向指定方位角/极角/半径（走指数阻尼，不瞬跳） */
+  aim(o: { theta?: number; phi?: number; radius?: number }): void {
+    if (o.theta !== undefined) this.tTheta = o.theta;
+    if (o.phi !== undefined) this.tPhi = clamp(o.phi, this.opts.minPhi, this.opts.maxPhi);
+    if (o.radius !== undefined) this.tRadius = clamp(o.radius, this.opts.minRadius, this.opts.maxRadius);
+  }
+
+  /** 运行时调整缩放/俯仰限制与自转速度（场景切换时用） */
+  configure(o: { minRadius?: number; maxRadius?: number; autoRotateSpeed?: number }): void {
+    if (o.minRadius !== undefined) this.opts.minRadius = o.minRadius;
+    if (o.maxRadius !== undefined) this.opts.maxRadius = o.maxRadius;
+    if (o.autoRotateSpeed !== undefined) this.opts.autoRotateSpeed = o.autoRotateSpeed;
   }
 }
 

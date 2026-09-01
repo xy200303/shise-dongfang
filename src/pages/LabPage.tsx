@@ -1,4 +1,4 @@
-import { useMemo, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import { Button, MessagePlugin } from 'tdesign-react';
 import {
   apcaContrast,
@@ -238,11 +238,18 @@ interface Props {
   onPickColor: (c: ColorEntry) => void;
   /** 从分享链接 ?lab=rrggbb 进入时的初始基色 */
   initialBase?: string;
+  /** 工作台三步流：基色变更上抛，供「去应用」携带 */
+  onBaseChange?: (hex: string) => void;
 }
 
-export default function LabPage({ colors, onPickColor, initialBase }: Props) {
+export default function LabPage({ colors, onPickColor, initialBase, onBaseChange }: Props) {
   const [base, setBase] = useState(() => (initialBase && normalizeHex(initialBase)) || DEFAULT_BASE);
   const [hexText, setHexText] = useState(() => (initialBase && normalizeHex(initialBase)) || DEFAULT_BASE);
+
+  // 基色变更上抛（含挂载时的初始值，幂等无害）
+  useEffect(() => {
+    onBaseChange?.(base);
+  }, [base, onBaseChange]);
 
   const byHex = useMemo(
     () => new Map(colors.map((c) => [c.hex.toLowerCase(), c])),
@@ -309,14 +316,7 @@ export default function LabPage({ colors, onPickColor, initialBase }: Props) {
   };
 
   return (
-    <main className="wrap lab-page">
-      <header className="lab-head">
-        <h1 className="lab-title">配色实验室</h1>
-        <p className="lab-sub">以一色为基，推演和谐、校验对比、预览色阶</p>
-      </header>
-
-      <hr className="hairline" />
-
+    <div className="lab-page">
       {/* 基色 */}
       <section className="lab-section">
         <h2 className="lab-section-title">基色</h2>
@@ -513,6 +513,6 @@ export default function LabPage({ colors, onPickColor, initialBase }: Props) {
           <span>10</span>
         </div>
       </section>
-    </main>
+    </div>
   );
 }
