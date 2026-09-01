@@ -2,16 +2,25 @@
   "name": "shise-dongfang",
   "private": true,
   "version": "1.0.0",
-  "description": "拾色 · 东方 — 中国传统色主题馆：TDesign × OKLCH 色阶引擎",
+  "description": "拾色 · 东方 — 中国传统色主题馆（shise-engine × TDesign）",
   "type": "module",
   "scripts": {
-    "build": "pnpm -r build",
-    "test": "pnpm -r test",
-    "dev": "pnpm --filter gallery dev"
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "shise-engine": "github:xy200303/shise-engine#v1.2.0",
+    "tdesign-react": "^1.11.0"
   },
   "devDependencies": {
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "@vitejs/plugin-react": "^4.3.4",
     "typescript": "^5.6.0",
-    "vitest": "^2.1.0"
+    "vite": "^5.4.11"
   },
   "engines": {
     "node": ">=18"
