@@ -6,6 +6,7 @@ export type Route =
   | 'home'
   | 'terms'
   | 'gallery'
+  | 'zaowu'
   | 'bench'
   | 'favorites'
   | 'about';
@@ -23,6 +24,7 @@ const NAV: { key: Route; label: string }[] = [
   { key: 'home', label: '色谱' },
   { key: 'terms', label: '节气' },
   { key: 'gallery', label: '观色' },
+  { key: 'zaowu', label: '造物' },
   { key: 'bench', label: '工作台' },
 ];
 

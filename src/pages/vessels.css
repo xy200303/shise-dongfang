@@ -197,8 +197,8 @@
 }
 
 .vessels-detail-btn:hover {
-  border-color: var(--td-brand-color);
-  color: var(--td-brand-color);
+  border-color: var(--brand-text);
+  color: var(--brand-text);
 }
 
 @media (max-width: 720px) {

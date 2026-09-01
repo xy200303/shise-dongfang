@@ -47,7 +47,7 @@
 .terms-today-poem {
   margin: 32px 0 0;
   padding: 0 0 0 20px;
-  border-left: 2px solid var(--td-brand-color);
+  border-left: 2px solid var(--brand-text);
   font-family: var(--font-display);
   font-size: 18px;
   letter-spacing: 0.1em;
@@ -102,7 +102,7 @@
   transition: color 200ms ease-out;
 }
 .term-chip:hover .term-chip-name {
-  color: var(--td-brand-color);
+  color: var(--brand-text);
 }
 .term-chip-hex {
   font-family: var(--font-mono);
@@ -126,7 +126,7 @@
   font-size: 96px;
   font-weight: 600;
   line-height: 1;
-  color: var(--td-brand-color);
+  color: var(--brand-text);
   opacity: 0.9;
 }
 .terms-season-title {
@@ -185,8 +185,8 @@
   transition: border-color 200ms ease-out, background 200ms ease-out;
 }
 .term-card.current::before {
-  background: var(--td-brand-color);
-  border-color: var(--td-brand-color);
+  background: var(--brand-text);
+  border-color: var(--brand-text);
   box-shadow: 0 0 0 4px var(--td-brand-color-focus);
 }
 
@@ -231,7 +231,7 @@
   color: var(--td-text-color-primary);
 }
 .term-card.current .term-card-name {
-  color: var(--td-brand-color);
+  color: var(--brand-text);
 }
 .term-card-pinyin {
   font-family: var(--font-mono);
@@ -247,7 +247,7 @@
 .term-card-badge {
   padding: 2px 10px;
   border-radius: 4px;
-  background: var(--td-brand-color);
+  background: var(--brand-text);
   color: var(--td-text-color-anti);
   font-size: 11px;
   letter-spacing: 0.2em;

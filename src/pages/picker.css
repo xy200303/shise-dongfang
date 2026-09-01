@@ -4,7 +4,7 @@
  */
 
 .picker-page {
-  padding-block: 64px 96px;
+  padding-block: 24px 96px;
 }
 
 .picker-head {
@@ -41,7 +41,7 @@
 }
 .picker-drop:hover,
 .picker-drop.dragging {
-  border-color: var(--td-brand-color);
+  border-color: var(--brand-text);
   background: var(--td-bg-color-container);
 }
 .picker-drop .seal-placeholder {
@@ -80,7 +80,7 @@
   align-items: start;
 }
 .picker-body.dragging .picker-img-box {
-  outline: 1px dashed var(--td-brand-color);
+  outline: 1px dashed var(--brand-text);
   outline-offset: 8px;
 }
 
@@ -167,7 +167,7 @@
   border-color: var(--td-component-border);
 }
 .picker-swatch.active {
-  border-color: var(--td-brand-color);
+  border-color: var(--brand-text);
 }
 .picker-swatch-color {
   height: 40px;
@@ -302,7 +302,7 @@
 .match-de-label {
   font-size: 12px;
   letter-spacing: 0.1em;
-  color: var(--td-brand-color);
+  color: var(--brand-text);
 }
 
 .picker-pick-hint {

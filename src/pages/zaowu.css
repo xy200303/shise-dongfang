@@ -1,0 +1,282 @@
+/* 造物页：设计稿舞台 + 部件面板 */
+
+.zaowu-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 24px;
+  justify-content: space-between;
+  padding: 16px 0 20px;
+}
+
+.zaowu-group-label {
+  font-size: 12px;
+  letter-spacing: 0.2em;
+  color: var(--td-text-color-placeholder);
+  align-self: center;
+}
+
+.zaowu-body {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 360px;
+  gap: 28px;
+  align-items: start;
+}
+
+/* 设计稿舞台 */
+.zaowu-stage {
+  position: relative;
+  border: 1px solid var(--td-component-border);
+  border-radius: 16px;
+  background:
+    radial-gradient(120% 90% at 50% 0%, var(--td-bg-color-container) 0%, var(--td-bg-color-page) 78%);
+  overflow: hidden;
+}
+
+.zaowu-svg {
+  display: block;
+  width: 100%;
+  height: 560px;
+}
+
+.zaowu-stage-caption {
+  position: absolute;
+  left: 24px;
+  bottom: 18px;
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+  pointer-events: none;
+}
+
+.zaowu-vessel-name {
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+}
+
+.zaowu-vessel-desc {
+  font-size: 12px;
+  color: var(--td-text-color-secondary);
+  letter-spacing: 0.06em;
+}
+
+/* 右侧面板 */
+.zaowu-panel {
+  border: 1px solid var(--td-component-border);
+  border-radius: 16px;
+  background: var(--td-bg-color-container);
+  padding: 20px;
+}
+
+.zaowu-section-title {
+  margin: 0 0 12px;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  color: var(--td-text-color-secondary);
+}
+
+.zaowu-section-title:not(:first-child) {
+  margin-top: 20px;
+}
+
+.zaowu-base {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.zaowu-base-chip {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  flex: none;
+  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.06);
+}
+
+.zaowu-base-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.zaowu-base-name {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+}
+
+.zaowu-base-hex {
+  margin: 2px 0 0;
+  font-size: 12px;
+  color: var(--td-text-color-secondary);
+}
+
+.zaowu-mini-btn {
+  flex: none;
+  padding: 6px 14px;
+  border: 1px solid var(--td-component-border);
+  border-radius: 999px;
+  background: transparent;
+  color: var(--td-text-color-secondary);
+  font-size: 12px;
+  letter-spacing: 0.1em;
+  cursor: pointer;
+  transition: border-color 160ms ease-out, color 160ms ease-out;
+}
+
+.zaowu-mini-btn:hover {
+  border-color: var(--brand-text);
+  color: var(--brand-text);
+}
+
+/* 部件清单 */
+.zaowu-slots {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.zaowu-slot {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 8px 10px;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  background: transparent;
+  cursor: pointer;
+  transition: border-color 160ms ease-out, background 160ms ease-out;
+}
+
+.zaowu-slot:hover {
+  background: var(--td-bg-color-component-hover);
+}
+
+.zaowu-slot.active {
+  border-color: var(--brand-text);
+}
+
+.zaowu-slot-chip {
+  width: 26px;
+  height: 26px;
+  border-radius: 8px;
+  flex: none;
+  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.06);
+}
+
+.zaowu-slot-label {
+  flex: 1;
+  text-align: left;
+  font-size: 13px;
+  letter-spacing: 0.08em;
+  color: var(--td-text-color-primary);
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+}
+
+.zaowu-slot-role {
+  font-style: normal;
+  font-size: 11px;
+  color: var(--td-text-color-placeholder);
+}
+
+.zaowu-slot-hex {
+  font-size: 11px;
+  color: var(--td-text-color-secondary);
+}
+
+/* 候选色 */
+.zaowu-suggest {
+  margin-top: 14px;
+  padding-top: 14px;
+  border-top: 1px dashed var(--td-component-border);
+}
+
+.zaowu-suggest-title {
+  margin: 0 0 10px;
+  font-size: 12px;
+  letter-spacing: 0.1em;
+  color: var(--td-text-color-primary);
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.zaowu-suggest-sub {
+  font-size: 11px;
+  color: var(--td-text-color-placeholder);
+}
+
+.zaowu-suggest-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 6px;
+}
+
+.zaowu-suggest-chip {
+  aspect-ratio: 1 / 1;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.06);
+  transition: transform 140ms ease-out, box-shadow 140ms ease-out;
+}
+
+.zaowu-suggest-chip:hover {
+  transform: scale(1.12);
+}
+
+.zaowu-suggest-chip.active {
+  box-shadow: 0 0 0 2px var(--td-bg-color-container), 0 0 0 4px var(--brand-text);
+}
+
+/* 动作 */
+.zaowu-actions {
+  margin-top: 20px;
+  display: flex;
+  gap: 10px;
+}
+
+.zaowu-action-btn {
+  flex: 1;
+  padding: 10px 0;
+  border: 1px solid var(--td-component-border);
+  border-radius: 10px;
+  background: transparent;
+  color: var(--td-text-color-primary);
+  font-size: 13px;
+  letter-spacing: 0.1em;
+  cursor: pointer;
+  transition: border-color 160ms ease-out, color 160ms ease-out, background 160ms ease-out;
+}
+
+.zaowu-action-btn:hover {
+  border-color: var(--brand-text);
+  color: var(--brand-text);
+}
+
+.zaowu-action-btn.primary {
+  background: var(--brand-text);
+  border-color: var(--brand-text);
+  color: var(--td-bg-color-container);
+}
+
+.zaowu-action-btn.primary:hover {
+  opacity: 0.88;
+}
+
+@media (max-width: 992px) {
+  .zaowu-body {
+    grid-template-columns: 1fr;
+  }
+
+  .zaowu-svg {
+    height: 460px;
+  }
+}

@@ -1,4 +1,4 @@
-import { generateTheme, tokensToCss } from 'shise-engine';
+import { accessibleTextLevel, generateTheme, tokensToCss } from 'shise-engine';
 
 export type ThemeMode = 'light' | 'dark';
 
@@ -24,13 +24,26 @@ function ensureStyleTag(): HTMLStyleElement {
  * 分别注入 :root 与 :root[theme-mode="dark"]，并持久化主题色。
  */
 export function applyTheme(hex: string): void {
-  const { tokens } = generateTheme(hex);
+  const theme = generateTheme(hex);
+  const { tokens } = theme;
+  // 自定义界面的文字态品牌色：浅主题色直接用在页底上会看不清，
+  // 用引擎的 accessibleTextLevel 下沉到「在此页底上可作正文」的色级
+  const brandText = (scale: string[], pageBg: string): string => {
+    const lv = accessibleTextLevel(scale, pageBg);
+    return scale[lv ?? scale.length - 1];
+  };
+  const lightExtra = {
+    '--brand-text': brandText(theme.colors, tokens.light['--td-bg-color-page']),
+  };
+  const darkExtra = {
+    '--brand-text': brandText(theme.darkColors, tokens.dark['--td-bg-color-page']),
+  };
   // tdesign 默认样式含 :root[theme-mode="light"]（优先级高于裸 :root），
   // 亮色表需用同等优先级的选择器注入才能覆盖
   const css =
-    tokensToCss(tokens.light, ':root, :root[theme-mode="light"]') +
+    tokensToCss({ ...tokens.light, ...lightExtra }, ':root, :root[theme-mode="light"]') +
     '\n' +
-    tokensToCss(tokens.dark, ':root[theme-mode="dark"]');
+    tokensToCss({ ...tokens.dark, ...darkExtra }, ':root[theme-mode="dark"]');
   ensureStyleTag().textContent = css;
   try {
     localStorage.setItem(COLOR_KEY, hex);
