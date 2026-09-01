@@ -24,8 +24,8 @@ importers:
         specifier: ^18.3.1
         version: 18.3.1(react@18.3.1)
       shise-engine:
-        specifier: github:xy200303/shise-engine#v1.1.0
-        version: https://codeload.github.com/xy200303/shise-engine/tar.gz/c76e91f5264db45cdf53c68ba259e2c718bd9698
+        specifier: github:xy200303/shise-engine#v1.2.0
+        version: https://codeload.github.com/xy200303/shise-engine/tar.gz/45d76ecf809b4476d5ff968d92517fed439fad40
       tdesign-react:
         specifier: ^1.11.0
         version: 1.18.2(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
@@ -722,9 +722,9 @@ packages:
     resolution: {integrity: sha512-BR7VvDCVHO+q2xBEWskxS6DJE1qRnb7DxzUrogb71CWoSficBxYsiAGd+Kl0mmq/MprG9yArRkyrQxTO6XjMzA==}
     hasBin: true
 
-  shise-engine@https://codeload.github.com/xy200303/shise-engine/tar.gz/c76e91f5264db45cdf53c68ba259e2c718bd9698:
-    resolution: {tarball: https://codeload.github.com/xy200303/shise-engine/tar.gz/c76e91f5264db45cdf53c68ba259e2c718bd9698}
-    version: 1.1.0
+  shise-engine@https://codeload.github.com/xy200303/shise-engine/tar.gz/45d76ecf809b4476d5ff968d92517fed439fad40:
+    resolution: {tarball: https://codeload.github.com/xy200303/shise-engine/tar.gz/45d76ecf809b4476d5ff968d92517fed439fad40}
+    version: 1.2.0
     engines: {node: '>=18'}
 
   siginfo@2.0.0:
@@ -1461,7 +1461,7 @@ snapshots:
 
   semver@6.3.1: {}
 
-  shise-engine@https://codeload.github.com/xy200303/shise-engine/tar.gz/c76e91f5264db45cdf53c68ba259e2c718bd9698:
+  shise-engine@https://codeload.github.com/xy200303/shise-engine/tar.gz/45d76ecf809b4476d5ff968d92517fed439fad40:
     dependencies:
       apca-w3: 0.1.9
       culori: 4.0.2
