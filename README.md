@@ -20,13 +20,24 @@
 
 ## 技术栈
 
-- 色阶引擎 [`shise-engine`](https://github.com/xy200303/shise-engine)（Task 01 算法核心包）以 **git 依赖**形式直接安装使用，安装时自动构建，单一事实来源
-- `apps/gallery`：React 18 + TypeScript + tdesign-react + Vite
+- 色阶引擎 [`shise-engine`](https://github.com/xy200303/shise-engine)（Task 01 算法核心包）以 **git 依赖**（`#v1.2.0` tag 锁定）形式直接安装使用，单一事实来源
+- 本仓库为单一 Vite 应用：React 18 + TypeScript + tdesign-react + Vite
 
 ```bash
 pnpm install
-pnpm -r build               # 构建站点（产物 apps/gallery/dist）
-pnpm --filter gallery dev   # 本地开发
+pnpm build     # 构建站点（产物 dist/）
+pnpm dev       # 本地开发
+pnpm preview   # 本地预览生产构建
+```
+
+## 目录结构
+
+```
+shise-dongfang/
+├── src/            # 站点源码（pages / components / webgl / data）
+├── public/         # 静态资产（logo / favicon / CNAME）
+├── scripts/        # validate-colors.cjs 数据集校验
+└── docs/task02/    # 全流程文档与 Miora 资产
 ```
 
 ## 文档
