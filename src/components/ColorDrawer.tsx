@@ -19,6 +19,8 @@ interface Props {
   onPickColor: (c: ColorEntry) => void;
   /** 跳入器物馆（携带当前色） */
   onEnterVessels?: (hex: string) => void;
+  /** 跳入造物（携带当前色作基色） */
+  onEnterZaowu?: (hex: string) => void;
 }
 
 function hexToRgb(hex: string): [number, number, number] {
@@ -40,7 +42,7 @@ async function copyText(text: string, label: string) {
   MessagePlugin.success(`已复制 ${label}：${text}`);
 }
 
-export default function ColorDrawer({ color, mode, byHex, siblings, onClose, onSetTheme, onPickColor, onEnterVessels }: Props) {
+export default function ColorDrawer({ color, mode, byHex, siblings, onClose, onSetTheme, onPickColor, onEnterVessels, onEnterZaowu }: Props) {
   const favIds = useFavorites();
   const faved = color ? favIds.includes(color.id) : false;
 
@@ -232,6 +234,11 @@ export default function ColorDrawer({ color, mode, byHex, siblings, onClose, onS
             {onEnterVessels && (
               <button className="vessels-entry-btn" onClick={() => onEnterVessels(color.hex)}>
                 携此色入器物馆 →
+              </button>
+            )}
+            {onEnterZaowu && (
+              <button className="vessels-entry-btn" onClick={() => onEnterZaowu(color.hex)}>
+                携此色入造物 →
               </button>
             )}
           </div>

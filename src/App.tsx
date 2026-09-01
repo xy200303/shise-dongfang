@@ -20,6 +20,7 @@ import ColorDrawer from './components/ColorDrawer';
 import TermsPage from './pages/TermsPage';
 import GalleryPage, { type GalleryTab } from './pages/GalleryPage';
 import BenchPage from './pages/BenchPage';
+import ZaowuPage from './pages/ZaowuPage';
 
 const COLORS = rawColors as unknown as ColorEntry[];
 const COLORS_BY_HEX = new Map(COLORS.map((c) => [c.hex.toLowerCase(), c]));
@@ -66,16 +67,27 @@ function vesselHexFromUrl(): string | null {
   }
 }
 
+/** ?zao=rrggbb → 造物页初始基色 */
+function zaoHexFromUrl(): string | null {
+  try {
+    const v = new URLSearchParams(window.location.search).get('zao');
+    return v && /^#?[0-9a-fA-F]{3}([0-9a-fA-F]{3})?$/.test(v.trim()) ? v : null;
+  } catch {
+    return null;
+  }
+}
+
 export default function App() {
   const [mode, setMode] = useState<ThemeMode>(initialMode);
   const [themeColor, setThemeColor] = useState(initialColor);
   const [labBase] = useState(labBaseFromUrl);
   const [vesselHex, setVesselHex] = useState(vesselHexFromUrl);
+  const [zaoHex, setZaoHex] = useState(zaoHexFromUrl);
   const [galleryTab, setGalleryTab] = useState<GalleryTab>(
     vesselHexFromUrl() ? 'vessels' : 'starmap',
   );
   const [route, setRoute] = useState<Route>(
-    labBase ? 'bench' : vesselHexFromUrl() ? 'gallery' : 'home',
+    labBase ? 'bench' : vesselHexFromUrl() ? 'gallery' : zaoHexFromUrl() ? 'zaowu' : 'home',
   );
 
   const [season, setSeason] = useState<Season | '全'>('全');
@@ -144,6 +156,12 @@ export default function App() {
     setRoute('gallery');
   };
 
+  const enterZaowu = (hex: string) => {
+    setZaoHex(hex);
+    setSelected(null);
+    setRoute('zaowu');
+  };
+
   return (
     <>
       <TopBar
@@ -204,6 +222,10 @@ export default function App() {
           />
         )}
 
+        {route === 'zaowu' && (
+          <ZaowuPage colors={COLORS} initialHex={zaoHex ?? undefined} />
+        )}
+
         {route === 'favorites' && (
           <FavoritesPage
             colors={COLORS}
@@ -225,6 +247,7 @@ export default function App() {
         onSetTheme={handleSetTheme}
         onPickColor={setSelected}
         onEnterVessels={enterVessels}
+        onEnterZaowu={enterZaowu}
       />
     </>
   );

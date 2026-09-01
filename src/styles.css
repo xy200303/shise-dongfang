@@ -320,13 +320,13 @@ body::before {
     transform 200ms ease-out;
 }
 .season-btn:hover .season-btn-char {
-  color: var(--td-brand-color);
-  border-color: var(--td-brand-color);
+  color: var(--brand-text);
+  border-color: var(--brand-text);
   transform: translateY(-2px);
 }
 .season-btn.active .season-btn-char {
-  background: var(--td-brand-color);
-  border-color: var(--td-brand-color);
+  background: var(--brand-text);
+  border-color: var(--brand-text);
   color: var(--td-text-color-anti);
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
 }
@@ -339,7 +339,7 @@ body::before {
 }
 .season-btn:hover .season-btn-label,
 .season-btn.active .season-btn-label {
-  color: var(--td-brand-color);
+  color: var(--brand-text);
 }
 .season-divider {
   width: 1px;
@@ -396,11 +396,11 @@ body::before {
   transition: color 200ms ease-out, border-color 200ms ease-out;
 }
 .filter-tab:hover {
-  color: var(--td-brand-color);
+  color: var(--brand-text);
 }
 .filter-tab.active {
-  color: var(--td-brand-color);
-  border-bottom-color: var(--td-brand-color);
+  color: var(--brand-text);
+  border-bottom-color: var(--brand-text);
 }
 .search-box {
   position: relative;
@@ -489,8 +489,8 @@ body::before {
   transition: color 200ms ease-out, border-color 200ms ease-out;
 }
 .load-more-btn:hover {
-  color: var(--td-brand-color);
-  border-color: var(--td-brand-color);
+  color: var(--brand-text);
+  border-color: var(--brand-text);
 }
 
 /* ===== 页脚 ===== */
@@ -791,7 +791,7 @@ body::before {
 }
 .fav-btn.faved {
   opacity: 1;
-  color: var(--td-brand-color);
+  color: var(--brand-text);
 }
 .nav-badge {
   display: inline-block;
@@ -801,7 +801,7 @@ body::before {
   margin-left: 4px;
   padding: 0 4px;
   border-radius: 8px;
-  background: var(--td-brand-color);
+  background: var(--brand-text);
   color: var(--td-text-color-anti);
   font-size: 11px;
   text-align: center;
@@ -825,7 +825,7 @@ body::before {
 .favorites-count em {
   font-style: normal;
   font-family: var(--font-mono);
-  color: var(--td-brand-color);
+  color: var(--brand-text);
 }
 .favorites-empty {
   padding-block: 128px;
@@ -836,7 +836,7 @@ body::before {
   height: 88px;
   margin: 0 auto 32px;
   border-radius: 12px;
-  background: var(--td-brand-color);
+  background: var(--brand-text);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -924,13 +924,13 @@ body::before {
   margin-top: 16px;
 }
 .about-link {
-  color: var(--td-brand-color);
+  color: var(--brand-text);
   text-decoration: none;
   border-bottom: 1px solid transparent;
   transition: border-color 200ms ease-out;
 }
 .about-link:hover {
-  border-bottom-color: var(--td-brand-color);
+  border-bottom-color: var(--brand-text);
 }
 @media (max-width: 768px) {
   .about-head {
@@ -1026,8 +1026,8 @@ body::before {
   transition: border-color 160ms ease-out, color 160ms ease-out;
 }
 .vessels-entry-btn:hover {
-  border-color: var(--td-brand-color);
-  color: var(--td-brand-color);
+  border-color: var(--brand-text);
+  color: var(--brand-text);
 }
 
 /* ===== 页面骨架（全站统一：题头 → 发丝线 → 控制行 → 主区） ===== */
@@ -1090,7 +1090,7 @@ body::before {
   transition: color 200ms ease-out;
 }
 .color-card:hover .color-name {
-  color: var(--td-brand-color);
+  color: var(--brand-text);
 }
 
 /* ===== 工作台：三步流指示 ===== */
@@ -1129,11 +1129,11 @@ body::before {
   color: var(--td-text-color-placeholder);
 }
 .bench-step:hover {
-  color: var(--td-brand-color);
+  color: var(--brand-text);
 }
 .bench-step.active {
-  color: var(--td-brand-color);
-  border-bottom-color: var(--td-brand-color);
+  color: var(--brand-text);
+  border-bottom-color: var(--brand-text);
 }
 .bench-step-sep {
   width: 44px;
@@ -1159,8 +1159,8 @@ body::before {
   transition: border-color 200ms ease-out, color 200ms ease-out, transform 200ms ease-out;
 }
 .bench-next:hover {
-  border-color: var(--td-brand-color);
-  color: var(--td-brand-color);
+  border-color: var(--brand-text);
+  color: var(--brand-text);
   transform: translateX(2px);
 }
 .bench-next-dot {
@@ -1201,8 +1201,8 @@ body::before {
   transition: border-color 200ms ease-out, color 200ms ease-out;
 }
 .drawer-sib-btn:hover {
-  border-color: var(--td-brand-color);
-  color: var(--td-brand-color);
+  border-color: var(--brand-text);
+  color: var(--brand-text);
 }
 .drawer-sib-hint {
   font-size: 11px;

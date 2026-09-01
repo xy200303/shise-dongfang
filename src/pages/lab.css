@@ -3,7 +3,7 @@
  */
 
 .lab-page {
-  padding-block: 80px 96px;
+  padding-block: 24px 96px;
 }
 
 .lab-head {
@@ -194,7 +194,7 @@
   transition: color 150ms ease-out;
 }
 .lab-match:hover {
-  color: var(--td-brand-color);
+  color: var(--brand-text);
 }
 .lab-match i {
   width: 12px;
