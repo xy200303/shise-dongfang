@@ -11,7 +11,7 @@
   "dependencies": {
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
-    "shise-engine": "github:xy200303/shise-engine#v1.1.0",
+    "shise-engine": "github:xy200303/shise-engine#v1.2.0",
     "tdesign-react": "^1.11.0"
   },
   "devDependencies": {
