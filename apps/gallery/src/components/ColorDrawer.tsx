@@ -1,10 +1,12 @@
-import { useMemo } from 'react';
+import { lazy, Suspense, useMemo } from 'react';
 import { Button, Drawer, MessagePlugin } from 'tdesign-react';
 import { bestTextOn, generateTheme, harmonyColors, resolveBase, usageHint } from 'shise-engine';
 import { toggleFavorite, useFavorites } from '../favorites';
 import { exportShareCard } from '../share';
 import type { ThemeMode } from '../theme';
 import type { ColorEntry } from '../types';
+
+const GlazeCanvas = lazy(() => import('../webgl/GlazeCanvas'));
 
 interface Props {
   color: ColorEntry | null;
@@ -180,6 +182,14 @@ export default function ColorDrawer({ color, mode, byHex, onClose, onSetTheme, o
               <span>1</span>
               <span>14</span>
             </div>
+          </div>
+
+          <div className="drawer-section">
+            <h3 className="drawer-section-title">釉色 · 器物</h3>
+            <Suspense fallback={<div className="glaze-loading">器物备展中</div>}>
+              <GlazeCanvas hex={color.hex} />
+            </Suspense>
+            <p className="a11y-note">釉面随所选色实时换染 · 拖拽旋转</p>
           </div>
 
           <div className="drawer-section">

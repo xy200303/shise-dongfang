@@ -169,6 +169,63 @@
 .starmap-legend-dot-dim {
   opacity: 0.4;
 }
+.starmap-legend-dot-wire {
+  background: transparent;
+  border: 1px dashed var(--td-text-color-placeholder);
+}
+
+/* ===== 3D 漫游视图 ===== */
+.starmap-space {
+  position: relative;
+  height: 560px;
+  max-width: 960px;
+  margin: 0 auto;
+  border: 1px solid var(--td-component-border);
+  border-radius: 12px;
+  overflow: hidden;
+}
+.starmap-space-canvas {
+  display: block;
+  width: 100%;
+  height: 100%;
+  cursor: grab;
+  touch-action: none;
+}
+.starmap-space-canvas:active {
+  cursor: grabbing;
+}
+/* 懒加载/失败占位：细线框 + 极简文案 */
+.starmap-space-loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background:
+    repeating-linear-gradient(
+      0deg,
+      transparent 0 55px,
+      var(--td-component-border) 55px 56px
+    ),
+    repeating-linear-gradient(
+      90deg,
+      transparent 0 55px,
+      var(--td-component-border) 55px 56px
+    );
+}
+.starmap-space-loading span {
+  font-size: 13px;
+  letter-spacing: 0.3em;
+  color: var(--td-text-color-placeholder);
+  background: var(--td-bg-color-container);
+  padding: 8px 16px;
+  border: 1px solid var(--td-component-border);
+  border-radius: 999px;
+}
+
+@media (max-width: 960px) {
+  .starmap-space {
+    height: 420px;
+  }
+}
 
 @media (max-width: 960px) {
   .starmap-legend-grid {

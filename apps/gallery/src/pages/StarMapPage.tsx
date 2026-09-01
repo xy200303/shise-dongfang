@@ -1,9 +1,12 @@
-import { useMemo, useRef, useState } from 'react';
+import { lazy, Suspense, useMemo, useRef, useState } from 'react';
 import { converter, HUE_ZONES } from 'shise-engine';
 import type { Oklch } from 'shise-engine';
 import type { Category, ColorEntry, Season } from '../types';
 import { CATEGORY_TABS, SEASONS } from '../types';
 import './starmap.css';
+
+// 3D 漫游视图懒加载：与详情抽屉的 WebGL 场景一样按需进包
+const SpaceCanvas = lazy(() => import('../webgl/SpaceCanvas'));
 
 const C_MAX = 0.37; // 数据集彩度上限（半径归一化基准）
 const SIZE = 780;
@@ -58,7 +61,7 @@ function scatterXY(c: number, l: number): [number, number] {
 }
 
 export default function StarMapPage({ colors, onPickColor }: Props) {
-  const [view, setView] = useState<'polar' | 'scatter'>('polar');
+  const [view, setView] = useState<'polar' | 'scatter' | 'space'>('polar');
   const [cat, setCat] = useState<Category | null>(null);
   const [season, setSeason] = useState<Season | null>(null);
   const [hover, setHover] = useState<{ entry: ColorEntry; x: number; y: number } | null>(null);
@@ -76,6 +79,17 @@ export default function StarMapPage({ colors, onPickColor }: Props) {
   const isLit = (p: StarPoint) =>
     (!cat || p.entry.category === cat) &&
     (!season || p.entry.season === season || p.entry.season === '四季');
+
+  // 3D 视图沿用同一套筛选：未选中的色直接从点云移除
+  const filteredColors = useMemo(
+    () =>
+      colors.filter(
+        (c) =>
+          (!cat || c.category === cat) &&
+          (!season || c.season === season || c.season === '四季'),
+      ),
+    [colors, cat, season],
+  );
 
   const onDotHover = (e: React.MouseEvent, entry: ColorEntry) => {
     const box = chartRef.current?.getBoundingClientRect();
@@ -159,6 +173,12 @@ export default function StarMapPage({ colors, onPickColor }: Props) {
           >
             散点 · 明度×彩度
           </button>
+          <button
+            className={`filter-tab${view === 'space' ? ' active' : ''}`}
+            onClick={() => setView('space')}
+          >
+            3D 漫游 · 色彩空间
+          </button>
         </div>
         <div className="filter-tabs">
           <button
@@ -201,7 +221,17 @@ export default function StarMapPage({ colors, onPickColor }: Props) {
 
       {/* 星图 */}
       <div className="starmap-chart" ref={chartRef}>
-        {view === 'polar' ? (
+        {view === 'space' ? (
+          <Suspense
+            fallback={
+              <div className="starmap-space starmap-space-loading">
+                <span>星图展开中…</span>
+              </div>
+            }
+          >
+            <SpaceCanvas colors={filteredColors} onPickColor={onPickColor} />
+          </Suspense>
+        ) : view === 'polar' ? (
           <svg viewBox={`0 0 ${SIZE} ${SIZE}`} className="starmap-svg" role="img" aria-label="色彩星图（极坐标）">
             {/* 彩度参考环 */}
             {[0.1, 0.2, 0.3, C_MAX].map((c) => (
@@ -334,6 +364,15 @@ export default function StarMapPage({ colors, onPickColor }: Props) {
               <strong>大小与明度同行。</strong>点越大、越亮，明度 L 越高。
               为什么这样看 537 色：色相、彩度、明度是感知均匀的三根轴，
               按它们布星，相近的色互为近邻，色系的聚散、四季的冷暖，一眼可辨。
+            </p>
+          </div>
+          <div className="starmap-legend-item">
+            <span className="starmap-legend-dot starmap-legend-dot-wire" />
+            <p>
+              <strong>3D 漫游把星图立起来。</strong>角度即色相、高度即明度、半径即彩度，
+              拖拽旋转、滚轮推近。最外层那圈灰色线框是 sRGB 色域的包络——
+              即色阶引擎在每组明度/色相下可取的最大彩度 Cmax(L,H)；
+              全部 537 色都安住于这层壳内，中央淡线为明度中轴（L 0→1）。
             </p>
           </div>
         </div>
