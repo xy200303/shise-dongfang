@@ -18,7 +18,7 @@ import FavoritesPage from './components/FavoritesPage';
 import AboutPage from './components/AboutPage';
 import ColorDrawer from './components/ColorDrawer';
 import TermsPage from './pages/TermsPage';
-import GalleryPage, { type GalleryTab } from './pages/GalleryPage';
+import GalleryPage from './pages/GalleryPage';
 import BenchPage from './pages/BenchPage';
 import ZaowuPage from './pages/ZaowuPage';
 
@@ -57,7 +57,7 @@ function labBaseFromUrl(): string | null {
   }
 }
 
-/** ?vessel=rrggbb → 观色页器物签初始釉色 */
+/** 旧链 ?vessel=rrggbb（原观色页器物签）→ 改指造物页「釉色器物」条目 */
 function vesselHexFromUrl(): string | null {
   try {
     const v = new URLSearchParams(window.location.search).get('vessel');
@@ -77,17 +77,29 @@ function zaoHexFromUrl(): string | null {
   }
 }
 
+/** ?stage=<器架条目id> → 造物页器架选中项（如 stage=vessels 直入釉色器物） */
+function zaoStageFromUrl(): string | null {
+  try {
+    return new URLSearchParams(window.location.search).get('stage');
+  } catch {
+    return null;
+  }
+}
+
 export default function App() {
   const [mode, setMode] = useState<ThemeMode>(initialMode);
   const [themeColor, setThemeColor] = useState(initialColor);
   const [labBase] = useState(labBaseFromUrl);
-  const [vesselHex, setVesselHex] = useState(vesselHexFromUrl);
-  const [zaoHex, setZaoHex] = useState(zaoHexFromUrl);
-  const [galleryTab, setGalleryTab] = useState<GalleryTab>(
-    vesselHexFromUrl() ? 'vessels' : 'starmap',
+  const [zaoHex, setZaoHex] = useState(() => zaoHexFromUrl() ?? vesselHexFromUrl());
+  const [zaoStage, setZaoStage] = useState<string | null>(
+    () => zaoStageFromUrl() ?? (vesselHexFromUrl() ? 'vessels' : null),
   );
   const [route, setRoute] = useState<Route>(
-    labBase ? 'bench' : vesselHexFromUrl() ? 'gallery' : zaoHexFromUrl() ? 'zaowu' : 'home',
+    labBase
+      ? 'bench'
+      : (zaoHexFromUrl() ?? vesselHexFromUrl() ?? zaoStageFromUrl())
+        ? 'zaowu'
+        : 'home',
   );
 
   const [season, setSeason] = useState<Season | '全'>('全');
@@ -149,15 +161,17 @@ export default function App() {
     MessagePlugin.success(`已将「${entry?.name ?? hex}」设为全站主题`);
   };
 
+  /** 抽屉「携此色试釉」：器物已并入造物器架，跳造物页并选中「釉色器物」 */
   const enterVessels = (hex: string) => {
-    setVesselHex(hex);
-    setGalleryTab('vessels');
+    setZaoHex(hex);
+    setZaoStage('vessels');
     setSelected(null);
-    setRoute('gallery');
+    setRoute('zaowu');
   };
 
   const enterZaowu = (hex: string) => {
     setZaoHex(hex);
+    setZaoStage(null);
     setSelected(null);
     setRoute('zaowu');
   };
@@ -183,6 +197,7 @@ export default function App() {
             </div>
             <section className="wrap wall" ref={wallRef}>
               <FilterBar
+                colors={COLORS}
                 category={category}
                 onCategoryChange={setCategory}
                 search={search}
@@ -200,16 +215,8 @@ export default function App() {
 
         {route === 'terms' && <TermsPage colors={COLORS} onPickColor={setSelected} />}
 
-        {route === 'gallery' && (
-          <GalleryPage
-            colors={COLORS}
-            mode={mode}
-            onModeChange={setMode}
-            onPickColor={setSelected}
-            tab={galleryTab}
-            onTabChange={setGalleryTab}
-            vesselHex={vesselHex ?? undefined}
-          />
+        {route === 'starmap' && (
+          <GalleryPage colors={COLORS} onPickColor={setSelected} />
         )}
 
         {route === 'bench' && (
@@ -223,7 +230,14 @@ export default function App() {
         )}
 
         {route === 'zaowu' && (
-          <ZaowuPage colors={COLORS} initialHex={zaoHex ?? undefined} />
+          <ZaowuPage
+            colors={COLORS}
+            initialHex={zaoHex ?? undefined}
+            initialStage={zaoStage ?? undefined}
+            mode={mode}
+            onModeChange={setMode}
+            onPickColor={setSelected}
+          />
         )}
 
         {route === 'favorites' && (

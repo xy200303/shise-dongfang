@@ -1,12 +1,10 @@
-import { lazy, Suspense, useEffect, useMemo } from 'react';
+import { useEffect, useMemo } from 'react';
 import { Button, Drawer, MessagePlugin } from 'tdesign-react';
 import { bestTextOn, generateTheme, harmonyColors, resolveBase, usageHint } from 'shise-engine';
 import { toggleFavorite, useFavorites } from '../favorites';
 import { exportShareCard } from '../share';
 import type { ThemeMode } from '../theme';
 import type { ColorEntry } from '../types';
-
-const GlazeCanvas = lazy(() => import('../webgl/GlazeCanvas'));
 
 interface Props {
   color: ColorEntry | null;
@@ -17,7 +15,7 @@ interface Props {
   onClose: () => void;
   onSetTheme: (hex: string) => void;
   onPickColor: (c: ColorEntry) => void;
-  /** 跳入器物馆（携带当前色） */
+  /** 跳入造物页「釉色器物」条目（携带当前色试釉） */
   onEnterVessels?: (hex: string) => void;
   /** 跳入造物（携带当前色作基色） */
   onEnterZaowu?: (hex: string) => void;
@@ -226,14 +224,11 @@ export default function ColorDrawer({ color, mode, byHex, siblings, onClose, onS
           </div>
 
           <div className="drawer-section">
-            <h3 className="drawer-section-title">釉色 · 器物</h3>
-            <Suspense fallback={<div className="glaze-loading">器物备展中</div>}>
-              <GlazeCanvas hex={color.hex} />
-            </Suspense>
-            <p className="a11y-note">釉面随所选色实时换染 · 拖拽旋转</p>
+            <h3 className="drawer-section-title">造物 · 应用</h3>
+            <p className="a11y-note">釉色器物与织造人台皆在造物</p>
             {onEnterVessels && (
               <button className="vessels-entry-btn" onClick={() => onEnterVessels(color.hex)}>
-                携此色入器物馆 →
+                携此色入造物试釉 →
               </button>
             )}
             {onEnterZaowu && (

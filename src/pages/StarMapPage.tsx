@@ -1,12 +1,24 @@
 import { lazy, Suspense, useMemo, useRef, useState } from 'react';
+import type { CSSProperties } from 'react';
 import { converter, HUE_ZONES } from 'shise-engine';
 import type { Oklch } from 'shise-engine';
 import type { Category, ColorEntry, Season } from '../types';
-import { CATEGORY_TABS, SEASONS } from '../types';
+import { SEASONS } from '../types';
+import { seasonRep } from '../colorReps';
+import Seg from '../components/Seg';
+import HueRibbon from '../components/HueRibbon';
 import './starmap.css';
 
 // 3D 漫游视图懒加载：与详情抽屉的 WebGL 场景一样按需进包
 const SpaceCanvas = lazy(() => import('../webgl/SpaceCanvas'));
+
+/** 视图切换（分段胶囊的选项与文案） */
+type ViewKey = 'polar' | 'scatter' | 'space';
+const VIEWS: { key: ViewKey; label: string }[] = [
+  { key: 'polar', label: '极坐标 · 色相×彩度' },
+  { key: 'scatter', label: '散点 · 明度×彩度' },
+  { key: 'space', label: '3D 漫游 · 色彩空间' },
+];
 
 const C_MAX = 0.37; // 数据集彩度上限（半径归一化基准）
 const SIZE = 780;
@@ -61,11 +73,17 @@ function scatterXY(c: number, l: number): [number, number] {
 }
 
 export default function StarMapPage({ colors, onPickColor }: Props) {
-  const [view, setView] = useState<'polar' | 'scatter' | 'space'>('polar');
+  const [view, setView] = useState<ViewKey>('polar');
   const [cat, setCat] = useState<Category | null>(null);
   const [season, setSeason] = useState<Season | null>(null);
   const [hover, setHover] = useState<{ entry: ColorEntry; x: number; y: number } | null>(null);
   const chartRef = useRef<HTMLDivElement>(null);
+
+  // 季节签的意象色：族锁定 + 灰润取色（见 colorReps）；族代表色由 HueRibbon 自算
+  const seasonReps = useMemo(
+    () => new Map(SEASONS.map((s) => [s, seasonRep(colors, s)])),
+    [colors],
+  );
 
   const points = useMemo<StarPoint[]>(
     () =>
@@ -151,62 +169,37 @@ export default function StarMapPage({ colors, onPickColor }: Props) {
 
   return (
     <div className="starmap-page">
-      {/* 控制行：视图切换 + 筛选 */}
+      {/* 控制行：视图切换（分段胶囊）+ 色相绸带 + 季节签 */}
       <div className="starmap-controls">
-        <div className="filter-tabs">
-          <button
-            className={`filter-tab${view === 'polar' ? ' active' : ''}`}
-            onClick={() => setView('polar')}
-          >
-            极坐标 · 色相×彩度
-          </button>
-          <button
-            className={`filter-tab${view === 'scatter' ? ' active' : ''}`}
-            onClick={() => setView('scatter')}
-          >
-            散点 · 明度×彩度
-          </button>
-          <button
-            className={`filter-tab${view === 'space' ? ' active' : ''}`}
-            onClick={() => setView('space')}
-          >
-            3D 漫游 · 色彩空间
-          </button>
-        </div>
-        <div className="filter-tabs">
-          <button
-            className={`filter-tab${!cat && !season ? ' active' : ''}`}
-            onClick={() => {
+        <Seg options={VIEWS} value={view} onChange={setView} />
+        <HueRibbon
+          colors={colors}
+          value={cat ?? 'all'}
+          onChange={(v) => {
+            if (v === 'all') {
               setCat(null);
               setSeason(null);
-            }}
-          >
-            全部
-          </button>
-          <span className="starmap-ctrl-divider" />
-          {CATEGORY_TABS.map((t) => (
-            <button
-              key={t.key}
-              className={`filter-tab${cat === t.key ? ' active' : ''}`}
-              onClick={() => {
-                setCat(cat === t.key ? null : t.key);
-                setSeason(null);
-              }}
-            >
-              {t.label}
-            </button>
-          ))}
-          <span className="starmap-ctrl-divider" />
+            } else {
+              setCat(v);
+              setSeason(null);
+            }
+          }}
+        />
+        <div className="chip-row chip-row-compact starmap-season-row">
           {SEASONS.map((s) => (
             <button
               key={s}
-              className={`filter-tab${season === s ? ' active' : ''}`}
+              className={`chip-dot${season === s ? ' active' : ''}`}
               onClick={() => {
                 setSeason(season === s ? null : s);
                 setCat(null);
               }}
             >
-              {s}
+              <span
+                className="chip-dot-dot"
+                style={{ '--dot': seasonReps.get(s) ?? undefined } as CSSProperties}
+              />
+              <span className="chip-dot-name">{s}</span>
             </button>
           ))}
         </div>

@@ -5,3 +5,7 @@ dist
 *.log
 __pycache__/
 *.tsbuildinfo
+
+# 本地验证产物（截图/调试脚本）
+shots/
+scripts/

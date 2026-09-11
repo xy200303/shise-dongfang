@@ -5,7 +5,7 @@ import type { ThemeMode } from '../theme';
 export type Route =
   | 'home'
   | 'terms'
-  | 'gallery'
+  | 'starmap'
   | 'zaowu'
   | 'bench'
   | 'favorites'
@@ -19,11 +19,11 @@ interface Props {
   themeColor: string;
 }
 
-/** 主导航：两条叙事线——看色（色谱/节气/观色）与用色（工作台） */
+/** 主导航：两条叙事线——看色（色谱/节气/星图）与用色（造物/工作台） */
 const NAV: { key: Route; label: string }[] = [
   { key: 'home', label: '色谱' },
   { key: 'terms', label: '节气' },
-  { key: 'gallery', label: '观色' },
+  { key: 'starmap', label: '星图' },
   { key: 'zaowu', label: '造物' },
   { key: 'bench', label: '工作台' },
 ];

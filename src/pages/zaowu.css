@@ -4,7 +4,7 @@
   display: flex;
   flex-wrap: wrap;
   gap: 12px 24px;
-  justify-content: space-between;
+  justify-content: flex-end;
   padding: 16px 0 20px;
 }
 
@@ -17,9 +17,132 @@
 
 .zaowu-body {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) 360px;
+  grid-template-columns: 188px minmax(0, 1fr) 360px;
   gap: 28px;
   align-items: start;
+}
+
+/* 器物展陈：占满舞台与面板区 */
+.zaowu-body.is-vessels {
+  grid-template-columns: 188px minmax(0, 1fr);
+}
+
+.zaowu-vessels {
+  min-width: 0;
+}
+
+/* ===== 器架栏 ===== */
+.zaowu-rack {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  padding: 6px 0;
+}
+
+.zaowu-rack-group {
+  display: flex;
+  align-items: stretch;
+  gap: 12px;
+}
+
+/* 分类签：竖排墨色小字，右侧发丝线 */
+.zaowu-rack-cat {
+  writing-mode: vertical-rl;
+  flex: none;
+  padding: 2px 8px 2px 0;
+  border-right: 1px solid var(--td-component-border);
+  font-size: 12px;
+  letter-spacing: 0.4em;
+  color: var(--td-text-color-placeholder);
+  user-select: none;
+}
+
+.zaowu-rack-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.zaowu-rack-item {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 7px 10px;
+  border: none;
+  border-radius: 10px;
+  background: transparent;
+  color: var(--td-text-color-secondary);
+  cursor: pointer;
+  transition:
+    transform 160ms ease-out,
+    background 160ms ease-out,
+    color 160ms ease-out;
+}
+
+.zaowu-rack-item:hover {
+  background: var(--td-bg-color-component-hover);
+  color: var(--td-text-color-primary);
+  transform: translateY(-1px);
+}
+
+/* 选中态：朱砂竖线 + 淡晕染底 + 名称加重 */
+.zaowu-rack-item.active {
+  background: color-mix(in srgb, var(--brand-text) 8%, transparent);
+  color: var(--td-text-color-primary);
+}
+
+.zaowu-rack-item.active::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 8px;
+  bottom: 8px;
+  width: 2px;
+  border-radius: 2px;
+  background: var(--brand-text);
+}
+
+.zaowu-rack-item.active .zaowu-rack-name {
+  font-weight: 600;
+}
+
+.zaowu-rack-icon {
+  width: 22px;
+  height: 22px;
+  flex: none;
+  color: var(--td-text-color-placeholder);
+  transition: color 160ms ease-out;
+}
+
+.zaowu-rack-item:hover .zaowu-rack-icon,
+.zaowu-rack-item.active .zaowu-rack-icon {
+  color: var(--brand-text);
+}
+
+.zaowu-rack-name {
+  font-size: 13px;
+  letter-spacing: 0.1em;
+  white-space: nowrap;
+}
+
+/* 3D 条目小签 */
+.zaowu-rack-tag {
+  font-style: normal;
+  font-size: 9px;
+  letter-spacing: 0.05em;
+  padding: 1px 4px;
+  border: 1px solid var(--td-component-border);
+  border-radius: 4px;
+  color: var(--td-text-color-placeholder);
+  transform: scale(0.9);
+  transform-origin: left center;
 }
 
 /* 设计稿舞台 */
@@ -46,6 +169,13 @@
   align-items: baseline;
   gap: 12px;
   pointer-events: none;
+  padding: 8px 14px;
+  border-radius: 10px;
+  border: 1px solid color-mix(in srgb, var(--td-component-border) 65%, transparent);
+  /* 磨砂底片：宣纸/墨夜/月庭任意场景下文字都清晰 */
+  background: color-mix(in srgb, var(--td-bg-color-container) 58%, transparent);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
 }
 
 .zaowu-vessel-name {
@@ -272,11 +402,130 @@
 }
 
 @media (max-width: 992px) {
-  .zaowu-body {
+  .zaowu-body,
+  .zaowu-body.is-vessels {
     grid-template-columns: 1fr;
   }
 
+  /* 器架退化为舞台上方横滑卡片条 */
+  .zaowu-rack {
+    flex-direction: row;
+    gap: 18px;
+    overflow-x: auto;
+    padding: 2px 2px 10px;
+    scrollbar-width: thin;
+  }
+
+  .zaowu-rack-group {
+    flex: none;
+    gap: 8px;
+  }
+
+  .zaowu-rack-list {
+    flex-direction: row;
+    gap: 6px;
+  }
+
+  .zaowu-rack-item {
+    width: auto;
+    flex-direction: column;
+    gap: 5px;
+    padding: 8px 12px;
+  }
+
+  .zaowu-rack-item.active::before {
+    left: 12px;
+    right: 12px;
+    top: auto;
+    bottom: 0;
+    width: auto;
+    height: 2px;
+  }
+
   .zaowu-svg {
+    height: 460px;
+  }
+}
+
+/* 试穿间 3D 舞台 */
+.zaowu-fitting {
+  position: relative;
+  height: 560px;
+}
+
+/* 试穿间台上控件：场景 / 动画两组分段胶囊 */
+.fitting-toolbar {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 8px;
+}
+
+.fitting-toolbar .seg-item {
+  padding: 5px 13px;
+  font-size: 12px;
+}
+
+/* 纹样选择器 */
+.zaowu-pattern-grid {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.zaowu-pattern-grid .ghost-btn.active {
+  border-color: var(--brand-text);
+  color: var(--brand-text);
+  font-weight: 600;
+}
+
+@media (max-width: 992px) {
+  .fitting-toolbar {
+    top: 10px;
+    right: 10px;
+    gap: 6px;
+  }
+
+  .fitting-toolbar .seg-item {
+    padding: 4px 10px;
+  }
+}
+
+.zaowu-fitting canvas {
+  display: block;
+  outline: none;
+}
+
+.zaowu-fitting-veil {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--td-text-color-secondary);
+  font-size: 14px;
+  letter-spacing: 0.3em;
+  text-indent: 0.3em;
+  pointer-events: none;
+  animation: zaowu-fitting-breathe 1.8s ease-in-out infinite;
+}
+
+@keyframes zaowu-fitting-breathe {
+  0%,
+  100% {
+    opacity: 0.45;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 992px) {
+  .zaowu-fitting {
     height: 460px;
   }
 }

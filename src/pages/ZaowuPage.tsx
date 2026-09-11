@@ -5,35 +5,85 @@
  * 选一件衣物或物件，挑一条配色规则，引擎即把基色推演成整案
  * （主/辅/缘/系/里/纹各安其位）；每个部件还可再手调，
  * 候选色全部来自引擎色阶与和谐推演。设计稿可导出 PNG。
+ *
+ * 模板切换为左侧「器架」栏：服饰 / 物件 / 器物 / 试穿四组。
+ * 「器物」是原观色页的釉色器物展（VesselsPage），并入后自占舞台与面板区，
+ * 造物的基色/部件/规则控制让位；「试穿」是 3D 试穿间（zaowu/fitting），
+ * 同一套插槽/规则语义，染色落到 KayKit 角色的调色板图集上。
  */
 import { useMemo, useRef, useState } from 'react';
 import { MessagePlugin } from 'tdesign-react';
+import type { ThemeMode } from '../theme';
 import type { ColorEntry } from '../types';
-import { RULES, ROLE_LABEL, type RuleId, type SlotDef } from '../zaowu/types';
+import { RULES, ROLE_LABEL, type RuleId, type SlotDef, type TemplateDef } from '../zaowu/types';
 import { solveScheme, slotSuggestions } from '../zaowu/solver';
 import { TEMPLATES } from '../zaowu/templates';
+import { FITTINGS } from '../zaowu/fitting/templates';
+import type { FittingDef } from '../zaowu/fitting/types';
+import FittingRoom from '../zaowu/fitting/FittingRoom';
+import { PATTERN_CHOICES, type PatternKind } from '../zaowu/fitting/patterns';
+import { OBJECTS_3D } from '../zaowu/objects3d/templates';
+import type { Object3DDef } from '../zaowu/objects3d/types';
+import ObjectRoom from '../zaowu/objects3d/ObjectRoom';
+import RackIcon from '../zaowu/RackIcon';
+import VesselsPage from './VesselsPage';
 import './zaowu.css';
+
+/** 「器物」条目：釉色器物展，舞台整区渲染 VesselsPage */
+const VESSELS_STAGE = {
+  id: 'vessels',
+  name: '釉色器物',
+  kind: '器物',
+  desc: '引擎釉色的 3D 展陈台',
+} as const;
+
+/** 2D 模板 + 程序化 3D 物件 + 器物展 + 3D 人台统一登记，按 id 取用 */
+type StageDef = TemplateDef | Object3DDef | FittingDef | typeof VESSELS_STAGE;
+
+/** 器架分组：类目签 → 条目（物件组：团扇保持 2D，伞/灯为程序化 3D） */
+const RACK: { label: string; items: StageDef[] }[] = [
+  { label: '服饰', items: TEMPLATES.filter((t) => t.kind === '服饰') },
+  { label: '物件', items: [...TEMPLATES.filter((t) => t.id === 'tuan'), ...OBJECTS_3D] },
+  { label: '器物', items: [VESSELS_STAGE] },
+  { label: '试穿', items: FITTINGS },
+];
+const STAGES: StageDef[] = RACK.flatMap((g) => g.items);
+
+/** 需要 WebGL 舞台的条目（器架上缀「3D」小签） */
+const is3D = (t: StageDef) => t.kind !== '服饰' && t.kind !== '物件';
 
 interface Props {
   colors: ColorEntry[];
   /** 从详情抽屉「携此色入造物」跳入时带的色 */
   initialHex?: string;
+  /** 深链 ?stage=<条目id> 选中的器架条目（如 vessels 直入釉色器物） */
+  initialStage?: string;
+  /** 器物展需要的明暗场景控制 */
+  mode: ThemeMode;
+  onModeChange: (m: ThemeMode) => void;
+  onPickColor: (c: ColorEntry) => void;
 }
 
-export default function ZaowuPage({ colors, initialHex }: Props) {
-  const [templateId, setTemplateId] = useState(TEMPLATES[0].id);
+export default function ZaowuPage({ colors, initialHex, initialStage, mode, onModeChange, onPickColor }: Props) {
+  const [templateId, setTemplateId] = useState(
+    () => STAGES.find((t) => t.id === initialStage)?.id ?? STAGES[0].id,
+  );
   const [ruleId, setRuleId] = useState<RuleId>('cascade');
   const [baseHex, setBaseHex] = useState(initialHex ?? colors[0]?.hex ?? '#A85858');
   const [custom, setCustom] = useState<Record<string, string>>({});
   const [selSlot, setSelSlot] = useState<string | null>(null);
+  const [pattern, setPattern] = useState<PatternKind>('none');
   const svgRef = useRef<SVGSVGElement>(null);
+  const captureRef = useRef<(() => string | null) | null>(null);
 
-  const template = TEMPLATES.find((t) => t.id === templateId) ?? TEMPLATES[0];
+  const template = STAGES.find((t) => t.id === templateId) ?? STAGES[0];
+  const isVessels = template.kind === '器物';
   const scheme = useMemo(() => solveScheme(ruleId, baseHex, colors), [ruleId, baseHex, colors]);
 
   // 插槽 → 实际色：手调优先，否则按规则解算（同角色多插槽顺位取色变体）
   const assignments = useMemo(() => {
     const out: Record<string, string> = {};
+    if (template.kind === '器物') return out;
     const roleCount: Record<string, number> = {};
     template.slots.forEach((slot) => {
       const i = roleCount[slot.role] ?? 0;
@@ -75,6 +125,20 @@ export default function ZaowuPage({ colors, initialHex }: Props) {
   const suggestions = useMemo(() => slotSuggestions(baseHex), [baseHex]);
 
   const exportPng = () => {
+    if (template.kind === '试穿' || template.kind === '物件3D') {
+      const url = captureRef.current?.();
+      if (!url) {
+        MessagePlugin.warning('人台尚未备好，稍候再试');
+        return;
+      }
+      const colorName = entry?.name ?? baseHex.toUpperCase();
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = `拾色造物-${template.name}-${colorName}.png`;
+      a.click();
+      MessagePlugin.success(`已导出试穿稿：拾色造物-${template.name}-${colorName}.png`);
+      return;
+    }
     const svg = svgRef.current;
     if (!svg) return;
     const xml = new XMLSerializer().serializeToString(svg);
@@ -103,8 +167,12 @@ export default function ZaowuPage({ colors, initialHex }: Props) {
   };
 
   const copyScheme = () => {
-    const lines = template.slots.map(
-      (s) => `${s.label}（${ROLE_LABEL[s.role]}）${assignments[s.id].toUpperCase()}`,
+    if (template.kind === '器物') return;
+    const patternLabel = PATTERN_CHOICES.find((p) => p.key === pattern)?.label;
+    const lines = template.slots.map((s) =>
+      s.id === 'pattern'
+        ? `${s.label}（${ROLE_LABEL[s.role]}）${patternLabel ?? '无纹'}`
+        : `${s.label}（${ROLE_LABEL[s.role]}）${assignments[s.id].toUpperCase()}`,
     );
     const rule = RULES.find((r) => r.id === ruleId)?.name;
     const text = `拾色造物 · ${template.name}｜${rule}之法｜基色 ${baseHex.toUpperCase()}\n${lines.join('\n')}`;
@@ -114,7 +182,8 @@ export default function ZaowuPage({ colors, initialHex }: Props) {
     );
   };
 
-  const selSlotDef: SlotDef | null = template.slots.find((s) => s.id === selSlot) ?? null;
+  const selSlotDef: SlotDef | null =
+    template.kind === '器物' ? null : template.slots.find((s) => s.id === selSlot) ?? null;
 
   return (
     <main className="wrap">
@@ -125,69 +194,104 @@ export default function ZaowuPage({ colors, initialHex }: Props) {
 
       <hr className="hairline" />
 
-      {/* 控制行：器物模板 / 配色规则 */}
-      <div className="zaowu-controls">
-        <div className="filter-tabs">
-          <span className="zaowu-group-label">服饰</span>
-          {TEMPLATES.filter((t) => t.kind === '服饰').map((t) => (
-            <button
-              key={t.id}
-              className={`filter-tab${templateId === t.id ? ' active' : ''}`}
-              onClick={() => pickTemplate(t.id)}
-            >
-              {t.name}
+      {/* 控制行：配色规则（器物展陈自有控制行，此排让位） */}
+      {!isVessels && (
+        <div className="zaowu-controls">
+          <div className="filter-tabs">
+            {RULES.map((r) => (
+              <button
+                key={r.id}
+                className={`filter-tab${ruleId === r.id ? ' active' : ''}`}
+                title={r.desc}
+                onClick={() => pickRule(r.id)}
+              >
+                {r.name}
+              </button>
+            ))}
+            <span className="starmap-ctrl-divider" />
+            <button className="ghost-btn" onClick={reroll}>
+              掷签
             </button>
-          ))}
-          <span className="starmap-ctrl-divider" />
-          <span className="zaowu-group-label">物件</span>
-          {TEMPLATES.filter((t) => t.kind === '物件').map((t) => (
-            <button
-              key={t.id}
-              className={`filter-tab${templateId === t.id ? ' active' : ''}`}
-              onClick={() => pickTemplate(t.id)}
-            >
-              {t.name}
-            </button>
-          ))}
-        </div>
-        <div className="filter-tabs">
-          {RULES.map((r) => (
-            <button
-              key={r.id}
-              className={`filter-tab${ruleId === r.id ? ' active' : ''}`}
-              title={r.desc}
-              onClick={() => pickRule(r.id)}
-            >
-              {r.name}
-            </button>
-          ))}
-          <span className="starmap-ctrl-divider" />
-          <button className="filter-tab" onClick={reroll}>
-            掷签
-          </button>
-        </div>
-      </div>
-
-      <div className="zaowu-body">
-        {/* 左：设计稿 */}
-        <div className="zaowu-stage">
-          <svg
-            ref={svgRef}
-            viewBox={template.viewBox}
-            className="zaowu-svg"
-            role="img"
-            aria-label={`${template.name} 配色设计稿`}
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            {template.render(assignments)}
-          </svg>
-          <div className="zaowu-stage-caption">
-            <span className="zaowu-vessel-name">{template.name}</span>
-            <span className="zaowu-vessel-desc">{template.desc}</span>
           </div>
         </div>
+      )}
 
-        {/* 右：基色与部件 */}
+      <div className={`zaowu-body${isVessels ? ' is-vessels' : ''}`}>
+        {/* 左：器架 */}
+        <nav className="zaowu-rack" aria-label="器架">
+          {RACK.map((g) => (
+            <div className="zaowu-rack-group" key={g.label}>
+              <span className="zaowu-rack-cat">{g.label}</span>
+              <ul className="zaowu-rack-list">
+                {g.items.map((t) => (
+                  <li key={t.id}>
+                    <button
+                      className={`zaowu-rack-item${templateId === t.id ? ' active' : ''}`}
+                      onClick={() => pickTemplate(t.id)}
+                    >
+                      <span className="zaowu-rack-icon">
+                        <RackIcon id={t.id} />
+                      </span>
+                      <span className="zaowu-rack-name">{t.name}</span>
+                      {is3D(t) && <em className="zaowu-rack-tag">3D</em>}
+                    </button>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))}
+        </nav>
+
+        {isVessels ? (
+          /* 器物：釉色展陈占满舞台与面板区 */
+          <div className="zaowu-vessels fade-stage" key="vessels">
+            <VesselsPage
+              colors={colors}
+              mode={mode}
+              onModeChange={onModeChange}
+              initialHex={baseHex}
+              onPickColor={onPickColor}
+            />
+          </div>
+        ) : (
+          <>
+            {/* 中：设计稿 / 试穿间 */}
+            <div className="zaowu-stage fade-stage" key={template.id}>
+              {template.kind === '试穿' ? (
+                <FittingRoom
+                  key={template.id}
+                  def={template}
+                  assignments={assignments}
+                  pattern={pattern}
+                  captureRef={captureRef}
+                />
+              ) : template.kind === '物件3D' ? (
+                <ObjectRoom
+                  key={template.id}
+                  def={template}
+                  assignments={assignments}
+                  pattern={pattern}
+                  captureRef={captureRef}
+                />
+              ) : (
+                <svg
+                  ref={svgRef}
+                  viewBox={template.viewBox}
+                  className="zaowu-svg"
+                  role="img"
+                  aria-label={`${template.name} 配色设计稿`}
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  {template.render(assignments)}
+                </svg>
+              )}
+              <div className="zaowu-stage-caption">
+                <span className="zaowu-vessel-name">{template.name}</span>
+                <span className="zaowu-vessel-desc">{template.desc}</span>
+              </div>
+            </div>
+
+            {/* 右：基色与部件 */}
         <aside className="zaowu-panel">
           <h2 className="zaowu-section-title">基色</h2>
           <div className="zaowu-base">
@@ -220,7 +324,25 @@ export default function ZaowuPage({ colors, initialHex }: Props) {
             ))}
           </ul>
 
-          {selSlotDef && (
+          {selSlotDef && selSlotDef.id === 'pattern' ? (
+            <div className="zaowu-suggest">
+              <p className="zaowu-suggest-title">
+                为「纹样」择式
+                <span className="zaowu-suggest-sub">印上主辅面料，同族深色低透明度，不夺渐变</span>
+              </p>
+              <div className="zaowu-pattern-grid">
+                {PATTERN_CHOICES.map((p) => (
+                  <button
+                    key={p.key}
+                    className={`ghost-btn${pattern === p.key ? ' active' : ''}`}
+                    onClick={() => setPattern(p.key)}
+                  >
+                    {p.label}
+                  </button>
+                ))}
+              </div>
+            </div>
+          ) : selSlotDef && (
             <div className="zaowu-suggest">
               <p className="zaowu-suggest-title">
                 为「{selSlotDef.label}」择色
@@ -249,6 +371,8 @@ export default function ZaowuPage({ colors, initialHex }: Props) {
             </button>
           </div>
         </aside>
+          </>
+        )}
       </div>
 
       <hr className="hairline" />

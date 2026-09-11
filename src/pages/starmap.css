@@ -29,7 +29,15 @@
   padding-block: 40px 8px;
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
   gap: 20px;
+}
+/* 绸带撑满控制行宽度；季节签与绸带之间多留 4px（合 24px 留白分隔） */
+.starmap-controls .hue-ribbon-scroll {
+  align-self: stretch;
+}
+.starmap-season-row {
+  margin-top: 4px;
 }
 .starmap-ctrl-divider {
   width: 1px;

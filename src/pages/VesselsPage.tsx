@@ -11,6 +11,8 @@ import { generatePalette } from 'shise-engine';
 import type { ThemeMode } from '../theme';
 import type { ColorEntry } from '../types';
 import { VESSELS } from '../webgl/vesselProfiles';
+import RackIcon from '../zaowu/RackIcon';
+import Seg from '../components/Seg';
 import './vessels.css';
 
 const VesselScene = lazy(() => import('../webgl/VesselScene'));
@@ -49,38 +51,36 @@ export default function VesselsPage({ colors, mode, onModeChange, initialHex, on
 
   return (
     <div className="vessels-page">
-      {/* 控制行：器形 / 展陈模式 / 换色 */}
+      {/* 控制行：器形（图标 chip）/ 展陈模式（分段胶囊）/ 动作（幽灵钮） */}
       <div className="vessels-controls">
-        <div className="filter-tabs">
+        <div className="chip-row">
           {VESSELS.map((v) => (
             <button
               key={v.id}
-              className={`filter-tab${vesselId === v.id ? ' active' : ''}`}
+              className={`chip-icon${vesselId === v.id ? ' active' : ''}`}
               onClick={() => setVesselId(v.id)}
             >
-              {v.name}
+              <span className="chip-icon-glyph">
+                <RackIcon id={v.id} />
+              </span>
+              <span className="chip-icon-name">{v.name}</span>
             </button>
           ))}
         </div>
-        <div className="filter-tabs">
-          <button
-            className={`filter-tab${!arrayMode ? ' active' : ''}`}
-            onClick={() => setArrayMode(false)}
-          >
-            单器
-          </button>
-          <button
-            className={`filter-tab${arrayMode ? ' active' : ''}`}
-            onClick={() => setArrayMode(true)}
-          >
-            色阶阵列
-          </button>
-          <span className="starmap-ctrl-divider" />
-          <button className="filter-tab" onClick={randomColor}>
+        <div className="vessels-controls-right">
+          <Seg
+            options={[
+              { key: 'single', label: '单器' },
+              { key: 'array', label: '色阶阵列' },
+            ]}
+            value={arrayMode ? 'array' : 'single'}
+            onChange={(k) => setArrayMode(k === 'array')}
+          />
+          <button className="ghost-btn" onClick={randomColor}>
             随机一色
           </button>
           <button
-            className="filter-tab"
+            className="ghost-btn"
             onClick={() => onModeChange(mode === 'dark' ? 'light' : 'dark')}
           >
             {mode === 'dark' ? '宣纸场景' : '墨夜场景'}

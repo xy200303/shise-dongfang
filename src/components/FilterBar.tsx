@@ -1,26 +1,18 @@
-import { CATEGORY_TABS, type Category } from '../types';
+import { type Category, type ColorEntry } from '../types';
+import HueRibbon from './HueRibbon';
 
 interface Props {
+  colors: ColorEntry[];
   category: Category | 'all';
   onCategoryChange: (c: Category | 'all') => void;
   search: string;
   onSearchChange: (s: string) => void;
 }
 
-export default function FilterBar({ category, onCategoryChange, search, onSearchChange }: Props) {
+export default function FilterBar({ colors, category, onCategoryChange, search, onSearchChange }: Props) {
   return (
     <div className="filter-row">
-      <div className="filter-tabs">
-        {CATEGORY_TABS.map((t) => (
-          <button
-            key={t.key}
-            className={`filter-tab${category === t.key ? ' active' : ''}`}
-            onClick={() => onCategoryChange(category === t.key ? 'all' : t.key)}
-          >
-            {t.label}
-          </button>
-        ))}
-      </div>
+      <HueRibbon colors={colors} value={category} onChange={onCategoryChange} />
       <div className="search-box">
         <input
           type="text"

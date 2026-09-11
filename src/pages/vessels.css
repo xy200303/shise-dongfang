@@ -30,6 +30,13 @@
   padding: 16px 0;
 }
 
+.vessels-controls-right {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
 /* 展台：宣纸/墨色随全局 token 走，器下有极淡投影 */
 .vessels-stage {
   position: relative;
