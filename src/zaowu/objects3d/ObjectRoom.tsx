@@ -29,7 +29,7 @@ export default function ObjectRoom({ def, assignments, pattern, captureRef }: Pr
   const [failed, setFailed] = useState(false);
   const [sceneId, setSceneId] = useState<SceneId>('paper');
   const stageRef = useRef<Stage | null>(null);
-  const isUmbrella = def.id === 'san';
+  const spin = def.spin === true;
 
   useEffect(() => {
     const mount = mountRef.current;
@@ -49,7 +49,7 @@ export default function ObjectRoom({ def, assignments, pattern, captureRef }: Pr
       stageRef.current = stage0;
       const { THREE } = stage0;
 
-      const built = def.build(THREE, stateRef.current.assignments, stateRef.current.pattern);
+      const built = await def.build(THREE, stateRef.current.assignments, stateRef.current.pattern);
       builtRef.current = built;
       built.update(stateRef.current.assignments, stateRef.current.pattern); // 首次上色
       stage0.scene.add(built.group);
@@ -73,8 +73,8 @@ export default function ObjectRoom({ def, assignments, pattern, captureRef }: Pr
       refl.scale.y = -1;
       stage0.setReflection(refl);
 
-      /* 伞缓慢自转展示 */
-      if (isUmbrella) {
+      /* 缓慢自转展示 */
+      if (spin) {
         stage0.onTick = (dt) => {
           built.group.rotation.y += dt * 0.35;
           refl.rotation.y += dt * 0.35;
@@ -102,7 +102,7 @@ export default function ObjectRoom({ def, assignments, pattern, captureRef }: Pr
       builtRef.current = null;
       captureRef.current = null;
     };
-  }, [def, captureRef, isUmbrella]);
+  }, [def, captureRef, spin]);
 
   useEffect(() => {
     builtRef.current?.update(assignments, pattern);
@@ -115,7 +115,7 @@ export default function ObjectRoom({ def, assignments, pattern, captureRef }: Pr
 
   return (
     <div className="zaowu-fitting" ref={mountRef}>
-      <div className="fitting-toolbar">
+      <div className={`fitting-toolbar${sceneId !== 'paper' ? ' on-dark' : ''}`}>
         <Seg options={SCENES} value={sceneId} onChange={setSceneId} />
       </div>
       {(loading || failed) && (

@@ -22,9 +22,11 @@ export interface Object3DDef {
   kind: '物件3D';
   desc: string;
   slots: SlotDef[];
+  /** 缓慢自转展示（伞类） */
+  spin?: boolean;
   build: (
     THREE: typeof import('three'),
     colors: Record<string, string>,
     pattern: PatternKind,
-  ) => BuiltObject;
+  ) => BuiltObject | Promise<BuiltObject>;
 }
