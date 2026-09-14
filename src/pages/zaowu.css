@@ -470,6 +470,23 @@
   font-size: 12px;
 }
 
+/* 深场景（墨夜/月庭）：深色磨砂轨道 + 浅字，滑块保持纸面 */
+.fitting-toolbar.on-dark .seg {
+  border-color: rgba(255, 255, 255, 0.28);
+  background: rgba(16, 14, 12, 0.45);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+.fitting-toolbar.on-dark .seg-item {
+  color: rgba(255, 255, 255, 0.72);
+}
+.fitting-toolbar.on-dark .seg-item:hover {
+  color: #fff;
+}
+.fitting-toolbar.on-dark .seg-item.active {
+  color: var(--td-text-color-primary);
+}
+
 /* 纹样选择器 */
 .zaowu-pattern-grid {
   display: flex;

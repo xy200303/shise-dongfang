@@ -15,12 +15,13 @@ import { useMemo, useRef, useState } from 'react';
 import { MessagePlugin } from 'tdesign-react';
 import type { ThemeMode } from '../theme';
 import type { ColorEntry } from '../types';
-import { RULES, ROLE_LABEL, type RuleId, type SlotDef, type TemplateDef } from '../zaowu/types';
+import { RULES, ROLE_LABEL, type RuleId, type SlotDef, type TemplateDef, type IllustratedTemplateDef } from '../zaowu/types';
 import { solveScheme, slotSuggestions } from '../zaowu/solver';
 import { TEMPLATES } from '../zaowu/templates';
 import { FITTINGS } from '../zaowu/fitting/templates';
 import type { FittingDef } from '../zaowu/fitting/types';
 import FittingRoom from '../zaowu/fitting/FittingRoom';
+import SvgStage from '../zaowu/SvgStage';
 import { PATTERN_CHOICES, type PatternKind } from '../zaowu/fitting/patterns';
 import { OBJECTS_3D } from '../zaowu/objects3d/templates';
 import type { Object3DDef } from '../zaowu/objects3d/types';
@@ -37,8 +38,8 @@ const VESSELS_STAGE = {
   desc: '引擎釉色的 3D 展陈台',
 } as const;
 
-/** 2D 模板 + 程序化 3D 物件 + 器物展 + 3D 人台统一登记，按 id 取用 */
-type StageDef = TemplateDef | Object3DDef | FittingDef | typeof VESSELS_STAGE;
+/** 2D/插画模板 + 程序化 3D 物件 + 器物展 + 3D 人台统一登记，按 id 取用 */
+type StageDef = TemplateDef | IllustratedTemplateDef | Object3DDef | FittingDef | typeof VESSELS_STAGE;
 
 /** 器架分组：类目签 → 条目（物件组：团扇保持 2D，伞/灯为程序化 3D） */
 const RACK: { label: string; items: StageDef[] }[] = [
@@ -141,7 +142,13 @@ export default function ZaowuPage({ colors, initialHex, initialStage, mode, onMo
     }
     const svg = svgRef.current;
     if (!svg) return;
-    const xml = new XMLSerializer().serializeToString(svg);
+    // 内联 svg 只有 viewBox、靠 CSS 撑尺寸；导出副本补上显式宽高（2x），
+    // 否则 <img> 按 300×150 默认 Intrinsic size 裁错
+    const clone = svg.cloneNode(true) as SVGSVGElement;
+    const vb = (clone.getAttribute('viewBox') ?? '0 0 400 520').split(/\s+/).map(Number);
+    clone.setAttribute('width', String(vb[2] * 2));
+    clone.setAttribute('height', String(vb[3] * 2));
+    const xml = new XMLSerializer().serializeToString(clone);
     const url = URL.createObjectURL(new Blob([xml], { type: 'image/svg+xml' }));
     const img = new Image();
     img.onload = () => {
@@ -272,6 +279,14 @@ export default function ZaowuPage({ colors, initialHex, initialStage, mode, onMo
                   assignments={assignments}
                   pattern={pattern}
                   captureRef={captureRef}
+                />
+              ) : 'svgUrl' in template ? (
+                <SvgStage
+                  key={template.id}
+                  def={template}
+                  assignments={assignments}
+                  pattern={pattern}
+                  svgRef={svgRef}
                 />
               ) : (
                 <svg

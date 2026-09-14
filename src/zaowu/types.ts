@@ -52,3 +52,24 @@ export const RULES: RuleDef[] = [
   { id: 'wuse', name: '五色', desc: '青赤黄白黑，相生转位' },
   { id: 'solar', name: '节气', desc: '取今日节气之色造物' },
 ];
+
+/**
+ * 矢量插画模板（Miora 位图描摹 SVG）：
+ * 运行时按锚点族聚类 path fill 染色（svgdye.ts），褶皱明暗随族内明度偏移存活。
+ * slots 语义与手绘模板一致；anchors 含各槽位源色 + ink（描线族，永不染）。
+ * 新增插画只需登记新配置，不动引擎。
+ */
+export interface IllustratedTemplateDef {
+  id: string;
+  name: string;
+  kind: '服饰' | '物件';
+  desc: string;
+  slots: SlotDef[];
+  /** 已抠底 + bbox 归一化的 SVG（public 下） */
+  svgUrl: string;
+  /** slotId → 源色锚点 hex（一族多锚点给数组，如深花芯+浅花瓣）；
+   *  另需 ink 描线锚点（keep* 开头的 key 为不染配景族） */
+  anchors: Record<string, string | string[]>;
+  /** 纹族在「无纹」时的行为：true=仍按纹槽色显示（插画本体纹样），false=隐去 */
+  patternDefaultVisible?: boolean;
+}

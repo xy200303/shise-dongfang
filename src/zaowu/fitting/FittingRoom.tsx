@@ -215,7 +215,7 @@ export default function FittingRoom({ def, assignments, pattern, captureRef }: P
 
   return (
     <div className="zaowu-fitting" ref={mountRef}>
-      <div className="fitting-toolbar">
+      <div className={`fitting-toolbar${sceneId !== 'paper' ? ' on-dark' : ''}`}>
         <Seg options={SCENES} value={sceneId} onChange={setSceneId} />
         <Seg options={ANIMS} value={animId} onChange={setAnimId} />
       </div>
