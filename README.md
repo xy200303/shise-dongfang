@@ -95,7 +95,7 @@ shise-dongfang/
 ## 文档
 
 产品动机、设计理念、Miora 与 CodeBuddy 全流程产出记录见 [`docs/task02/`](docs/task02/)。
-Miora 视觉资产源文件见 `docs/task02/miora/`，混元 3D 模型源文件见 `docs/task02/miora/3d/`。
+Miora 视觉资产源文件见 `docs/task02/miora/`；混元 3D 模型经 `tools/slim-glb.mjs` 瘦身后入库 `public/models/youzhisan.glb`（原始 23MB 源文件可从 git 历史取回）。
 
 ## 致谢
 

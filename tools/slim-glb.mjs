@@ -14,6 +14,7 @@ import {
 import { MeshoptSimplifier, MeshoptEncoder, MeshoptDecoder } from 'meshoptimizer';
 import sharp from 'sharp';
 
+// 混元图生 3D 原始模型（23MB）未入库，可从 git 历史（混元伞特性提交）取回放到此路径
 const SRC = 'docs/task02/miora/3d/伞.glb';
 const DST = 'public/models/youzhisan.glb';
 
