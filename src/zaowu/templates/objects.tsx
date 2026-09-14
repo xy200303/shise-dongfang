@@ -1,55 +1,11 @@
 /**
- * 物件模板三件：团扇 / 油纸伞 / 灯笼
- * 平面剪影插画，插槽色经引擎配色规则着色（见 zaowu/types.ts）。
+ * 物件模板两件（手绘 2D 版留存底稿）：油纸伞 / 灯笼
+ * 团扇已升级为 Miora 矢量插画模板（templates/illustrated.ts）；
+ * 油纸伞/灯笼在器架中由程序化 3D 版（objects3d/）呈现。
  */
-import PatternDefs, { patternUrl } from '../patterns';
 import type { TemplateDef } from '../types';
 
-/* ---------- 团扇：素面团扇，兰草入画 ---------- */
-export const tuan: TemplateDef = {
-  id: 'tuan',
-  name: '团扇',
-  kind: '物件',
-  desc: '素扇团栾，兰草入画，纨扇之雅',
-  viewBox: '0 0 400 500',
-  slots: [
-    { id: 'face', label: '扇面', role: 'main' },
-    { id: 'frame', label: '扇缘', role: 'trim' },
-    { id: 'rib', label: '扇柄', role: 'tie' },
-    { id: 'tassel', label: '流苏', role: 'secondary' },
-    { id: 'art', label: '扇面画', role: 'accent' },
-  ],
-  render: (c) => (
-    <g>
-      <PatternDefs id="tuan" bg={c.face} line={c.art} />
-      {/* 扇面 */}
-      <circle cx="200" cy="180" r="140" fill={c.face} />
-      <circle cx="200" cy="180" r="132" fill={patternUrl('tuan', 'chan')} opacity="0.35" />
-      {/* 兰草 */}
-      <g fill="none" stroke={c.art} strokeLinecap="round">
-        <path d="M150 262 C158 224 178 202 208 190" strokeWidth="2.6" />
-        <path d="M170 270 C188 244 216 232 248 230" strokeWidth="2.6" />
-        <path d="M196 268 C212 250 236 244 258 246" strokeWidth="2" />
-        <path d="M142 246 C136 228 138 210 148 196" strokeWidth="2" />
-      </g>
-      <circle cx="212" cy="186" r="4.5" fill={c.art} />
-      <circle cx="228" cy="196" r="3.5" fill={c.art} />
-      <circle cx="152" cy="192" r="3.5" fill={c.art} />
-      {/* 扇缘 */}
-      <circle cx="200" cy="180" r="140" fill="none" stroke={c.frame} strokeWidth="10" />
-      <circle cx="200" cy="180" r="127" fill="none" stroke={c.frame} strokeWidth="1.6" opacity="0.6" />
-      {/* 柄 */}
-      <rect x="188" y="296" width="24" height="18" rx="5" fill={c.frame} />
-      <rect x="193" y="310" width="14" height="128" rx="6" fill={c.rib} />
-      {/* 流苏 */}
-      <line x1="200" y1="438" x2="200" y2="462" stroke={c.tassel} strokeWidth="2.4" />
-      <rect x="190" y="462" width="20" height="18" rx="6" fill={c.tassel} />
-      {[192, 197, 202, 207].map((x) => (
-        <line key={x} x1={x} y1="480" x2={x - 1} y2="520" stroke={c.tassel} strokeWidth="2" strokeLinecap="round" />
-      ))}
-    </g>
-  ),
-};
+/* ---------- 油纸伞：八瓣伞面，伞骨如星 ---------- */
 
 /* ---------- 油纸伞：八瓣伞面，伞骨如星 ---------- */
 const SAN_JOINTS = [36, 83, 130, 177, 223, 270, 317, 364];

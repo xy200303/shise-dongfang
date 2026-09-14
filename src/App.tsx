@@ -161,14 +161,7 @@ export default function App() {
     MessagePlugin.success(`已将「${entry?.name ?? hex}」设为全站主题`);
   };
 
-  /** 抽屉「携此色试釉」：器物已并入造物器架，跳造物页并选中「釉色器物」 */
-  const enterVessels = (hex: string) => {
-    setZaoHex(hex);
-    setZaoStage('vessels');
-    setSelected(null);
-    setRoute('zaowu');
-  };
-
+  /** 抽屉「携此色入造物」：带基色跳造物页（釉色器物亦在器架内，不再单独直达） */
   const enterZaowu = (hex: string) => {
     setZaoHex(hex);
     setZaoStage(null);
@@ -260,7 +253,6 @@ export default function App() {
         onClose={() => setSelected(null)}
         onSetTheme={handleSetTheme}
         onPickColor={setSelected}
-        onEnterVessels={enterVessels}
         onEnterZaowu={enterZaowu}
       />
     </>

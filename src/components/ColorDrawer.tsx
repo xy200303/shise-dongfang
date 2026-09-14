@@ -15,9 +15,7 @@ interface Props {
   onClose: () => void;
   onSetTheme: (hex: string) => void;
   onPickColor: (c: ColorEntry) => void;
-  /** 跳入造物页「釉色器物」条目（携带当前色试釉） */
-  onEnterVessels?: (hex: string) => void;
-  /** 跳入造物（携带当前色作基色） */
+  /** 跳入造物（携带当前色作基色；釉色器物/织造人台皆在器架内选） */
   onEnterZaowu?: (hex: string) => void;
 }
 
@@ -40,7 +38,7 @@ async function copyText(text: string, label: string) {
   MessagePlugin.success(`已复制 ${label}：${text}`);
 }
 
-export default function ColorDrawer({ color, mode, byHex, siblings, onClose, onSetTheme, onPickColor, onEnterVessels, onEnterZaowu }: Props) {
+export default function ColorDrawer({ color, mode, byHex, siblings, onClose, onSetTheme, onPickColor, onEnterZaowu }: Props) {
   const favIds = useFavorites();
   const faved = color ? favIds.includes(color.id) : false;
 
@@ -226,11 +224,6 @@ export default function ColorDrawer({ color, mode, byHex, siblings, onClose, onS
           <div className="drawer-section">
             <h3 className="drawer-section-title">造物 · 应用</h3>
             <p className="a11y-note">釉色器物与织造人台皆在造物</p>
-            {onEnterVessels && (
-              <button className="vessels-entry-btn" onClick={() => onEnterVessels(color.hex)}>
-                携此色入造物试釉 →
-              </button>
-            )}
             {onEnterZaowu && (
               <button className="vessels-entry-btn" onClick={() => onEnterZaowu(color.hex)}>
                 携此色入造物 →
